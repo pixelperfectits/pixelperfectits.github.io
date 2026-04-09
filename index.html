@@ -3,210 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Perfect IT Solutions | Principal Systems Architect</title>
+    <title>Pixel Perfect IT Solutions | Systems Architecture & Land Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', 'Hind Siliguri', sans-serif; scroll-behavior: smooth; background-color: #000000; overflow-x: hidden; }
-        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 32px; transition: all 0.5s ease; }
-        .glass-card:hover { border-color: #00F2FF; transform: translateY(-10px); box-shadow: 0 30px 60px -12px rgba(0, 242, 255, 0.2); }
-        .neon-text { text-shadow: 0 0 20px rgba(0, 242, 255, 0.7); }
-        .btn-glow { box-shadow: 0 0 30px rgba(0, 242, 255, 0.3); }
-        .capsule { background: rgba(0, 242, 255, 0.05); border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 50px; padding: 4px 12px; font-size: 10px; font-weight: 700; color: #00F2FF; text-transform: uppercase; letter-spacing: 1px; }
-        .bhumitech-bridge { background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(2, 6, 23, 1) 100%); border: 1px solid rgba(16, 185, 129, 0.2); }
+        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 32px; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-card:hover { border-color: #00F2FF; transform: translateY(-10px); box-shadow: 0 40px 80px -15px rgba(0, 242, 255, 0.15); }
+        .neon-text { text-shadow: 0 0 25px rgba(0, 242, 255, 0.8); }
+        .emerald-text { color: #10B981; text-shadow: 0 0 25px rgba(16, 185, 129, 0.5); }
+        .capsule { background: rgba(0, 242, 255, 0.05); border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 100px; padding: 6px 16px; font-size: 10px; font-weight: 800; color: #00F2FF; text-transform: uppercase; letter-spacing: 2px; }
+        .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px); background-size: 40px 40px; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
     </style>
 </head>
-<body class="text-slate-300">
+<body class="text-slate-300 bg-grid">
 
-    <!-- TOP GLOBAL BAR -->
-    <div class="w-full bg-[#00F2FF] text-black text-[9px] font-black uppercase tracking-[0.3em] py-2 text-center">
-        Serving Global Clients: USA • Europe • Middle East • Bangladesh
+    <!-- GLOBAL ACCESS BAR -->
+    <div class="w-full bg-[#00F2FF] text-black text-[10px] font-black uppercase tracking-[0.4em] py-2 text-center">
+        Engineering Excellence: Bangladesh • Global • Digital • Physical
     </div>
 
     <!-- NAVIGATION -->
-    <header class="fixed w-full z-50 bg-black/60 backdrop-blur-xl border-b border-white/5 top-[26px]">
+    <header class="fixed w-full z-50 bg-black/60 backdrop-blur-2xl border-b border-white/5 top-[30px]">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-10 h-10 shadow-[0_0_20px_#00F2FF] rounded-xl">
+                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-12 h-12 shadow-[0_0_20px_#00F2FF] rounded-2xl">
                 <div>
-                    <span class="text-xl font-black text-white tracking-tighter block leading-none italic">PIXEL PERFECT</span>
-                    <span class="text-[9px] font-bold text-[#00F2FF] tracking-[0.3em] uppercase">Global Systems Engineering</span>
+                    <span class="text-2xl font-black text-white tracking-tighter block leading-none italic uppercase">Pixel Perfect</span>
+                    <span class="text-[9px] font-bold text-[#00F2FF] tracking-[0.4em] uppercase">Systems Engineering</span>
                 </div>
             </div>
-            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                <a href="#services" class="hover:text-[#00F2FF]">Expertise</a>
-                <a href="#portfolio" class="hover:text-[#00F2FF]">The Vault</a>
-                <a href="#bhumitech" class="text-emerald-400 hover:neon-text">Bhumitech Division</a>
+            <div class="hidden lg:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#it-sector" class="hover:text-[#00F2FF] transition">IT Solutions</a>
+                <a href="#marketing" class="hover:text-[#00F2FF] transition">Growth</a>
+                <a href="#bhumitech" class="text-emerald-400 hover:emerald-text transition">Bhumitech</a>
+                <a href="#portfolio" class="hover:text-[#00F2FF] transition">Vault</a>
             </div>
-            <a href="https://wa.me/8801715354960" class="bg-[#00F2FF] text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest btn-glow hover:bg-white transition-all">Consult Now</a>
+            <a href="https://wa.me/8801715354960" class="bg-[#00F2FF] text-black px-8 py-3 rounded-full font-black text-[10px] uppercase tracking-widest shadow-[0_0_30px_rgba(0,242,255,0.3)] hover:bg-white transition-all">WhatsApp</a>
         </nav>
     </header>
 
     <!-- HERO SECTION -->
     <section class="relative pt-64 pb-32 px-6">
         <div class="container mx-auto text-center">
-            <span class="capsule mb-8 inline-block">Architecture • Logic • Precision</span>
-            <h1 class="text-5xl md:text-8xl font-black text-white leading-none mb-8 uppercase italic tracking-tighter">
-                Engineering <br><span class="text-[#00F2FF] neon-text">The Future</span>
+            <span class="capsule mb-10 inline-block">Architecture • Logic • Precision</span>
+            <h1 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-10 uppercase italic tracking-tighter">
+                Engineering <br><span class="text-[#00F2FF] neon-text">Perfection</span>
             </h1>
-            <p class="text-slate-400 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-12">
+            <p class="text-slate-400 max-w-4xl mx-auto text-lg md:text-2xl leading-relaxed mb-16">
                 পিক্সেল এবং ইঞ্চির সূক্ষ্মতম নির্ভুলতায় আপনার ব্যবসার ডিজিটাল এবং কায়িক সম্পদকে নিরাপদ ও সমৃদ্ধ করাই আমাদের মূল লক্ষ্য। 
-                <span class="text-white block mt-4 font-bold italic">Global Standard Solutions powered by Proprietary Engines.</span>
+                <span class="text-white block mt-6 font-bold italic opacity-80">Building the Digital Backbone for Modern Brands.</span>
             </p>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="#portfolio" class="bg-white text-black px-10 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all hover:bg-[#00F2FF]">Explore Showcase</a>
-                <a href="https://wa.me/8801715354960" class="border border-white/10 hover:bg-white/5 text-white px-10 py-4 rounded-2xl font-black text-xs uppercase tracking-widest transition-all">Direct WhatsApp</a>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a href="https://wa.me/8801715354960" class="bg-white text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-[#00F2FF] transition-all transform hover:-rotate-2">Analyze My Project</a>
+                <a href="#portfolio" class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] transition-all">Explore The Vault</a>
             </div>
         </div>
     </section>
 
-    <!-- INTEGRATED IT SERVICES (THE ENGINES) -->
-    <section id="services" class="py-32 bg-black/40">
+    <!-- DIVISION 01: IT & SOFTWARE SYSTEMS -->
+    <section id="it-sector" class="py-32 bg-white/[0.01]">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl font-black text-white uppercase italic tracking-tighter mb-4">World-Class Capabilities</h2>
-                <p class="text-slate-500 uppercase text-xs font-bold tracking-[0.2em]">আমরা যে সকল সেবায় পারদর্শী</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Web & Software -->
-                <div class="glass-card p-10">
-                    <i data-lucide="cpu" class="text-[#00F2FF] mb-6 w-10 h-10"></i>
-                    <h3 class="text-xl font-black text-white mb-4 uppercase italic">Web Systems</h3>
-                    <ul class="text-xs space-y-3 font-bold text-slate-500 uppercase tracking-widest">
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-3 h-3 text-[#00F2FF]"></i> Corporate Web Portals</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-3 h-3 text-[#00F2FF]"></i> High-Converting Landing Pages</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-3 h-3 text-[#00F2FF]"></i> Custom SaaS Architectures</li>
-                    </ul>
-                </div>
-                <!-- Design & Media -->
-                <div class="glass-card p-10 border-[#00F2FF]/20">
-                    <i data-lucide="layers" class="text-[#00F2FF] mb-6 w-10 h-10"></i>
-                    <h3 class="text-xl font-black text-white mb-4 uppercase italic">Visual Media</h3>
-                    <ul class="text-xs space-y-3 font-bold text-slate-500 uppercase tracking-widest">
-                        <li class="flex items-center gap-2"><i data-lucide="star" class="w-3 h-3 text-[#00F2FF]"></i> UI/UX System Interfaces</li>
-                        <li class="flex items-center gap-2"><i data-lucide="star" class="w-3 h-3 text-[#00F2FF]"></i> Professional Print Identity</li>
-                        <li class="flex items-center gap-2"><i data-lucide="star" class="w-3 h-3 text-[#00F2FF]"></i> Scroll-Stopping Ad Media</li>
-                    </ul>
-                </div>
-                <!-- Audit & Analytics -->
-                <div class="glass-card p-10">
-                    <i data-lucide="shield-check" class="text-[#00F2FF] mb-6 w-10 h-10"></i>
-                    <h3 class="text-xl font-black text-white mb-4 uppercase italic">Strategic Audit</h3>
-                    <ul class="text-xs space-y-3 font-bold text-slate-500 uppercase tracking-widest">
-                        <li class="flex items-center gap-2"><i data-lucide="activity" class="w-3 h-3 text-[#00F2FF]"></i> Technical Health Scans</li>
-                        <li class="flex items-center gap-2"><i data-lucide="activity" class="w-3 h-3 text-[#00F2FF]"></i> Revenue Leakage Analysis</li>
-                        <li class="flex items-center gap-2"><i data-lucide="activity" class="w-3 h-3 text-[#00F2FF]"></i> Security Hardening</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BHUMITECH BRIDGE (THE CLICKABLE LINK) -->
-    <section id="bhumitech" class="py-20 px-6">
-        <div class="container mx-auto">
-            <div class="bhumitech-bridge p-12 md:p-20 rounded-[40px] flex flex-col md:flex-row justify-between items-center gap-12">
-                <div class="text-left">
-                    <span class="text-emerald-400 font-black uppercase text-[10px] tracking-[0.4em] mb-4 block">Specialized Division</span>
-                    <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-6">360° Bhumitech <br>Solutions</h2>
-                    <p class="text-slate-400 max-w-md text-lg">Smart Land Intelligence, Geo-Data Analysis, and Forensic Deed Audits.</p>
-                </div>
-                <a href="https://pixelperfectits.github.io/bhumitech" class="bg-emerald-500 text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all transform hover:rotate-2">Visit Bhumitech Portal</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- DYNAMIC SHOWCASE (THE LIVE VAULT) -->
-    <section id="portfolio" class="py-32">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-20 gap-8">
-                <div class="text-left">
-                    <h2 class="text-4xl font-black text-white uppercase italic tracking-tighter">The Live Vault</h2>
-                    <p class="text-slate-500 font-bold uppercase text-[10px] tracking-widest mt-2">আমাদের কাজের লাইভ পোর্টফোলিও (Daily Updated)</p>
-                </div>
-                <div class="flex gap-4">
-                    <a href="https://github.com/pixelperfectits/assets" target="_blank" class="bg-white/5 border border-white/10 px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all">Browse All Assets</a>
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-l-[6px] border-[#00F2FF] pl-10">
+                <div>
+                    <h2 class="text-5xl font-black text-white uppercase italic tracking-tighter">Digital Engineering</h2>
+                    <p class="text-slate-500 mt-3 text-lg font-medium">সফটওয়্যার, ডিজাইন ও টেকনিক্যাল সিস্টেম সমাধান</p>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Item 1: UI/UX -->
-                <div class="glass-card overflow-hidden group">
-                    <div class="h-64 bg-slate-900 flex items-center justify-center relative">
-                        <i data-lucide="layout" class="w-12 h-12 text-[#00F2FF] opacity-20"></i>
-                        <span class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all bg-black/80 font-black text-[10px] uppercase tracking-widest">View Design File</span>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-white font-black uppercase tracking-tighter mb-2">Web & UI Interfaces</h4>
-                        <p class="text-[10px] text-slate-500 font-bold uppercase mb-6">High-Converting Landing Pages</p>
-                        <a href="https://github.com/pixelperfectits/assets" class="text-[#00F2FF] text-[10px] font-black uppercase tracking-widest border-b border-[#00F2FF]">Open Showcase</a>
-                    </div>
+                <!-- Web & Software -->
+                <div class="glass-card p-12">
+                    <i data-lucide="code-2" class="text-[#00F2FF] mb-8 w-12 h-12"></i>
+                    <h3 class="text-2xl font-black text-white mb-6 uppercase italic">Web & Software</h3>
+                    <p class="text-sm text-slate-400 mb-8 leading-relaxed">ব্যবসায়িক কার্যক্রম সহজ করতে আধুনিক ওয়েবসাইট ও কাস্টম সফটওয়্যার নির্মাণ।</p>
+                    <ul class="text-[11px] space-y-4 font-bold text-slate-500 uppercase tracking-widest border-t border-white/5 pt-8">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-4 h-4 text-[#00F2FF]"></i> Corporate Web Portals</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-4 h-4 text-[#00F2FF]"></i> Institutional Management</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-4 h-4 text-[#00F2FF]"></i> High-Speed Landing Pages</li>
+                    </ul>
                 </div>
-                <!-- Item 2: Print Identity -->
-                <div class="glass-card overflow-hidden group border-white/10">
-                    <div class="h-64 bg-slate-900 flex items-center justify-center relative">
-                        <i data-lucide="printer" class="w-12 h-12 text-[#00F2FF] opacity-20"></i>
-                        <span class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all bg-black/80 font-black text-[10px] uppercase tracking-widest">View Print Specs</span>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-white font-black uppercase tracking-tighter mb-2">Corporate Identity</h4>
-                        <p class="text-[10px] text-slate-500 font-bold uppercase mb-6">Business Cards & Memos</p>
-                        <a href="https://github.com/pixelperfectits/assets" class="text-[#00F2FF] text-[10px] font-black uppercase tracking-widest border-b border-[#00F2FF]">Open Showcase</a>
-                    </div>
+                <!-- UI/UX & Print -->
+                <div class="glass-card p-12 border-[#00F2FF]/20">
+                    <i data-lucide="palette" class="text-[#00F2FF] mb-8 w-12 h-12"></i>
+                    <h3 class="text-2xl font-black text-white mb-6 uppercase italic">Visual Identity</h3>
+                    <p class="text-sm text-slate-400 mb-8 leading-relaxed">ব্র্যান্ডিংয়ের জন্য প্রফেশনাল ইউআই (UI) এবং প্রিন্ট মিডিয়া ডিজাইন।</p>
+                    <ul class="text-[11px] space-y-4 font-bold text-slate-500 uppercase tracking-widest border-t border-white/5 pt-8">
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-[#00F2FF]"></i> Modern UI/UX Interfaces</li>
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-[#00F2FF]"></i> High-End Print Assets</li>
+                        <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-[#00F2FF]"></i> Scroll-Stopping Ad Media</li>
+                    </ul>
                 </div>
-                <!-- Item 3: Case Studies -->
-                <div class="glass-card overflow-hidden group">
-                    <div class="h-64 bg-slate-900 flex items-center justify-center relative">
-                        <i data-lucide="file-text" class="w-12 h-12 text-[#00F2FF] opacity-20"></i>
-                        <span class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all bg-black/80 font-black text-[10px] uppercase tracking-widest">Read Audit Report</span>
+                <!-- Technical Audit -->
+                <div class="glass-card p-12">
+                    <i data-lucide="shield-alert" class="text-[#00F2FF] mb-8 w-12 h-12"></i>
+                    <h3 class="text-2xl font-black text-white mb-6 uppercase italic">Technical Audit</h3>
+                    <p class="text-sm text-slate-400 mb-8 leading-relaxed">আপনার ডিজিটাল সম্পদের গতি, নিরাপত্তা ও ত্রুটি শনাক্তকরণ অডিট।</p>
+                    <ul class="text-[11px] space-y-4 font-bold text-slate-500 uppercase tracking-widest border-t border-white/5 pt-8">
+                        <li class="flex items-center gap-3"><i data-lucide="activity" class="w-4 h-4 text-[#00F2FF]"></i> Security Vulnerability Scan</li>
+                        <li class="flex items-center gap-3"><i data-lucide="activity" class="w-4 h-4 text-[#00F2FF]"></i> Site Speed Optimization</li>
+                        <li class="flex items-center gap-3"><i data-lucide="activity" class="w-4 h-4 text-[#00F2FF]"></i> Revenue Leakage Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVISION 02: DIGITAL GROWTH ENGINE -->
+    <section id="marketing" class="py-32">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-24">
+                <span class="capsule mb-6">Growth Navigator</span>
+                <h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter">Digital Marketing</h2>
+                <p class="text-slate-500 mt-4 text-xl font-medium italic">অ্যালগরিদম নির্ভর প্রচার ও অনলাইন ব্র্যান্ডিং</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Meta -->
+                <div class="glass-card p-10 text-left border-white/10">
+                    <i data-lucide="megaphone" class="text-[#00F2FF] mb-6"></i>
+                    <h4 class="text-white font-black text-sm uppercase tracking-widest mb-4">Meta Platforms</h4>
+                    <ul class="text-[10px] font-bold text-slate-500 space-y-2 uppercase">
+                        <li>✓ Page Infrastructure</li>
+                        <li>✓ Business Suite Setup</li>
+                        <li>✓ Pixel & Ad Strategy</li>
+                    </ul>
+                </div>
+                <!-- YouTube -->
+                <div class="glass-card p-10 text-left border-white/10">
+                    <i data-lucide="youtube" class="text-red-500 mb-6"></i>
+                    <h4 class="text-white font-black text-sm uppercase tracking-widest mb-4">YouTube Engine</h4>
+                    <ul class="text-[10px] font-bold text-slate-500 space-y-2 uppercase">
+                        <li>✓ Channel Optimization</li>
+                        <li>✓ SEO & Keyword Plan</li>
+                        <li>✓ Retention Tactics</li>
+                    </ul>
+                </div>
+                <!-- Google Business -->
+                <div class="glass-card p-10 text-left border-white/10">
+                    <i data-lucide="map-pin" class="text-yellow-500 mb-6"></i>
+                    <h4 class="text-white font-black text-sm uppercase tracking-widest mb-4">Local Search</h4>
+                    <ul class="text-[10px] font-bold text-slate-500 space-y-2 uppercase">
+                        <li>✓ Google My Business</li>
+                        <li>✓ Map Visibility Audit</li>
+                        <li>✓ Local SEO Dominance</li>
+                    </ul>
+                </div>
+                <!-- SEO -->
+                <div class="glass-card p-10 text-left border-white/10">
+                    <i data-lucide="search" class="text-purple-500 mb-6"></i>
+                    <h4 class="text-white font-black text-sm uppercase tracking-widest mb-4">Search Mastery</h4>
+                    <ul class="text-[10px] font-bold text-slate-500 space-y-2 uppercase">
+                        <li>✓ Algorithmic Indexing</li>
+                        <li>✓ Technical SEO Fix</li>
+                        <li>✓ Authority Building</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE BHUMITECH BRIDGE (360 BHUMITECH) -->
+    <section id="bhumitech" class="py-32 px-6">
+        <div class="container mx-auto">
+            <div class="glass-card p-12 md:p-24 border-[#10B981]/20 relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-[#10B981]/5 rounded-full blur-[120px]"></div>
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-16">
+                    <div class="text-left">
+                        <span class="text-emerald-500 font-black uppercase text-xs tracking-[0.4em] mb-6 block">Specialized Wing</span>
+                        <h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter mb-8 leading-none">360° Bhumitech <br>Solutions</h2>
+                        <p class="text-slate-400 max-w-xl text-lg md:text-xl leading-relaxed">
+                            Smart Land Intelligence, Geo-Spatial Mapping, and Technical Deed Audits.
+                            <span class="text-emerald-500 block mt-4 font-bold">এক ইঞ্চির সূক্ষ্মতায় কারিগরি সত্য উন্মোচন করাই আমাদের কাজ।</span>
+                        </p>
                     </div>
-                    <div class="p-8">
-                        <h4 class="text-white font-black uppercase tracking-tighter mb-2">Technical Audits</h4>
-                        <p class="text-[10px] text-slate-500 font-bold uppercase mb-6">System Health Case Studies</p>
-                        <a href="https://github.com/pixelperfectits/assets" class="text-[#00F2FF] text-[10px] font-black uppercase tracking-widest border-b border-[#00F2FF]">Open Showcase</a>
+                    <div class="flex-shrink-0">
+                        <a href="https://pixelperfectits.github.io/bhumitech" class="bg-[#10B981] text-black px-16 py-6 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all transform hover:rotate-3 shadow-[0_0_50px_rgba(16,185,129,0.3)]">Visit Land Portal</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ARCHITECT SIGNATURE -->
-    <section class="py-48 relative overflow-hidden bg-white/[0.01]">
-        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-            <div class="relative">
-                <div class="w-full aspect-square rounded-[60px] border-2 border-white/10 overflow-hidden shadow-2xl">
+    <!-- THE LIVE VAULT (DYNAMIC PORTFOLIO) -->
+    <section id="portfolio" class="py-32">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-24 gap-8">
+                <div class="text-left">
+                    <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">The Live Vault</h2>
+                    <p class="text-slate-500 font-bold uppercase text-xs tracking-widest mt-4">আমাদের কাজের লাইভ পোর্টফোলিও (Daily Updated Showcase)</p>
+                </div>
+                <a href="https://github.com/pixelperfectits/assets" target="_blank" class="bg-white/5 border border-white/10 px-8 py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all">Full Asset Repository</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Case Study 1 -->
+                <div class="glass-card group overflow-hidden">
+                    <div class="h-72 bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                        <i data-lucide="layout-template" class="w-16 h-16 text-[#00F2FF] opacity-10 group-hover:scale-125 transition-transform duration-700"></i>
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] font-black uppercase tracking-[0.3em] border border-white/20 px-6 py-2">Open Showcase</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <h4 class="text-white font-black uppercase tracking-tighter mb-3">UI/UX Systems</h4>
+                        <p class="text-xs text-slate-500 font-bold uppercase mb-8">High-Conversion Web Interfaces</p>
+                        <a href="https://github.com/pixelperfectits/assets" class="text-[#00F2FF] text-[10px] font-black uppercase tracking-widest border-b-2 border-[#00F2FF] pb-1">View Details</a>
+                    </div>
+                </div>
+                <!-- Case Study 2 -->
+                <div class="glass-card group overflow-hidden border-[#10B981]/20">
+                    <div class="h-72 bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                        <i data-lucide="map" class="w-16 h-16 text-emerald-400 opacity-10 group-hover:scale-125 transition-transform duration-700"></i>
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] font-black uppercase tracking-[0.3em] border border-white/20 px-6 py-2">Open Showcase</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <h4 class="text-white font-black uppercase tracking-tighter mb-3">Land Intelligence</h4>
+                        <p class="text-xs text-slate-500 font-bold uppercase mb-8">Digital Survey & Geo-Mapping</p>
+                        <a href="https://github.com/pixelperfectits/assets" class="text-[#10B981] text-[10px] font-black uppercase tracking-widest border-b-2 border-[#10B981] pb-1">View Details</a>
+                    </div>
+                </div>
+                <!-- Case Study 3 -->
+                <div class="glass-card group overflow-hidden border-rose-500/10">
+                    <div class="h-72 bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                        <i data-lucide="file-check" class="w-16 h-16 text-rose-500 opacity-10 group-hover:scale-125 transition-transform duration-700"></i>
+                        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] font-black uppercase tracking-[0.3em] border border-white/20 px-6 py-2">Open Showcase</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <h4 class="text-white font-black uppercase tracking-tighter mb-3">Technical Audits</h4>
+                        <p class="text-xs text-slate-500 font-bold uppercase mb-8">Security & Revenue Reports</p>
+                        <a href="https://github.com/pixelperfectits/assets" class="text-rose-500 text-[10px] font-black uppercase tracking-widest border-b-2 border-rose-500 pb-1">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHITECT PROFILE -->
+    <section id="about" class="py-48 relative overflow-hidden bg-white/[0.01]">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center">
+            <div class="relative group">
+                <div class="w-full aspect-square rounded-[60px] border-2 border-white/10 overflow-hidden shadow-[0_0_80px_rgba(0,0,0,1)] group-hover:border-[#00F2FF]/40 transition-all duration-700">
                     <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/MD%20IBRAHIM%20HOSSAIN.jpeg" alt="Architect" class="w-full h-full object-cover">
                 </div>
-                <div class="absolute -bottom-10 -right-10 glass-card p-8 text-center border-[#00F2FF]/30 shadow-2xl">
-                    <p class="text-[10px] font-black text-[#00F2FF] uppercase tracking-[0.4em] mb-2">Authenticated</p>
-                    <p class="text-white font-black italic">MD Ibrahim Hossain</p>
+                <div class="absolute -bottom-10 -right-10 glass-card p-10 text-center border-[#00F2FF]/30 shadow-2xl animate-float">
+                    <p class="text-[11px] font-black text-[#00F2FF] uppercase tracking-[0.5em] mb-3">Authenticated</p>
+                    <p class="text-white text-xl font-black italic tracking-tighter uppercase">MD Ibrahim Hossain</p>
                 </div>
             </div>
             <div class="text-left">
-                <h2 class="text-5xl font-black text-white uppercase italic tracking-tighter mb-10">The Architect Behind <br> The Logic</h2>
-                <p class="text-slate-400 text-lg leading-relaxed mb-12 font-medium">
-                    আমি বিশ্বাস করি একটি সফল প্রজেক্টের পেছনে শুধু কোডিং নয়, বরং একটি নিখুঁত গাণিতিক আর্কিটেকচার থাকা প্রয়োজন। আমি আপনার ডিজিটাল এবং ফিজিক্যাল সম্পদকে লজিকের মাধ্যমে নিরাপদ করতে প্রতিশ্রুতিবদ্ধ।
+                <h2 class="text-6xl font-black text-white uppercase italic tracking-tighter mb-12 leading-none">The Systems <br> Architect</h2>
+                <p class="text-slate-400 text-xl leading-relaxed mb-16 font-medium italic">
+                    "আমি বিশ্বাস করি প্রতিটি সফল প্রজেক্টের পেছনে শুধু কোডিং নয়, বরং একটি নিখুঁত গাণিতিক আর্কিটেকচার থাকা প্রয়োজন। আমরা ডিজিটাল ও ফিজিক্যাল সম্পদকে লজিকের মাধ্যমে নিরাপদ ও লাভজনক করতে প্রতিশ্রুতিবদ্ধ।"
                 </p>
-                <div class="flex flex-wrap gap-4 text-[9px] font-black uppercase tracking-widest text-[#00F2FF]">
-                    <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5">Principal Systems Architect</span>
-                    <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 text-emerald-400">Geo-Data Analyst</span>
-                    <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 text-yellow-500">Technical Auditor</span>
+                <div class="flex flex-wrap gap-6 text-[10px] font-black uppercase tracking-widest">
+                    <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 hover:border-[#00F2FF] transition">Principal Systems Architect</span>
+                    <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 text-emerald-400 hover:border-emerald-400 transition">Geo-Data Analyst</span>
+                    <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 text-yellow-500 hover:border-yellow-500 transition">Technical Auditor</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-20 border-t border-white/5 text-center">
-        <div class="flex justify-center mb-12">
-            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center font-black text-[#00F2FF] border border-white/10 italic">P</div>
+    <footer class="py-32 border-t border-white/5 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid opacity-20 -z-10"></div>
+        <div class="flex justify-center mb-16">
+            <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-[#00F2FF] text-2xl border border-white/10 italic">P</div>
         </div>
-        <p class="text-[10px] font-black text-slate-500 tracking-[0.8em] uppercase mb-6">Pixel Perfect IT Solutions</p>
-        <div class="flex justify-center gap-12 text-[9px] font-bold text-slate-600 uppercase tracking-[0.2em]">
+        <p class="text-[11px] font-black text-slate-500 tracking-[0.8em] uppercase mb-10">Pixel Perfect IT Solutions</p>
+        <div class="flex flex-col md:flex-row justify-center gap-16 text-[10px] font-bold text-slate-600 uppercase tracking-widest">
             <span>Kathalbari, Shibchar, Madaripur</span>
-            <span class="text-white">Your Vision, Engineered.</span>
+            <span class="text-white">Your Vision, Engineered to Perfection.</span>
+            <a href="https://wa.me/8801715354960" class="text-[#00F2FF] hover:neon-text">WhatsApp Contact</a>
         </div>
     </footer>
 
