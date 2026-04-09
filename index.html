@@ -6,16 +6,18 @@
     
     <!-- ADVANCED SEO METADATA -->
     <title>Pixel Perfect IT Solutions | Global Systems Engineering & Strategic SEO</title>
-    <meta name="description" content="পিক্সেল পারফেক্ট আইটি সলিউশনস - বিশেষজ্ঞ কারিগরি অডিট, ইনফ্রাস্ট্রাকচার আর্কিটেকচার এবং ডিজিটাল গ্রোথ সমাধান। শিবচর ও মাদারীপুরের শীর্ষ আইটি কনসালটেন্সি।">
-    <meta name="keywords" content="কারিগরি অডিট, সফটওয়্যার আর্কিটেকচার, এসইও সার্ভিস শিবচর, ডিজিটাল মার্কেটিং মাদারীপুর, ল্যান্ডিং পেজ ডিজাইন, Systems Architect, MD Ibrahim Hossain">
-    
-    <!-- JSON-LD SCHEMA (Google Local SEO) -->
+    <meta name="description" content="পিক্সেল পারফেক্ট আইটি সলিউশনস - বিশেষজ্ঞ কারিগরি অডিট, ইনফ্রাস্ট্রাকচার আর্কিটেকচার, সফটওয়্যার (ERP/CRM) এবং ডিজিটাল গ্রোথ সমাধান।">
+    <meta name="keywords" content="কারিগরি অডিট, কোড ডিবাগিং, এসইও সার্ভিস শিবচর, ডিজিটাল মার্কেটিং মাদারীপুর, ল্যান্ডিং পেজ ডিজাইন, Systems Architect, MD Ibrahim Hossain">
+    <link rel="canonical" href="https://pixelperfectits.github.io/">
+
+    <!-- SCHEMA MARKUP (গুগল র‍্যাঙ্কিং ইনজেকশন) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Pixel Perfect IT Solutions",
       "image": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "url": "https://pixelperfectits.github.io/",
       "telephone": "+8801715354960",
       "address": {
         "@type": "PostalAddress",
@@ -33,235 +35,213 @@
     
     <style>
         body { font-family: 'Inter', 'Hind Siliguri', sans-serif; scroll-behavior: smooth; background-color: #000000; overflow-x: hidden; }
-        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 32px; transition: all 0.5s ease; cursor: pointer; }
-        .glass-card:hover { border-color: #00F2FF; transform: translateY(-10px); box-shadow: 0 40px 80px -20px rgba(0, 242, 255, 0.2); }
+        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 24px; transition: all 0.5s ease; cursor: pointer; }
+        .glass-card:hover { border-color: #00F2FF; transform: translateY(-8px); box-shadow: 0 30px 60px -15px rgba(0, 242, 255, 0.2); }
         .neon-text-cyan { text-shadow: 0 0 20px rgba(0, 242, 255, 0.7); color: #00F2FF; }
         .neon-text-emerald { text-shadow: 0 0 20px rgba(16, 185, 129, 0.7); color: #10B981; }
-        .neon-text-purple { text-shadow: 0 0 20px rgba(162, 89, 255, 0.7); color: #A259FF; }
         .neon-text-yellow { text-shadow: 0 0 20px rgba(251, 191, 36, 0.7); color: #FBBF24; }
-        .capsule { border-radius: 100px; padding: 6px 16px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; }
+        .neon-text-purple { text-shadow: 0 0 20px rgba(162, 89, 255, 0.7); color: #A259FF; }
         .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px); background-size: 50px 50px; }
         
-        /* Mobile Spacing & Line Height */
-        p, li { line-height: 1.8; letter-spacing: 0.01em; }
-        section { padding-left: 20px; padding-right: 20px; }
+        /* Mobile Menu Setup */
+        #mobile-menu { transition: all 0.4s ease-in-out; transform: translateY(-100%); opacity: 0; pointer-events: none; }
+        #mobile-menu.active { transform: translateY(0); opacity: 1; pointer-events: auto; }
         
-        #portfolio-modal { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); align-items: center; justify-content: center; padding: 20px; }
-        .modal-content { max-width: 900px; width: 100%; animation: zoomIn 0.4s ease; }
-        @keyframes zoomIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
-        
-        #mobile-menu { transition: all 0.4s ease-in-out; transform: translateY(-100%); opacity: 0; }
-        #mobile-menu.active { transform: translateY(0); opacity: 1; display: flex !important; }
+        /* Spacing Fix */
+        .section-padding { padding-top: 80px; padding-bottom: 80px; }
+        @media (max-width: 768px) { .section-padding { padding-top: 60px; padding-bottom: 60px; } }
     </style>
 </head>
 <body class="text-slate-300 bg-grid">
 
-    <!-- TOP BAR -->
+    <!-- TOP ACCESS BAR -->
     <div class="w-full bg-[#00F2FF] text-black text-[9px] md:text-[11px] font-black uppercase tracking-[0.3em] py-2 text-center fixed top-0 z-[60] shadow-2xl">
-        Principal Systems Architect • Serving Global & Local Brands • 100% Precision
+        Global Systems Architect • Serving Local & International Brands • 100% Precision
     </div>
 
     <!-- NAVIGATION -->
-    <header class="fixed w-full z-50 bg-black/60 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[32px]">
-        <nav class="container mx-auto py-4 flex justify-between items-center relative">
-            <div class="flex items-center gap-4">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-10 h-10 md:w-14 md:h-14 shadow-[0_0_20px_#00F2FF] rounded-xl">
-                <div class="mt-1">
-                    <span class="text-xl md:text-3xl font-black text-white tracking-tighter block leading-none italic uppercase">Pixel Perfect</span>
-                    <span class="text-[8px] md:text-[10px] font-bold text-[#00F2FF] tracking-[0.3em] uppercase italic">Systems Engineering</span>
+    <header class="fixed w-full z-50 bg-black/60 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[30px]">
+        <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center relative">
+            <div class="flex items-center gap-3">
+                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-10 h-10 md:w-14 md:h-14 rounded-xl shadow-lg">
+                <div class="flex flex-col pt-1">
+                    <span class="text-lg md:text-3xl font-black text-white leading-none tracking-tighter uppercase italic">PIXEL PERFECT</span>
+                    <span class="text-[8px] md:text-[10px] font-bold text-[#00F2FF] uppercase tracking-widest mt-1">Systems Engineering</span>
                 </div>
             </div>
 
             <!-- Desktop Links -->
-            <div class="hidden lg:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                <a href="#audit-section" class="hover:text-[#00F2FF] transition">Diagnostics</a>
-                <a href="#growth-section" class="hover:text-[#00F2FF] transition">Growth</a>
-                <a href="#media-section" class="hover:text-yellow-400 transition">Visual Media</a>
-                <a href="./bhumitech/" class="text-emerald-400 hover:neon-text transition border border-emerald-400/20 px-4 py-1 rounded-full text-[9px]">360° Bhumitech</a>
+            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#audit" class="hover:text-[#00F2FF] transition">Audit</a>
+                <a href="#growth" class="hover:text-[#00F2FF] transition">Growth</a>
+                <a href="#visual" class="hover:text-[#00F2FF] transition">Visuals</a>
+                <a href="#systems" class="hover:text-[#00F2FF] transition">Systems</a>
+                <a href="./bhumitech/" class="text-emerald-400 border border-emerald-400/20 px-4 py-1 rounded-full">Bhumitech</a>
             </div>
 
+            <!-- Mobile Toggle -->
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/8801715354960" class="hidden md:flex items-center gap-2 bg-[#25D366] text-white px-5 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+                <a href="https://wa.me/8801715354960" class="md:bg-[#25D366] md:text-white p-2 md:px-4 md:py-2 rounded-full flex items-center gap-2 hover:scale-105 transition">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span class="hidden md:block text-[10px] font-black uppercase">WhatsApp</span>
                 </a>
-                <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()" aria-label="Menu">
+                <button class="lg:hidden text-white" onclick="toggleMobileMenu()">
                     <i data-lucide="menu" id="menu-icon"></i>
                 </button>
             </div>
         </nav>
 
         <!-- MOBILE MENU OVERLAY -->
-        <div id="mobile-menu" class="hidden fixed inset-0 top-[60px] bg-black/98 backdrop-blur-3xl flex-col items-center justify-center gap-10 p-10 z-40 lg:hidden text-center">
-            <a href="#audit-section" onclick="toggleMobileMenu()" class="text-xl font-black uppercase text-slate-300 italic">Audit Systems</a>
-            <a href="#growth-section" onclick="toggleMobileMenu()" class="text-xl font-black uppercase text-slate-300 italic">Growth Engine</a>
-            <a href="./bhumitech/" class="text-emerald-400 font-black uppercase tracking-[0.2em] border border-emerald-500/20 px-8 py-4 rounded-2xl w-full">Visit Bhumitech</a>
-            <a href="https://wa.me/8801715354960" class="bg-[#25D366] text-white font-black uppercase px-8 py-4 rounded-2xl w-full flex justify-center gap-3 italic shadow-xl">
-                <i data-lucide="message-circle"></i> WhatsApp Now
-            </a>
+        <div id="mobile-menu" class="fixed inset-0 bg-black/98 backdrop-blur-3xl flex flex-col items-center justify-center gap-8 p-10 z-40 lg:hidden h-screen overflow-hidden">
+            <a href="#audit" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-widest">Diagnostics</a>
+            <a href="#growth" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-widest">Growth Engine</a>
+            <a href="#systems" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-widest text-purple-400">Systems Architecture</a>
+            <div class="w-full h-px bg-white/10"></div>
+            <a href="./bhumitech/" class="text-emerald-400 font-black uppercase tracking-widest border border-emerald-500/20 px-8 py-3 rounded-xl w-full text-center">Visit Bhumitech</a>
+            <a href="https://wa.me/8801715354960" class="bg-[#25D366] text-white font-black uppercase px-8 py-3 rounded-xl w-full text-center italic">WhatsApp Now</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-64 pb-32 px-6 text-center">
-        <div class="container mx-auto">
-            <span class="capsule mb-10 inline-block italic bg-[#00F2FF]/10 text-[#00F2FF] border-[#00F2FF]/20">Global Systems Architecture</span>
-            <h1 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-12 uppercase italic tracking-tighter">
-                Engineering <br><span class="neon-text-cyan">Perfection</span>
-            </h1>
-            <p class="text-slate-400 max-w-4xl mx-auto text-lg md:text-2xl leading-relaxed mb-16 italic font-medium">
-                পিক্সেল এবং ইঞ্চির সূক্ষ্মতম নির্ভুলতায় আপনার ব্যবসার <span class="text-white font-bold italic">ডিজিটাল উপস্থিতি</span> এবং <span class="text-[#00F2FF] font-bold italic">কারিগরি নিরাপত্তা</span> নিশ্চিত করাই আমাদের দর্শন। 
-                <span class="text-white block mt-6 font-black italic opacity-60 uppercase tracking-widest text-sm md:text-base leading-relaxed">Strategic Performance Engineering for High-End Global Brands.</span>
+    <main class="relative pt-48 md:pt-64 pb-32 px-4">
+        <div class="container mx-auto text-center">
+            <span class="inline-block border border-[#00F2FF]/20 bg-[#00F2FF]/5 px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] text-[#00F2FF] mb-10 italic">Logic • Strategy • Precision</span>
+            <h2 class="text-5xl md:text-9xl font-black text-white leading-tight mb-8 uppercase italic tracking-tighter">
+                Engineering <br><span class="neon-text-cyan">Certainty</span>
+            </h2>
+            <p class="text-slate-400 max-w-4xl mx-auto text-lg md:text-2xl leading-relaxed mb-16 font-medium italic">
+                পিক্সেল এবং ইঞ্চির সূক্ষ্মতম নির্ভুলতায় আপনার ব্যবসার <span class="text-white font-bold">ডিজিটাল উপস্থিতি</span> এবং <span class="text-[#00F2FF] font-bold italic">কারিগরি নিরাপত্তা</span> নিশ্চিত করাই আমাদের দর্শন। 
             </p>
-            <div class="flex flex-wrap justify-center gap-8">
-                <a href="https://wa.me/8801715354960" class="bg-[#00F2FF] text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_50px_rgba(0,242,255,0.3)] hover:bg-white transition-all transform hover:rotate-2">Analyze My Project</a>
+            <a href="https://wa.me/8801715354960" class="bg-[#00F2FF] text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-white transition-all transform hover:rotate-3">Analyze My Project</a>
+        </div>
+    </main>
+
+    <!-- SECTION 01: TECHNICAL AUDIT -->
+    <section id="audit" class="section-padding bg-white/[0.02] border-y border-white/5">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-left order-2 lg:order-1">
+                    <div class="flex items-center gap-4 mb-8 border-l-8 border-[#00F2FF] pl-6">
+                        <h2 class="text-4xl md:text-7xl font-black text-white uppercase italic leading-none">Technical <br> Diagnostics</h2>
+                    </div>
+                    <p class="text-slate-400 text-lg md:text-xl mb-12 italic leading-relaxed">আমরা ওয়েবসাইটের গভীরে লুকিয়ে থাকা এরর শনাক্ত করি এবং গতি ও নিরাপত্তা নিশ্চিত করি।</p>
+                    <div class="glass-card p-8 md:p-12 border-[#00F2FF]/10">
+                        <ul class="space-y-6 text-sm md:text-lg font-bold text-slate-400 uppercase tracking-widest">
+                            <li class="flex items-center gap-4"><i data-lucide="terminal" class="text-rose-500 w-6 h-6"></i> Code Error & Infrastructure Debugging</li>
+                            <li class="flex items-center gap-4"><i data-lucide="zap" class="text-[#00F2FF] w-6 h-6"></i> Core Web Vitals & Speed Optimization</li>
+                            <li class="flex items-center gap-4"><i data-lucide="search" class="text-[#00F2FF] w-6 h-6"></i> Revenue Leakage & UX Friction Audit</li>
+                            <li class="flex items-center gap-4"><i data-lucide="lock" class="text-[#00F2FF] w-6 h-6"></i> Security Vulnerability & Malware Scan</li>
+                            <li class="flex items-center gap-4"><i data-lucide="eye" class="text-[#00F2FF] w-6 h-6"></i> Advanced SEO Infrastructure Audit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 opacity-10 flex justify-center">
+                    <i data-lucide="cpu" class="w-64 h-64 md:w-96 md:h-96 text-[#00F2FF] animate-pulse"></i>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTOR 01: TECHNICAL DIAGNOSTICS (CYAN) -->
-    <section id="audit-section" class="py-32 bg-white/[0.02] border-y border-white/5 text-left">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-l-[8px] border-[#00F2FF] pl-8">
-                <div>
-                    <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-none">Strategic <br>Diagnostics</h2>
-                    <p class="text-[#00F2FF] mt-4 text-xl font-bold uppercase tracking-widest italic text-left">গভীর কারিগরি অডিট ও কোড এরর বিশ্লেষণ</p>
+    <!-- SECTION 02: GROWTH ENGINE -->
+    <section id="growth" class="section-padding bg-black">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="opacity-10 hidden lg:flex justify-center">
+                    <i data-lucide="trending-up" class="w-96 h-96 text-emerald-400 animate-bounce"></i>
+                </div>
+                <div class="text-left">
+                    <div class="flex items-center gap-4 mb-8 border-l-8 border-emerald-400 pl-6 text-left">
+                        <h2 class="text-4xl md:text-7xl font-black text-white uppercase italic leading-none text-left">Growth <br> Infrastructure</h2>
+                    </div>
+                    <p class="text-slate-400 text-lg md:text-xl mb-12 italic text-left">অ্যালগরিদম নির্ভর ডিজিটাল মার্কেটিং (Facebook, YT, WhatsApp) ও এসইও (SEO)।</p>
+                    <div class="glass-card p-8 md:p-12 border-emerald-400/10">
+                        <ul class="space-y-6 text-sm md:text-lg font-bold text-slate-400 uppercase tracking-widest text-left">
+                            <li class="flex items-center gap-4"><i data-lucide="map-pin" class="text-emerald-400 w-6 h-6"></i> Google My Business (GMB) Mastery</li>
+                            <li class="flex items-center gap-4"><i data-lucide="search" class="text-emerald-400 w-6 h-6"></i> Advanced SEO & Keyword Dominance</li>
+                            <li class="flex items-center gap-4"><i data-lucide="facebook" class="text-emerald-400 w-6 h-6"></i> Meta Business Suite & Pixel Setup</li>
+                            <li class="flex items-center gap-4"><i data-lucide="youtube" class="text-emerald-400 w-6 h-6"></i> YouTube SEO & Channel Engineering</li>
+                            <li class="flex items-center gap-4"><i data-lucide="message-square" class="text-emerald-400 w-6 h-6"></i> WhatsApp Business API & Cataloging</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="glass-card p-10 md:p-14 border-[#00F2FF]/10 text-left">
-                    <h3 class="text-3xl font-black text-white mb-10 uppercase italic underline decoration-[#00F2FF] decoration-4 underline-offset-12">Audit Expertise</h3>
-                    <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="terminal" class="w-6 h-6 text-rose-500"></i> Code Error & Infrastructure Debugging</li>
-                        <li class="flex items-center gap-5"><i data-lucide="zap" class="w-6 h-6 text-[#00F2FF]"></i> Core Web Vitals & Speed Optimization</li>
-                        <li class="flex items-center gap-5"><i data-lucide="search" class="w-6 h-6 text-[#00F2FF]"></i> Revenue Leakage & UX Friction Audit</li>
-                        <li class="flex items-center gap-5"><i data-lucide="lock" class="w-6 h-6 text-[#00F2FF]"></i> Security Vulnerability & Malware Scan</li>
-                        <li class="flex items-center gap-5"><i data-lucide="eye" class="w-6 h-6 text-[#00F2FF]"></i> Advanced SEO Infrastructure Audit</li>
+    <!-- SECTION 03: VISUAL PRODUCTION -->
+    <section id="visual" class="section-padding bg-white/[0.01]">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center gap-4 mb-8 border-l-8 border-yellow-400 pl-6 text-left">
+                <h2 class="text-4xl md:text-7xl font-black text-white uppercase italic leading-none">Visual <br> Production</h2>
+            </div>
+            <p class="text-slate-400 text-lg md:text-xl mb-12 italic text-left">প্রিমিয়াম মিডিয়া অ্যাসেট ও ব্র্যান্ডিং সমাধান।</p>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="glass-card p-10 border-yellow-500/10">
+                    <h3 class="text-2xl font-black text-white mb-8 uppercase italic text-yellow-500">Print Media</h3>
+                    <ul class="text-xs md:text-sm space-y-4 font-bold text-slate-400 uppercase tracking-widest">
+                        <li>✓ Elite Corporate ID & Business Cards</li>
+                        <li>✓ Large Format Banners & Flyers</li>
+                        <li>✓ Institutional Stationery Design</li>
                     </ul>
                 </div>
-                <div class="hidden lg:block text-center opacity-10">
-                    <i data-lucide="cpu" class="w-80 h-80 mx-auto text-[#00F2FF] animate-pulse"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTOR 02: DIGITAL GROWTH ENGINE (EMERALD) -->
-    <section id="growth-section" class="py-32 bg-black/40 text-left">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-l-[8px] border-emerald-400 pl-8">
-                <div>
-                    <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-none">Growth <br>Infrastructure</h2>
-                    <p class="text-emerald-400 mt-4 text-xl font-bold uppercase tracking-widest italic text-left">অ্যালগরিদম নির্ভর ডিজিটাল মার্কেটিং ও এসইও</p>
-                </div>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="order-2 lg:order-1 glass-card p-10 md:p-14 border-emerald-400/10">
-                    <h3 class="text-3xl font-black text-white mb-10 uppercase italic underline decoration-emerald-400 decoration-4 underline-offset-12 text-left">Marketing Mastery</h3>
-                    <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest text-left">
-                        <li class="flex items-center gap-5"><i data-lucide="map-pin" class="w-6 h-6 text-emerald-400"></i> Google My Business (GMB) Mastery</li>
-                        <li class="flex items-center gap-5"><i data-lucide="search" class="w-6 h-6 text-emerald-400"></i> Advanced SEO & Keyword Dominance</li>
-                        <li class="flex items-center gap-5"><i data-lucide="facebook" class="w-6 h-6 text-[#1877F2]"></i> Meta Business Suite & Pixel Setup</li>
-                        <li class="flex items-center gap-5"><i data-lucide="youtube" class="w-6 h-6 text-red-500"></i> YouTube Algorithm Engineering & SEO</li>
-                        <li class="flex items-center gap-5"><i data-lucide="message-square" class="w-6 h-6 text-[#25D366]"></i> WhatsApp Business API & Cataloging</li>
+                <div class="glass-card p-10 border-[#00F2FF]/10">
+                    <h3 class="text-2xl font-black text-[#00F2FF] mb-8 uppercase italic">Digital Media</h3>
+                    <ul class="text-xs md:text-sm space-y-4 font-bold text-slate-400 uppercase tracking-widest">
+                        <li>⭐ High-Impact Ad Graphics</li>
+                        <li>⭐ Social Media Content Production</li>
+                        <li>⭐ Digital Media Presentation Kits</li>
                     </ul>
                 </div>
-                <div class="order-1 lg:order-2 opacity-10 hidden lg:block text-center">
-                    <i data-lucide="trending-up" class="w-80 h-80 mx-auto text-emerald-400 animate-float"></i>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTOR 03: VISUAL PRODUCTION (YELLOW) -->
-    <section id="media-section" class="py-32 bg-white/[0.01] text-left">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-l-[8px] border-yellow-400 pl-8 text-left">
-                <i data-lucide="palette" class="w-12 h-12 text-yellow-400 hidden md:block"></i>
-                <div>
-                    <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-none">Visual <br>Production</h2>
-                    <p class="text-yellow-400 mt-4 text-xl font-bold uppercase tracking-widest italic text-left">প্রিমিয়াম মিডিয়া ও ব্র্যান্ড আইডেন্টিটি</p>
-                </div>
+    <!-- SECTION 04: SYSTEMS ARCHITECTURE (THE HIGHLIGHT) -->
+    <section id="systems" class="section-padding bg-black">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center gap-4 mb-16 border-l-8 border-purple-500 pl-6 text-left">
+                <h2 class="text-4xl md:text-7xl font-black text-white uppercase italic leading-none">Systems <br> Architecture</h2>
             </div>
-
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="glass-card p-10 md:p-14 border-yellow-500/10">
-                    <h3 class="text-3xl font-black text-white mb-10 uppercase italic underline decoration-yellow-500 decoration-4 underline-offset-12">Media Assets</h3>
-                    <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="star" class="w-6 h-6 text-yellow-500"></i> Modern UI/UX System Interfaces</li>
-                        <li class="flex items-center gap-5"><i data-lucide="star" class="w-6 h-6 text-yellow-500"></i> Corporate Branding (Card, ID, Pad)</li>
-                        <li class="flex items-center gap-5"><i data-lucide="zap" class="w-6 h-6 text-yellow-500"></i> High-Impact Digital Ad Content</li>
-                        <li class="flex items-center gap-5"><i data-lucide="zap" class="w-6 h-6 text-yellow-500"></i> Large Format Banners & Flyers</li>
-                        <li class="flex items-center gap-5"><i data-lucide="zap" class="w-6 h-6 text-yellow-500"></i> Social Media Content Production Kits</li>
-                    </ul>
-                </div>
-                <div class="hidden lg:block opacity-10 text-center">
-                    <i data-lucide="image" class="w-80 h-80 mx-auto text-yellow-500"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTOR 04: SYSTEMS ARCHITECTURE (PURPLE) - ULTRA HIGHLIGHTED -->
-    <section id="systems-section" class="py-32 bg-black/60 text-left">
-        <div class="container mx-auto">
-            <div class="flex items-center gap-6 mb-20 border-l-[8px] border-purple-500 pl-8">
-                <i data-lucide="layers" class="w-12 h-12 text-purple-500 hidden md:block"></i>
-                <div>
-                    <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-none">Systems <br>Architecture</h2>
-                    <p class="text-purple-500 mt-4 text-xl font-bold uppercase tracking-widest italic text-left">আধুনিক ওয়েবসাইট ও ওয়েব অ্যাপ্লিকেশন</p>
-                </div>
-            </div>
-
-            <div class="glass-card p-10 md:p-20 border-purple-500/20 relative overflow-hidden text-left">
-                <h3 class="text-3xl md:text-6xl font-black text-white mb-10 leading-tight uppercase italic">
+            
+            <div class="glass-card p-10 md:p-24 border-purple-500/30 relative overflow-hidden text-left bg-purple-500/[0.02]">
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px]"></div>
+                <h3 class="text-2xl md:text-5xl font-black text-white mb-10 leading-tight uppercase italic">
                     <span class="text-purple-400">Websites, Portfolios & Business Sites</span> <br> 
                     Built on Elite Cloud Infrastructure.
                 </h3>
-                <p class="text-slate-300 text-xl md:text-3xl mb-12 font-bold border-b border-white/10 pb-12 leading-relaxed">
-                    অত্যন্ত অল্প সময়ের মধ্যে আমরা সর্বোচ্চ মানের ডিজিটাল সলিউশন নিশ্চিত করি, যেখানে প্রতিটি কোড থাকে <span class="text-purple-400 italic">Advanced SEO Optimized</span>।
-                </p>
-                <div class="grid md:grid-cols-2 gap-12 text-left">
-                    <ul class="text-sm md:text-xl space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="zap" class="w-6 h-6 text-purple-400"></i> Rapid Engineering & Deployment</li>
-                        <li class="flex items-center gap-5"><i data-lucide="zap" class="w-6 h-6 text-purple-400"></i> High-Conversion Landing Systems</li>
+                <div class="space-y-8 mb-12 border-b border-white/5 pb-12">
+                    <p class="text-slate-300 text-lg md:text-3xl font-bold leading-relaxed">
+                        আমরা অত্যন্ত অল্প সময়ের মধ্যে সর্বোচ্চ মানের ডিজিটাল সলিউশন নিশ্চিত করি, যেখানে প্রতিটি প্রজেক্ট থাকে <span class="text-[#00F2FF]">Advanced SEO Optimized</span>।
+                    </p>
+                    <p class="text-slate-500 text-sm md:text-xl font-medium uppercase tracking-widest italic">
+                        Expertise in: ERP, CRM, HRM, High-Conversion Landing Pages, UI/UX Systems, Business & Executive Portfolios.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <ul class="text-xs md:text-lg space-y-4 font-black text-slate-400 uppercase tracking-[0.2em]">
+                        <li class="flex items-center gap-4"><i data-lucide="zap" class="text-purple-400"></i> Rapid Engineering & Deployment</li>
+                        <li class="flex items-center gap-4"><i data-lucide="cloud" class="text-purple-400"></i> Secure Immutable Cloud Hosting</li>
                     </ul>
-                    <ul class="text-sm md:text-xl space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-6 h-6 text-purple-400"></i> Secure Immutable Cloud Hosting</li>
-                        <li class="flex items-center gap-5"><i data-lucide="search" class="w-6 h-6 text-purple-400"></i> Native Advanced SEO Integration</li>
+                    <ul class="text-xs md:text-lg space-y-4 font-black text-slate-400 uppercase tracking-[0.2em]">
+                        <li class="flex items-center gap-4"><i data-lucide="search" class="text-purple-400"></i> Local & Global SEO Integration</li>
+                        <li class="flex items-center gap-4"><i data-lucide="shield-check" class="text-purple-400"></i> Scalable Backend Architectures</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BHUMITECH BRIDGE (THE CLICKABLE BANNER) -->
-    <section class="py-32 px-6">
-        <div class="container mx-auto">
-            <div class="glass-card p-12 md:p-24 border-emerald-500/20 relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-16 text-left">
-                 <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-[#10B981]/10 rounded-full blur-[120px]"></div>
-                 <div>
-                    <span class="text-emerald-500 font-black uppercase text-sm tracking-[0.4em] mb-6 block italic">Specialized Division</span>
-                    <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic tracking-tighter mb-8 leading-none italic">360° Bhumitech <br>Solutions</h2>
-                    <p class="text-slate-400 max-w-xl text-lg md:text-2xl leading-relaxed italic">Smart Land Intelligence, Geo-Spatial Mapping, and Technical Deed Audits. <br><span class="text-[#10B981] font-bold">মাটির তথ্য এবং প্রযুক্তির নিখুঁত সমন্বয়।</span></p>
-                 </div>
-                 <a href="./bhumitech/" class="bg-[#10B981] text-black px-16 py-6 rounded-2xl font-black text-sm uppercase tracking-widest shadow-2xl hover:bg-white transition-all transform hover:rotate-3">Visit Land Portal</a>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-40 border-t border-white/5 text-center relative overflow-hidden px-8">
-        <div class="flex justify-center mb-16">
-            <div class="w-20 h-20 bg-white/5 rounded-[24px] flex items-center justify-center font-black text-[#00F2FF] text-4xl border border-white/10 italic">P</div>
+    <footer class="py-32 border-t border-white/5 text-center relative overflow-hidden px-4">
+        <div class="flex justify-center mb-12">
+            <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-[#00F2FF] text-2xl border border-white/10 italic">P</div>
         </div>
-        <p class="text-sm font-black text-slate-500 tracking-[1em] uppercase mb-12">Pixel Perfect IT Solutions</p>
-        <div class="flex flex-col md:flex-row justify-center gap-16 text-xs font-bold text-slate-600 uppercase tracking-widest items-center italic">
+        <p class="text-[11px] font-black text-slate-500 tracking-[0.6em] uppercase mb-10">Pixel Perfect IT Solutions | Global Hub</p>
+        <div class="flex flex-col md:flex-row justify-center gap-12 text-[10px] font-bold text-slate-600 uppercase tracking-widest text-center items-center">
             <span>Kathalbari, Shibchar, Madaripur</span>
-            <span class="text-white font-black italic">Engineered to Perfection.</span>
-            <a href="https://wa.me/8801715354960" class="flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-full font-black hover:scale-105 transition-all shadow-xl">
-                <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Direct
+            <span class="text-white font-black italic uppercase">Engineered for Certainty.</span>
+            <a href="https://wa.me/8801715354960" class="flex items-center gap-3 bg-[#25D366] text-white px-8 py-3 rounded-full font-black hover:scale-105 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Support
             </a>
         </div>
     </footer>
@@ -274,8 +254,10 @@
             menu.classList.toggle('active');
             if (menu.classList.contains('active')) {
                 icon.setAttribute('data-lucide', 'x');
+                document.body.style.overflow = 'hidden';
             } else {
                 icon.setAttribute('data-lucide', 'menu');
+                document.body.style.overflow = 'auto';
             }
             lucide.createIcons();
         }
