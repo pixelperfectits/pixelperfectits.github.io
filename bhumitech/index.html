@@ -9,35 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', 'Hind Siliguri', sans-serif; scroll-behavior: smooth; background-color: #020617; overflow-x: hidden; }
-        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(16, 185, 129, 0.1); border-radius: 32px; transition: all 0.5s ease; cursor: pointer; }
+        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 32px; transition: all 0.5s ease; }
         .glass-card:hover { border-color: #10B981; transform: translateY(-10px); box-shadow: 0 40px 80px -15px rgba(16, 185, 129, 0.2); }
         .emerald-text { color: #10B981; text-shadow: 0 0 25px rgba(16, 185, 129, 0.5); }
         .capsule { background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 100px; padding: 6px 16px; font-size: 10px; font-weight: 800; color: #10B981; text-transform: uppercase; letter-spacing: 2px; }
         .bg-grid { background-image: radial-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px); background-size: 40px 40px; }
         
-        /* Portfolio Modal */
-        #portfolio-modal { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); align-items: center; justify-content: center; padding: 20px; }
-        .modal-content { max-width: 900px; width: 100%; animation: zoomIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        @keyframes zoomIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
-        
         /* Mobile Menu */
-        #mobile-menu { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(-100%); opacity: 0; }
+        #mobile-menu { transition: all 0.4s ease-in-out; transform: translateY(-100%); opacity: 0; }
         #mobile-menu.active { transform: translateY(0); opacity: 1; display: flex !important; }
         .disclaimer-box { background: rgba(244, 63, 94, 0.03); border: 1px solid rgba(244, 63, 94, 0.1); border-radius: 20px; padding: 25px; font-size: 13px; color: #fb7185; }
     </style>
 </head>
 <body class="text-slate-300 bg-grid">
 
-    <!-- TOP GLOBAL ACCESS BAR -->
+    <!-- TOP ACCESS BAR -->
     <div class="w-full bg-[#10B981] text-black text-[9px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[60]">
-        Smart Land Intelligence • Geo-Spatial Analysis • Forensic Audit • Bangladesh
+        Smart Land Intelligence • Technical Forensic Audit • Bangladesh
     </div>
 
     <!-- NAVIGATION -->
     <header class="fixed w-full z-50 bg-black/60 backdrop-blur-2xl border-b border-white/5 top-[26px]">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 bg-[#10B981] rounded-xl flex items-center justify-center font-black text-black italic shadow-[0_0_20px_#10B981]">360°</div>
+                <div class="w-10 h-10 bg-[#10B981] rounded-xl flex items-center justify-center font-black text-black shadow-[0_0_20px_#10B981]">360°</div>
                 <div>
                     <span class="text-xl font-black text-white tracking-tighter block leading-none italic uppercase">Bhumitech</span>
                     <span class="text-[8px] font-bold text-[#10B981] tracking-[0.3em] uppercase">Intelligence Solutions</span>
@@ -45,169 +40,135 @@
             </div>
 
             <!-- Desktop Links -->
-            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                <a href="#services" class="hover:text-[#10B981] transition">Core Systems</a>
-                <a href="#portfolio" class="hover:text-[#10B981] transition">The Vault</a>
+            <div class="hidden lg:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#services" class="hover:text-[#10B981] transition">Methodology</a>
+                <a href="#security" class="hover:text-[#10B981] transition">Data Security</a>
                 <a href="../" class="text-cyan-400 hover:text-white transition border border-cyan-400/20 px-4 py-1 rounded-full text-[9px]">IT Division</a>
             </div>
 
-            <!-- Mobile Menu Toggle -->
             <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()">
                 <i data-lucide="menu" id="menu-icon"></i>
             </button>
 
-            <!-- WhatsApp CTA -->
-            <a href="https://wa.me/8801715354960" class="hidden lg:block bg-[#10B981] text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg hover:bg-white transition-all">Report Request</a>
+            <a href="https://wa.me/8801715354960" class="hidden lg:block bg-[#10B981] text-black px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg hover:bg-white transition-all">WhatsApp Now</a>
         </nav>
 
         <!-- MOBILE MENU OVERLAY -->
         <div id="mobile-menu" class="hidden fixed inset-0 top-[60px] bg-black/98 backdrop-blur-3xl flex-col items-center justify-center gap-10 p-10 z-40 lg:hidden text-center">
-            <a href="#services" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-[0.3em] text-slate-300 hover:text-[#10B981]">Systems</a>
-            <a href="#portfolio" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-[0.3em] text-slate-300 hover:text-[#10B981]">Bhumitech Vault</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-[0.3em] text-slate-300 hover:text-[#10B981]">Methodology</a>
+            <a href="#security" onclick="toggleMobileMenu()" class="text-xl font-black uppercase tracking-[0.3em] text-slate-300 hover:text-[#10B981]">Security</a>
             <div class="w-full h-px bg-white/10"></div>
             <a href="../" class="text-cyan-400 font-black uppercase tracking-[0.2em] border border-cyan-500/20 px-8 py-4 rounded-2xl w-full">Visit IT Division</a>
-            <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black font-black uppercase tracking-[0.2em] px-8 py-4 rounded-2xl w-full">WhatsApp Now</a>
+            <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black font-black uppercase tracking-[0.2em] px-8 py-4 rounded-2xl w-full">Contact Analyst</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-64 pb-32 px-6">
-        <div class="container mx-auto text-center">
-            <span class="capsule mb-10 inline-block">Verify • Measure • Secure • Solve</span>
+    <section class="relative pt-64 pb-32 px-6 text-center">
+        <div class="container mx-auto">
+            <span class="capsule mb-10 inline-block">Analysis • Precision • Confidentiality</span>
             <h1 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-10 uppercase italic tracking-tighter">
                 From Land to <br><span class="emerald-text">Logic</span>
             </h1>
             <p class="text-slate-400 max-w-4xl mx-auto text-lg md:text-2xl leading-relaxed mb-16">
                 আমরা আপনার জমির অগোছালো রেকর্ড এবং মৌজা ম্যাপকে আধুনিক <span class="text-white font-bold italic">কারিগরি প্রোটোকল</span> দিয়ে বিশ্লেষণ করি। এক ইঞ্চির সূক্ষ্মতায় সত্য উন্মোচন করাই আমাদের লক্ষ্য।
-                <span class="text-emerald-500 block mt-6 font-black italic opacity-80 leading-relaxed uppercase tracking-widest text-sm md:text-base">Securing Your Assets through Advanced Geo-Data Logic.</span>
+                <span class="text-emerald-500 block mt-6 font-black italic opacity-80 leading-relaxed uppercase tracking-widest text-sm md:text-base">We prioritize Data Privacy & Confidentiality above all.</span>
             </p>
             <div class="flex flex-wrap justify-center gap-8">
-                <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-white transition-all transform hover:rotate-2">Audit My Property</a>
-                <a href="#services" class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] transition-all">Our Solutions</a>
+                <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-white transition-all transform hover:rotate-2">Analyze My Property</a>
+                <a href="#services" class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] transition-all">How We Work</a>
             </div>
         </div>
     </section>
 
-    <!-- TECHNICAL SYSTEMS -->
+    <!-- CORE METHODOLOGY SECTION -->
     <section id="services" class="py-32 bg-black/40">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-24 border-l-[6px] border-[#10B981] pl-10">
                 <div>
-                    <h2 class="text-5xl font-black text-white uppercase italic tracking-tighter">Technical Systems</h2>
-                    <p class="text-slate-500 mt-3 text-lg font-medium">জমি-জমার আধুনিক কারিগরি সমাধান ও ফরেনসিক অডিট</p>
+                    <h2 class="text-5xl font-black text-white uppercase italic tracking-tighter">Our Methodology</h2>
+                    <p class="text-slate-500 mt-3 text-lg font-medium italic text-left">যেভাবে আমরা আপনার সম্পদের কারিগরি সত্য অনুসন্ধান করি</p>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                 <!-- System 1 -->
                 <div class="glass-card p-12">
-                    <i data-lucide="file-search" class="text-[#10B981] mb-8 w-12 h-12"></i>
-                    <h3 class="text-2xl font-black text-white mb-6 uppercase italic leading-tight">Forensic <br> Audit</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-8">সিএস থেকে বিএস রেকর্ডের ধারাবাহিকতা যাচাই এবং দলিলের তথ্যে অসামঞ্জস্যতা শনাক্তকরণ।</p>
+                    <i data-lucide="search-check" class="text-[#10B981] mb-8 w-12 h-12"></i>
+                    <h3 class="text-2xl font-black text-white mb-6 uppercase italic leading-tight text-left">Forensic <br> Verification</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 text-left">সিএস থেকে বিএস রেকর্ডের গাণিতিক ধারাবাহিকতা যাচাই এবং দলিলের তথ্যে অসামঞ্জস্যতা শনাক্তকরণ। আমরা প্রতিটি বায়া দলিলের উৎস অনুসন্ধান করি।</p>
                     <ul class="text-[10px] space-y-3 font-bold text-slate-500 uppercase tracking-widest border-t border-white/5 pt-8">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Ownership Chain Logic</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Discrepancy Detection</li>
+                        <li class="flex items-center gap-2 text-left text-xs uppercase"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Ownership Chain Logic</li>
+                        <li class="flex items-center gap-2 text-left text-xs uppercase"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Discrepancy Detection</li>
                     </ul>
                 </div>
                 <!-- System 2 -->
                 <div class="glass-card p-12 border-[#10B981]/20">
-                    <i data-lucide="map-pin" class="text-[#10B981] mb-8 w-12 h-12"></i>
-                    <h3 class="text-2xl font-black text-white mb-4 uppercase italic leading-tight">Geo <br> Mapping</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-8">ডিজিটাল সার্ভে এবং মৌজা ম্যাপের সমন্বয়ে ১ ইঞ্চির সূক্ষ্মতায় সীমানা নির্ধারণ ও ব্লুপ্রিন্ট তৈরি।</p>
+                    <i data-lucide="map-pinned" class="text-[#10B981] mb-8 w-12 h-12"></i>
+                    <h3 class="text-2xl font-black text-white mb-4 uppercase italic leading-tight text-left">Digital <br> Surveying</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 text-left">আধুনিক ডিজিটাল সার্ভে টুলস এবং কম্পিউটারাইজড জিও-ম্যাপিংয়ের মাধ্যমে এক ইঞ্চির সূক্ষ্মতায় জমির স্থায়ী সীমানা নির্ধারণ ও ব্লুপ্রিন্ট তৈরি।</p>
                     <ul class="text-[10px] space-y-3 font-bold text-slate-500 uppercase tracking-widest border-t border-white/5 pt-8">
-                        <li class="flex items-center gap-2"><i data-lucide="ruler" class="w-3 h-3 text-[#10B981]"></i> Digital Demarcation</li>
-                        <li class="flex items-center gap-2"><i data-lucide="layers" class="w-3 h-3 text-[#10B981]"></i> Layer Superimposition</li>
+                        <li class="flex items-center gap-2 text-left text-xs uppercase"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Digital Demarcation</li>
+                        <li class="flex items-center gap-2 text-left text-xs uppercase"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Layer Superimposition</li>
                     </ul>
                 </div>
                 <!-- System 3 -->
                 <div class="glass-card p-12">
                     <i data-lucide="shield-check" class="text-[#10B981] mb-8 w-12 h-12"></i>
-                    <h3 class="text-2xl font-black text-white mb-4 uppercase italic leading-tight">Decision <br> Intel</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-8">রেকর্ড সংশোধন (মিস কেস), নামজারি জটিলতা বা মামলা মোকাবিলায় কারিগরি তথ্য সরবরাহ।</p>
+                    <h3 class="text-2xl font-black text-white mb-4 uppercase italic leading-tight text-left">Decision <br> Intelligence</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 text-left">রেকর্ড সংশোধন, নামজারি জটিলতা বা জমি সংক্রান্ত বিরোধে কারিগরি তথ্য ও গাণিতিক প্রমাণের মাধ্যমে সঠিক সিদ্ধান্ত গ্রহণে সহায়তা।</p>
                     <ul class="text-[10px] space-y-3 font-bold text-slate-500 uppercase tracking-widest border-t border-white/5 pt-8">
-                        <li class="flex items-center gap-2"><i data-lucide="target" class="w-3 h-3 text-[#10B981]"></i> Technical Evidence Matrix</li>
-                        <li class="flex items-center gap-2"><i data-lucide="target" class="w-3 h-3 text-[#10B981]"></i> Success Probability Audit</li>
+                        <li class="flex items-center gap-2 text-left text-xs uppercase"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Evidence Matrix</li>
+                        <li class="flex items-center gap-2 text-left text-xs uppercase"><i data-lucide="check" class="w-3 h-3 text-[#10B981]"></i> Strategy Simulation</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- THE BHUMITECH VAULT (4 CATEGORIES) -->
-    <section id="portfolio" class="py-32 bg-white/[0.01]">
+    <!-- DATA SECURITY & PRIVACY SECTION (NEW REPLACEMENT) -->
+    <section id="security" class="py-32 relative overflow-hidden">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-20">Bhumitech Vault</h2>
+            <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-12">Data Privacy First</h2>
+            <p class="text-slate-400 max-w-3xl mx-auto text-lg mb-20 font-medium">আপনার জমির নথিপত্র এবং তথ্য আমাদের কাছে আমানত। আমরা সর্বোচ্চ গোপনীয়তা এবং আধুনিক এনক্রিপশন প্রটোকল অনুসরণ করি।</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
-                <!-- Vault 1 -->
-                <div class="glass-card p-6 group" onclick="openModal('https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png', 'Forensic Deed Audit', 'Detailed analysis of land ownership history using proprietary forensic data logic.')">
-                    <div class="aspect-square bg-slate-900 rounded-3xl overflow-hidden mb-8 border border-white/5 relative">
-                        <i data-lucide="file-text" class="absolute inset-0 m-auto w-12 h-12 text-[#10B981] opacity-10 group-hover:scale-150 transition-all duration-700"></i>
-                        <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="glass-card p-10 flex items-center gap-8 text-left">
+                    <i data-lucide="lock" class="w-16 h-16 text-[#10B981] flex-shrink-0 opacity-20"></i>
+                    <div>
+                        <h4 class="text-white font-black uppercase text-sm mb-2">Zero Exposure Policy</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">আমরা কখনোই আপনার দলিলের তথ্য বা ম্যাপ কোনো থার্ড-পার্টি বা পাবলিক প্ল্যাটফর্মে শেয়ার করি না।</p>
                     </div>
-                    <h4 class="text-white font-black uppercase text-xs tracking-widest mb-1 text-center">Deed Forensic</h4>
                 </div>
-                <!-- Vault 2 -->
-                <div class="glass-card p-6 group border-emerald-500/10" onclick="openModal('https://raw.githubusercontent.com/pixelperfectits/assets/main/Neon%20Circuit%20Emblem.png', 'Precision Survey Map', 'High-fidelity digital survey blueprints with precise GPS coordinate integration.')">
-                    <div class="aspect-square bg-slate-900 rounded-3xl overflow-hidden mb-8 border border-white/5 relative">
-                        <i data-lucide="map" class="absolute inset-0 m-auto w-12 h-12 text-emerald-500 opacity-10 group-hover:scale-150 transition-all duration-700"></i>
-                        <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Neon%20Circuit%20Emblem.png" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity">
+                <div class="glass-card p-10 flex items-center gap-8 text-left border-[#10B981]/20">
+                    <i data-lucide="database" class="w-16 h-16 text-[#10B981] flex-shrink-0 opacity-20"></i>
+                    <div>
+                        <h4 class="text-white font-black uppercase text-sm mb-2">Private Client Vault</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">ক্লায়েন্টদের জন্য আমাদের আছে এনক্রিপ্টেড ডিজিটাল ভল্ট সিস্টেম, যা শুধুমাত্র মালিকের জন্য এক্সেসিবল।</p>
                     </div>
-                    <h4 class="text-white font-black uppercase text-xs tracking-widest mb-1 text-center">Survey Mapping</h4>
-                </div>
-                <!-- Vault 3 -->
-                <div class="glass-card p-6 group border-yellow-500/10" onclick="openModal('https://raw.githubusercontent.com/pixelperfectits/assets/main/3D%20Glass%20Orb%20Logo.png', 'Strategic Legal Brief', 'Advanced evidence collection and strategy briefs for complex land litigation.')">
-                    <div class="aspect-square bg-slate-900 rounded-3xl overflow-hidden mb-8 border border-white/5 relative">
-                        <i data-lucide="briefcase" class="absolute inset-0 m-auto w-12 h-12 text-yellow-500 opacity-10 group-hover:scale-150 transition-all duration-700"></i>
-                        <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/3D%20Glass%20Orb%20Logo.png" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity">
-                    </div>
-                    <h4 class="text-white font-black uppercase text-xs tracking-widest mb-1 text-center">Legal Evidence</h4>
-                </div>
-                <!-- Vault 4 -->
-                <div class="glass-card p-6 group border-rose-500/10" onclick="openModal('https://raw.githubusercontent.com/pixelperfectits/assets/main/Glass%20Card%20Logo.png', 'Secure Asset Vault', 'Cloud-based encrypted storage for lifetime protection of land titles and deeds.')">
-                    <div class="aspect-square bg-slate-900 rounded-3xl overflow-hidden mb-8 border border-white/5 relative">
-                        <i data-lucide="lock" class="absolute inset-0 m-auto w-12 h-12 text-rose-500 opacity-10 group-hover:scale-150 transition-all duration-700"></i>
-                        <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Glass%20Card%20Logo.png" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity">
-                    </div>
-                    <h4 class="text-white font-black uppercase text-xs tracking-widest mb-1 text-center">Document Vault</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PORTFOLIO MODAL -->
-    <div id="portfolio-modal" onclick="closeModal()">
-        <div class="modal-content glass-card p-6 bg-black border border-white/10" onclick="event.stopPropagation()">
-            <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/5 shadow-2xl">
-                <img id="modal-img" src="" class="w-full h-auto max-h-[65vh] object-contain mx-auto">
-            </div>
-            <h3 id="modal-title" class="text-2xl font-black text-white uppercase italic mb-2 tracking-tighter"></h3>
-            <p id="modal-desc" class="text-slate-400 text-sm mb-10 leading-relaxed"></p>
-            <div class="flex gap-6">
-                <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-10 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest">Order Service</a>
-                <button onclick="closeModal()" class="text-slate-500 font-bold uppercase text-[10px] tracking-widest hover:text-white transition">Close Preview</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ANALYST -->
+    <!-- ANALYST PROFILE -->
     <section id="about" class="py-48">
         <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center text-left">
             <div class="relative group">
                 <div class="w-full aspect-square rounded-[60px] border-2 border-white/10 overflow-hidden shadow-[0_0_80px_rgba(0,0,0,1)] group-hover:border-[#10B981]/40 transition-all duration-700">
                     <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/MD%20IBRAHIM%20HOSSAIN.jpeg" alt="Architect" class="w-full h-full object-cover">
                 </div>
-                <div class="absolute -bottom-10 -right-10 glass-card p-10 text-center border-[#10B981]/30 shadow-2xl animate-float">
+                <div class="absolute -bottom-10 -right-10 glass-card p-10 text-center border-[#10B981]/30 shadow-2xl">
                     <p class="text-[11px] font-black text-[#10B981] uppercase tracking-[0.5em] mb-3">Principal Lead</p>
-                    <p class="text-white text-xl font-black italic tracking-tighter uppercase font-mono tracking-widest">MD Ibrahim Hossain</p>
+                    <p class="text-white text-xl font-black italic tracking-tighter uppercase font-mono tracking-widest text-left">MD Ibrahim Hossain</p>
                 </div>
             </div>
             <div>
                 <h2 class="text-6xl font-black text-white uppercase italic tracking-tighter mb-12 leading-none">The Land Systems <br> Architect</h2>
                 <p class="text-slate-400 text-xl leading-relaxed mb-16 font-medium italic">
-                    আমি বিশ্বাস করি প্রতিটি মাটির ইঞ্চির পেছনে একটি গাণিতিক সত্য লুকিয়ে থাকে। আমাদের ল্যাবে আমরা অগোছালো দলিল এবং ম্যাপকে লজিক্যাল কাঠামোতে রূপান্তর করি।
+                    "আমি বিশ্বাস করি প্রতিটি মাটির ইঞ্চির পেছনে একটি গাণিতিক সত্য লুকিয়ে থাকে। আমাদের ল্যাবে আমরা অগোছালো দলিল এবং ম্যাপকে লজিক্যাল কাঠামোতে রূপান্তর করি যাতে আপনার সম্পদের নিরাপত্তা নিশ্চিত হয়।"
                 </p>
-                <div class="flex flex-wrap gap-4 text-[9px] font-black uppercase tracking-widest">
+                <div class="flex flex-wrap gap-4 text-[9px] font-black uppercase tracking-widest text-left">
                     <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5">Principal Geo-Data Analyst</span>
                     <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 text-blue-400">Systems Architect</span>
                     <span class="bg-white/5 px-6 py-3 rounded-2xl border border-white/5 text-yellow-500">Forensic Record Auditor</span>
@@ -219,11 +180,13 @@
     <!-- FOOTER & LEGAL -->
     <footer class="py-32 border-t border-white/5 text-center relative overflow-hidden">
         <div class="container mx-auto px-6">
+            
             <div class="max-w-5xl mx-auto disclaimer-box mb-24 text-left md:text-center">
-                <strong>TECHNICAL DISCLAIMER:</strong> 360° Bhumitech Solutions একটি ডাটা অ্যানালাইটিক্স এবং কারিগরি প্রযুক্তি প্রতিষ্ঠান। আমরা কোনো আইনি প্রতিনিধিত্ব বা ওকালতি (Legal Advocacy) করি না। আমাদের সকল রিপোর্ট এবং তথ্য শুধুমাত্র আপনার দলিলের কারিগরি অডিট এবং ম্যাপের গাণিতিক ডাটা বিশ্লেষণ মাত্র। আইনি বিষয়ে চূড়ান্ত সিদ্ধান্তের জন্য আপনার আইনজীবীর সাথে সরাসরি পরামর্শ করুন।
+                <strong>TECHNICAL DISCLAIMER:</strong> 360° Bhumitech Solutions একটি ডাটা অ্যানালাইটিক্স এবং কারিগরি প্রযুক্তি প্রতিষ্ঠান। আমরা কোনো আইনি প্রতিনিধিত্ব বা ওকালতি (Legal Advocacy) করি না। আমাদের সকল রিপোর্ট এবং তথ্য ডিজিটাল সার্ভে এবং রেকর্ডের কারিগরি অডিট এবং ম্যাপের গাণিতিক ডাটা বিশ্লেষণ মাত্র। আইনি বিষয়ে চূড়ান্ত সিদ্ধান্তের জন্য আপনার আইনজীবীর সাথে সরাসরি পরামর্শ করুন।
             </div>
+
             <div class="flex justify-center mb-16">
-                <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-[#10B981] text-2xl border border-white/10 italic">360°</div>
+                <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-[#10B981] text-2xl border border-white/10 italic text-left">360°</div>
             </div>
             <p class="text-[11px] font-black text-slate-500 tracking-[0.8em] uppercase mb-10">Pixel Perfect IT Solutions | Bhumitech Division</p>
             <div class="flex flex-col md:flex-row justify-center gap-16 text-[10px] font-bold text-slate-600 uppercase tracking-widest text-center">
@@ -246,17 +209,6 @@
                 icon.setAttribute('data-lucide', 'menu');
             }
             lucide.createIcons();
-        }
-        function openModal(imgSrc, title, desc) {
-            document.getElementById('modal-img').src = imgSrc;
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-desc').innerText = desc;
-            document.getElementById('portfolio-modal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-        function closeModal() {
-            document.getElementById('portfolio-modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
         }
     </script>
 </body>
