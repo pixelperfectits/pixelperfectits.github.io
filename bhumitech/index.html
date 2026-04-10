@@ -3,22 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>360° Bhumitech | ডিজিটাল ভূমি জরিপ ও ফরেনসিক বিশ্লেষণ</title>
-    <!-- All other meta tags -->
+    
+    <!-- ADVANCED SEO -->
+    <title>360° Bhumitech | ডিজিটাল ভূমি জরিপ, নামজারি ও ফরেনসিক রেকর্ড বিশ্লেষণ</title>
+    
+    <!-- JSON-LD SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "360° Bhumitech Solutions",
+      "image": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "email": "pixelperfect.its@gmail.com",
+      "telephone": "+8801715354960",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kathalbari",
+        "addressLocality": "Shibchar",
+        "addressRegion": "Madaripur",
+        "addressCountry": "BD"
+      }
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; background-color: #020617; padding-top: 100px; /* Overlap fix */ }
+        body { 
+            font-family: 'Inter', 'Hind Siliguri', sans-serif; 
+            scroll-behavior: smooth; 
+            background-color: #020617; 
+            overflow-x: hidden; 
+            padding-top: 100px; /* Overlap fix */
+        }
         @media (min-width: 768px) { body { padding-top: 112px; } }
+
         .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border-radius: 24px; }
         .emerald-text { color: #10B981; }
         #mobile-menu { transition: transform 0.4s ease; transform: translateY(-100%); opacity: 0; z-index: 100; visibility: hidden; }
         #mobile-menu.active { transform: translateY(0); opacity: 1; visibility: visible; display: flex !important; }
+        .disclaimer-box { background: rgba(244, 63, 94, 0.05); border: 1px solid rgba(244, 63, 94, 0.2); border-radius: 20px; padding: 20px; font-size: 13px; color: #fb7185; }
     </style>
 </head>
 <body class="text-slate-300 text-left">
+
     <!-- TOP BAR -->
     <div class="w-full bg-[#10B981] text-black text-[9px] font-black uppercase tracking-[0.3em] py-2 text-center fixed top-0 z-[60]">
         Precision Land Intelligence • Forensic Audit • Bangladesh
@@ -27,13 +57,11 @@
     <!-- NAVIGATION (Mobile Fix) -->
     <header class="fixed w-full z-50 bg-black/70 backdrop-blur-xl border-b border-white/5 top-[26px] md:top-[38px]">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center relative">
-            <!-- Brand -->
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-[#10B981] rounded-lg flex items-center justify-center font-black text-black">360°</div>
                 <span class="text-lg font-black text-white uppercase">Bhumitech</span>
             </div>
             
-            <!-- Desktop Links -->
             <div class="hidden lg:flex gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-400">
                 <a href="#methodology" class="hover:text-[#10B981]">কার্যপদ্ধতি</a>
                 <a href="../" class="text-cyan-400 border border-cyan-400/20 px-3 py-1 rounded-full">IT Division</a>
@@ -61,26 +89,94 @@
         </div>
     </div>
 
-    <!-- METHODOLOGY Section (Link Fixed) -->
-    <section id="methodology" class="py-24">
-        <h2 class="text-3xl md:text-5xl font-black text-white uppercase italic text-center mb-16">আমাদের কাজের প্রক্রিয়া</h2>
-        <!-- 4 Step Cards Here... -->
+    <!-- HERO SECTION -->
+    <section class="relative pt-40 pb-32 px-6 text-center">
+        <h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-10 uppercase italic tracking-tighter">
+            মাটি থেকে <span class="emerald-text">লজিক</span>
+        </h1>
+        <p class="text-slate-400 max-w-3xl mx-auto text-base md:text-2xl leading-relaxed mb-16 font-medium">
+            আপনার কষ্টার্জিত জমির নিরাপত্তা নিশ্চিত করতে আমরা প্রদান করি অত্যাধুনিক ডিজিটাল জরিপ এবং কারিগরি রেকর্ড বিশ্লেষণ সেবা।
+        </p>
+        <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-wider shadow-lg">ফ্রি পরামর্শ নিন</a>
     </section>
 
-    <!-- FOOTER (Bengali & Map Placeholder) -->
+    <!-- DETAILED SERVICES -->
+    <section id="services" class="py-24">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-white uppercase italic">আমাদের ৪টি প্রধান সেবামূলক বিভাগ</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <!-- Record Forensic -->
+                <div class="glass-card p-8 md:p-12 border-l-4 border-[#10B981]">
+                    <h3 class="text-2xl md:text-4xl font-black text-white uppercase italic mb-6">Record Forensic</h3>
+                    <ul class="space-y-4 text-xs md:text-sm font-bold text-slate-400 uppercase tracking-wider">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-[#10B981]"></i> বায়া দলিলের ধারাবাহিকতা যাচাই</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-[#10B981]"></i> জালিয়াতি ও নকল দলিল শনাক্তকরণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-[#10B981]"></i> সিএস থেকে বিএস রেকর্ডের গাণিতিক অডিট</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-[#10B981]"></i> দলিলের শর্তাবলী ও ঝুঁকি বিশ্লেষণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-[#10B981]"></i> রেজিস্ট্রেশন ও বালাম বই যাচাই</li>
+                    </ul>
+                </div>
+                <!-- Geo-Mapping -->
+                <div class="glass-card p-8 md:p-12 border-l-4 border-cyan-500">
+                    <h3 class="text-2xl md:text-4xl font-black text-white uppercase italic mb-6">Geo-Mapping</h3>
+                    <ul class="space-y-4 text-xs md:text-sm font-bold text-slate-400 uppercase tracking-wider">
+                        <li class="flex items-center gap-3"><i data-lucide="ruler" class="w-4 h-4 text-cyan-500"></i> ডিজিটাল জরিপ ও স্থায়ী সীমানা নির্ধারণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="layers" class="w-4 h-4 text-cyan-500"></i> মৌজা ম্যাপের ডিজিটাল সুপার-ইম্পোজ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="layout" class="w-4 h-4 text-cyan-500"></i> ১ ইঞ্চি সূক্ষ্মতায় ডিজিটাল ব্লুপ্রিন্ট</li>
+                        <li class="flex items-center gap-3"><i data-lucide="target" class="w-4 h-4 text-cyan-500"></i> জবরদখল ও বিচ্যুতি শনাক্তকরণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="cpu" class="w-4 h-4 text-cyan-500"></i> ডিজিটাল সার্ভে ডাটা প্রসেসিং</li>
+                    </ul>
+                </div>
+                <!-- Revenue Strategy -->
+                <div class="glass-card p-8 md:p-12 border-l-4 border-yellow-500">
+                    <h3 class="text-2xl md:text-4xl font-black text-white uppercase italic mb-6">Revenue Strategy</h3>
+                    <ul class="space-y-4 text-xs md:text-sm font-bold text-slate-400 uppercase tracking-wider">
+                        <li class="flex items-center gap-3"><i data-lucide="navigation" class="w-4 h-4 text-yellow-500"></i> নামজারি যোগ্যতা যাচাই</li>
+                        <li class="flex items-center gap-3"><i data-lucide="navigation" class="w-4 h-4 text-yellow-500"></i> মিসকেস ও রেকর্ড সংশোধন গাইড</li>
+                        <li class="flex items-center gap-3"><i data-lucide="navigation" class="w-4 h-4 text-yellow-500"></i> এসি ল্যান্ড অফিসের জন্য রিপোর্ট</li>
+                        <li class="flex items-center gap-3"><i data-lucide="navigation" class="w-4 h-4 text-yellow-500"></i> খতিয়ান ও পর্চার ভুল বিশ্লেষণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="navigation" class="w-4 h-4 text-yellow-500"></i> শুনানির জন্য কারিগরি প্রমাণ</li>
+                    </ul>
+                </div>
+                <!-- Forensic Support -->
+                <div class="glass-card p-8 md:p-12 border-l-4 border-rose-500">
+                    <h3 class="text-2xl md:text-4xl font-black text-white uppercase italic mb-6">Forensic Support</h3>
+                    <ul class="space-y-4 text-xs md:text-sm font-bold text-slate-400 uppercase tracking-wider">
+                        <li class="flex items-center gap-3"><i data-lucide="shield-check" class="w-4 h-4 text-rose-500"></i> ফারায়েজ ও গাণিতিক অংশ নির্ধারণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="shield-check" class="w-4 h-4 text-rose-500"></i> বাটোয়ারা দলিলের কারিগরি অডিট</li>
+                        <li class="flex items-center gap-3"><i data-lucide="shield-check" class="w-4 h-4 text-rose-500"></i> মামলায় আইনজীবীদের কারিগরি সহায়তা</li>
+                        <li class="flex items-center gap-3"><i data-lucide="shield-check" class="w-4 h-4 text-rose-500"></i> আদালতের রায়ের ভৌগোলিক বিশ্লেষণ</li>
+                        <li class="flex items-center gap-3"><i data-lucide="shield-check" class="w-4 h-4 text-rose-500"></i> দলিলের ডিজিটাল ভল্ট ও সুরক্ষা</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section id="methodology" class="py-24">
+        <!-- Methodology content here -->
+    </section>
+    
+    <!-- FOOTER -->
     <footer class="py-24 border-t border-white/5">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
             <div>
                 <h3 class="text-2xl font-black text-white uppercase italic mb-6">যোগাযোগ ও ঠিকানা</h3>
                 <div class="space-y-4 text-slate-400">
                     <p class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 emerald-text"></i> কাঁঠালবাড়ী, শিবচর, মাদারীপুর</p>
-                    <p class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 emerald-text"></i> ibrahim.dev360@gmail.com</p>
+                    <p class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 emerald-text"></i> pixelperfect.its@gmail.com</p>
                     <p class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 emerald-text"></i> +৮৮০ ১৭১৫-৩৫৪৯৬০</p>
                 </div>
             </div>
             <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden border border-white/10">
                 <!-- *** PASTE YOUR GOOGLE MAP IFRAME CODE HERE *** -->
             </div>
+        </div>
+        <div class="container mx-auto mt-16 disclaimer-box text-left md:text-center italic">
+            <strong>কারিগরি সতর্কতা:</strong> ৩৬০° ভূমিটেক সলিউশনস একটি ডাটা অ্যানালাইটিক্স এবং কারিগরি প্রযুক্তি প্রতিষ্ঠান...
         </div>
     </footer>
 
