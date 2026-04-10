@@ -32,10 +32,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; scroll-behavior: smooth; background-color: #020617; overflow-x: hidden; padding-top: 100px; }
+        body { 
+            font-family: 'Inter', 'Hind Siliguri', sans-serif; 
+            scroll-behavior: smooth; 
+            background-color: #020617; 
+            overflow-x: hidden; 
+            padding-top: 100px; /* MAIN FIX FOR OVERLAP */
+        }
         @media (min-width: 768px) { body { padding-top: 112px; } }
 
-        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 32px; transition: all 0.5s ease; cursor: pointer; }
+        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(16, 185, 129, 0.1); border-radius: 32px; transition: all 0.5s ease; cursor: pointer; }
         .glass-card:hover { border-color: #10B981; transform: translateY(-12px); box-shadow: 0 40px 80px -15px rgba(16, 185, 129, 0.25); }
         .emerald-text { color: #10B981; text-shadow: 0 0 25px rgba(16, 185, 129, 0.6); }
         .capsule { border-radius: 100px; padding: 6px 18px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; }
@@ -44,7 +50,6 @@
         #mobile-menu { transition: transform 0.4s ease-in-out, opacity 0.4s ease; transform: translateY(-100%); opacity: 0; z-index: 100; visibility: hidden; }
         #mobile-menu.active { transform: translateY(0); opacity: 1; visibility: visible; display: flex !important; }
         .disclaimer-box { background: rgba(244, 63, 94, 0.03); border: 1px solid rgba(244, 63, 94, 0.1); border-radius: 24px; padding: 30px; font-size: 14px; color: #fb7185; line-height: 1.8; }
-        
         p, li { line-height: 1.8; letter-spacing: 0.01em; }
     </style>
 </head>
@@ -68,10 +73,9 @@
 
             <!-- Desktop Links -->
             <div class="hidden lg:flex gap-10 text-[11px] font-black uppercase tracking-widest text-slate-400">
-                <a href="#audit-services" class="hover:text-[#10B981] transition">অডিট ও রেকর্ড</a>
-                <a href="#survey-services" class="hover:text-[#10B981] transition">ডিজিটাল জরিপ</a>
-                <a href="#revenue-section" class="hover:text-[#10B981] transition">নামজারি ও আইন</a>
-                <a href="../" class="text-cyan-400 hover:text-white transition border border-cyan-400/20 px-5 py-1.5 rounded-full text-[9px] uppercase font-black">IT Division</a>
+                <a href="#services" class="hover:text-[#10B981] transition">সেবাসমূহ</a>
+                <a href="#methodology" class="hover:text-[#10B981] transition">কার্যপদ্ধতি</a>
+                <a href="../" class="text-cyan-400 hover:text-white transition border border-cyan-400/20 px-5 py-1.5 rounded-full">IT Division</a>
             </div>
 
             <div class="flex items-center gap-4">
@@ -84,135 +88,124 @@
             </div>
         </nav>
 
-        <!-- MOBILE MENU -->
-        <div id="mobile-menu" class="hidden fixed inset-0 top-[60px] bg-black/98 backdrop-blur-3xl flex-col items-center p-10 z-50 lg:hidden overflow-y-auto">
+        <!-- MOBILE MENU OVERLAY (FIXED) -->
+        <div id="mobile-menu" class="hidden fixed inset-0 top-[80px] bg-black/98 backdrop-blur-3xl flex-col items-center p-10 z-40 lg:hidden overflow-y-auto">
             <div class="w-full space-y-4 mb-12">
                 <a href="../" class="border border-cyan-500/30 text-[#00F2FF] font-black uppercase tracking-[0.2em] py-5 rounded-2xl w-full flex justify-center items-center gap-3">
                     <i data-lucide="monitor"></i> IT & Systems Division
                 </a>
             </div>
-            <div class="flex flex-col gap-8 text-center">
-                <a href="#audit-services" onclick="toggleMobileMenu()" class="text-lg font-black uppercase text-slate-300">Analysis Services</a>
-                <a href="#survey-services" onclick="toggleMobileMenu()" class="text-lg font-black uppercase text-slate-300">Geo-Mapping</a>
+            <div class="flex flex-col gap-8 text-center text-lg font-black uppercase">
+                <a href="#services" onclick="toggleMobileMenu()">সেবাসমূহ</a>
+                <a href="#methodology" onclick="toggleMobileMenu()">কার্যপদ্ধতি</a>
+                <a href="https://wa.me/8801715354960" class="bg-[#25D366] text-white px-8 py-4 rounded-xl">WhatsApp</a>
             </div>
         </div>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <section class="relative pt-40 pb-40 px-6 text-center">
-        <div class="container mx-auto">
-            <h1 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-12 uppercase italic tracking-tighter">
-                মাটি থেকে <br><span class="emerald-text">লজিক</span>
-            </h1>
-            <p class="text-slate-400 max-w-4xl mx-auto text-xl md:text-3xl leading-relaxed mb-20 font-medium italic">
-                আপনার কষ্টার্জিত জমির নিরাপত্তা নিশ্চিত করতে আমরা প্রদান করি অত্যাধুনিক <span class="text-white font-black">ডিজিটাল জরিপ</span> এবং <span class="text-[#10B981] font-bold">কারিগরি রেকর্ড বিশ্লেষণ</span> সেবা। 
-            </p>
-            <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-12 md:px-16 py-5 md:py-6 rounded-2xl font-black text-sm uppercase tracking-[0.2em] shadow-2xl hover:bg-white transition-all transform hover:rotate-3 inline-block">Analyze My Property</a>
-        </div>
+        <h1 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-12 uppercase italic tracking-tighter">
+            মাটি থেকে <br><span class="emerald-text">লজিক</span>
+        </h1>
+        <p class="text-slate-400 max-w-4xl mx-auto text-xl md:text-3xl leading-relaxed mb-20 font-medium italic">
+            আপনার কষ্টার্জিত জমির নিরাপত্তা নিশ্চিত করতে আমরা প্রদান করি অত্যাধুনিক <span class="text-white font-black">ডিজিটাল জরিপ</span> এবং <span class="text-[#10B981] font-bold">কারিগরি রেকর্ড বিশ্লেষণ</span> সেবা। 
+        </p>
+        <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-12 md:px-16 py-5 md:py-6 rounded-2xl font-black text-sm uppercase tracking-[0.2em] shadow-2xl hover:bg-white transition-all transform hover:rotate-3 inline-block">Analyze My Property</a>
     </section>
 
-    <!-- DETAILED SERVICE SECTIONS (4x5 Points) -->
+    <!-- DETAILED SERVICES (4 SECTORS x 5 POINTS) -->
     <section id="services" class="py-32 bg-black/40">
         <div class="container mx-auto">
+            <div class="text-center mb-24 border-b border-white/5 pb-10">
+                <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter mb-6 text-left">Strategic Solutions</h2>
+                <p class="text-[#10B981] font-bold uppercase tracking-widest text-left">আমাদের ৪টি প্রধান সেবামূলক বিভাগ</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
                 
                 <!-- 1. Forensic Audit -->
                 <div class="glass-card p-10 md:p-14 border-l-[6px] border-[#10B981]">
                     <i data-lucide="file-check-2" class="text-[#10B981] mb-8 w-12 h-12"></i>
-                    <h2 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-[#10B981] decoration-4 underline-offset-12">Record Forensic</h2>
+                    <h3 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-[#10B981] decoration-4 underline-offset-12">Record Forensic</h3>
                     <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 md:w-6 md:h-6 text-[#10B981]"></i> বায়া দলিলের ধারাবাহিকতা যাচাই</li>
-                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 md:w-6 md:h-6 text-[#10B981]"></i> জালিয়াতি ও নকল দলিল শনাক্তকরণ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 md:w-6 md:h-6 text-[#10B981]"></i> সিএস থেকে বিএস রেকর্ডের গাণিতিক অডিট</li>
-                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 md:w-6 md:h-6 text-[#10B981]"></i> দলিলের অস্পষ্ট শর্ত ও ঝুঁকি বিশ্লেষণ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 md:w-6 md:h-6 text-[#10B981]"></i> রেজিস্ট্রেশন ও বালাম বই যাচাই</li>
+                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 text-[#10B981]"></i> বায়া দলিলের ধারাবাহিকতা যাচাই</li>
+                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 text-[#10B981]"></i> জালিয়াতি ও নকল দলিল শনাক্তকরণ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 text-[#10B981]"></i> সিএস থেকে বিএস রেকর্ডের গাণিতিক অডিট</li>
+                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 text-[#10B981]"></i> দলিলের অস্পষ্ট শর্ত ও ঝুঁকি বিশ্লেষণ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="check" class="w-5 h-5 text-[#10B981]"></i> রেজিস্ট্রেশন ও বালাম বই যাচাই</li>
                     </ul>
                 </div>
 
                 <!-- 2. Geo-Mapping -->
                 <div class="glass-card p-10 md:p-14 border-l-[6px] border-cyan-500">
                     <i data-lucide="map-pinned" class="text-cyan-500 mb-8 w-12 h-12"></i>
-                    <h2 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-cyan-500 decoration-4 underline-offset-12">Geo-Mapping</h2>
+                    <h3 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-cyan-500 decoration-4 underline-offset-12">Geo-Mapping</h3>
                     <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="ruler" class="w-5 h-5 md:w-6 md:h-6 text-cyan-500"></i> ডিজিটাল জরিপ ও স্থায়ী সীমানা নির্ধারণ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="layers" class="w-5 h-5 md:w-6 md:h-6 text-cyan-500"></i> মৌজা ম্যাপের ডিজিটাল সুপার-ইম্পোজ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="layout" class="w-5 h-5 md:w-6 md:h-6 text-cyan-500"></i> ১ ইঞ্চি সূক্ষ্মতায় ডিজিটাল ব্লুপ্রিন্ট ম্যাপ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="target" class="w-5 h-5 md:w-6 md:h-6 text-cyan-500"></i> জবরদখল ও সীমানা বিচ্যুতি শনাক্তকরণ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="cpu" class="w-5 h-5 md:w-6 md:h-6 text-cyan-500"></i> টোটাল স্টেশন ও GPS ডাটা প্রসেসিং</li>
+                        <li class="flex items-center gap-5"><i data-lucide="ruler" class="w-5 h-5 text-cyan-500"></i> ডিজিটাল জরিপ ও স্থায়ী সীমানা নির্ধারণ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="layers" class="w-5 h-5 text-cyan-500"></i> মৌজা ম্যাপের ডিজিটাল সুপার-ইম্পোজ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="layout" class="w-5 h-5 text-cyan-500"></i> ১ ইঞ্চি সূক্ষ্মতায় ডিজিটাল ব্লুপ্রিন্ট ম্যাপ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="target" class="w-5 h-5 text-cyan-500"></i> জবরদখল ও সীমানা বিচ্যুতি শনাক্তকরণ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="cpu" class="w-5 h-5 text-cyan-500"></i> টোটাল স্টেশন ও GPS ডাটা প্রসেসিং</li>
                     </ul>
                 </div>
 
                 <!-- 3. Revenue Strategy -->
                 <div class="glass-card p-10 md:p-14 border-l-[6px] border-yellow-500">
                     <i data-lucide="gavel" class="text-yellow-500 mb-8 w-12 h-12"></i>
-                    <h2 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-yellow-500 decoration-4 underline-offset-12">Revenue Strategy</h2>
+                    <h3 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-yellow-500 decoration-4 underline-offset-12">Revenue Strategy</h3>
                     <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 md:w-6 md:h-6 text-yellow-500"></i> নামজারি যোগ্যতা কারিগরি যাচাই</li>
-                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 md:w-6 md:h-6 text-yellow-500"></i> রেকর্ড সংশোধনের জন্য মিসকেস গাইড</li>
-                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 md:w-6 md:h-6 text-yellow-500"></i> এসি ল্যান্ড অফিসের জন্য রিপোর্ট তৈরি</li>
-                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 md:w-6 md:h-6 text-yellow-500"></i> খতিয়ান ও পর্চার ভুল সংশোধন</li>
-                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 md:w-6 md:h-6 text-yellow-500"></i> শুনানির জন্য কারিগরি প্রমাণের ম্যাট্রিক্স</li>
+                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 text-yellow-500"></i> নামজারি যোগ্যতা কারিগরি যাচাই</li>
+                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 text-yellow-500"></i> রেকর্ড সংশোধনের মিসকেস গাইড</li>
+                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 text-yellow-500"></i> এসি ল্যান্ড অফিসের জন্য রিপোর্ট তৈরি</li>
+                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 text-yellow-500"></i> খতিয়ান ও পর্চার ভুল সংশোধন বিশ্লেষণ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="navigation" class="w-5 h-5 text-yellow-500"></i> শুনানির জন্য কারিগরি প্রমাণ সরবরাহ</li>
                     </ul>
                 </div>
 
                 <!-- 4. Forensic Support -->
                 <div class="glass-card p-10 md:p-14 border-l-[6px] border-rose-500">
                     <i data-lucide="briefcase" class="text-rose-500 mb-8 w-12 h-12"></i>
-                    <h2 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-rose-500 decoration-4 underline-offset-12">Forensic Support</h2>
+                    <h3 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-rose-500 decoration-4 underline-offset-12">Forensic Support</h3>
                     <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-rose-500"></i> উত্তরাধিকার সূত্রে ফারায়েজ ও গাণিতিক অংশ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-rose-500"></i> বাটোয়ারা দলিলের কারিগরি সঠিকতা অডিট</li>
-                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-rose-500"></i> মামলায় আইনজীবীদের কারিগরি সহায়তা</li>
-                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-rose-500"></i> আদালতের রায়ের ভৌগোলিক ও কারিগরি বিশ্লেষণ</li>
-                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-rose-500"></i> দলিলের ডিজিটাল ভল্টিং ও আজীবন নিরাপত্তা</li>
+                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 text-rose-500"></i> উত্তরাধিকার সূত্রে ফারায়েজ ও অংশ নির্ধারণ</li>
+                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 text-rose-500"></i> বাটোয়ারা দলিলের কারিগরি অডিট</li>
+                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 text-rose-500"></i> মামলায় আইনজীবীদের কারিগরি সহায়তা</li>
+                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 text-rose-500"></i> আদালতের রায়ের ভৌগোলিক পোস্টমর্টেম</li>
+                        <li class="flex items-center gap-5"><i data-lucide="shield-check" class="w-5 h-5 text-rose-500"></i> দলিলের আজীবন ডিজিটাল নিরাপত্তা</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- METHODOLOGY -->
+    <section id="methodology" class="py-32 bg-black/40">
+        <h2 class="text-4xl font-black text-white uppercase italic text-center mb-20">আমাদের কাজের প্রক্রিয়া</h2>
+        <div class="grid md:grid-cols-4 gap-6 text-center container mx-auto">
+            <!-- Steps -->
+        </div>
+    </section>
+    
     <!-- FOOTER & LEGAL -->
-    <footer class="py-32 md:py-40 border-t border-white/5 text-center relative overflow-hidden px-6">
+    <footer class="py-32 border-t border-white/5 text-center relative px-6">
         <div class="max-w-5xl mx-auto">
-            <div class="disclaimer-box mb-16 md:mb-24 text-left md:text-center italic text-sm">
-                <strong>কারিগরি সতর্কতা:</strong> ৩৬০° ভূমিটেক সলিউশনস একটি পিউর টেকনিক্যাল ডাটা অ্যানালাইটিক্স এবং ইঞ্জিনিয়ারিং সিস্টেম। আমরা কোনো আইনি প্রতিনিধিত্ব বা ওকালতি করি না। আমাদের সকল রিপোর্ট এবং তথ্য আধুনিক ডিজিটাল জরিপ ও দলিলের ফরেনসিক বিশ্লেষণের ওপর ভিত্তি করে তৈরি। আইনি বিষয়ে চূড়ান্ত সিদ্ধান্তের জন্য আপনার আইনজীবীর সাথে পরামর্শ করুন।
+            <div class="disclaimer-box mb-16 md:mb-24 text-left md:text-center italic">
+                <strong>কারিগরি সতর্কতা:</strong> ৩৬০° ভূমিটেক সলিউশনস একটি পিউর টেকনিক্যাল ডাটা অ্যানালাইটিক্স এবং ইঞ্জিনিয়ারিং সিস্টেম। আমরা কোনো আইনি প্রতিনিধিত্ব বা ওকালতি করি না। আমাদের রিপোর্টসমূহ শুধুমাত্র দলিলের কারিগরি অডিট এবং ম্যাপের গাণিতিক ডাটা বিশ্লেষণ মাত্র। আইনি বিষয়ে চূড়ান্ত সিদ্ধান্তের জন্য আপনার আইনজীবীর সাথে সরাসরি পরামর্শ করুন।
             </div>
-
-            <div class="flex justify-center mb-12 md:mb-16">
-                <div class="w-16 h-16 md:w-20 md:h-20 bg-white/5 rounded-[24px] flex items-center justify-center font-black text-[#10B981] text-3xl md:text-4xl border border-white/10 italic shadow-lg">360°</div>
-            </div>
-            <p class="text-xs md:text-sm font-black text-slate-500 tracking-[0.5em] md:tracking-[0.8em] uppercase mb-8 md:mb-12 text-center italic">Pixel Perfect IT Solutions | Bhumitech Division</p>
-            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16 text-xs font-bold text-slate-600 uppercase tracking-widest text-center items-center italic">
+            <p class="text-[11px] font-black text-slate-500 tracking-[0.8em] uppercase mb-10 text-center">Pixel Perfect IT Solutions | Bhumitech Division</p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16 text-xs font-bold text-slate-600 uppercase tracking-widest items-center italic">
                 <span>Kathalbari, Shibchar, Madaripur</span>
-                <span class="text-white font-black italic uppercase">Driven by Data. Secured by Logic.</span>
-                <a href="https://wa.me/8801715354960" class="flex items-center gap-3 bg-[#25D366] text-white px-6 md:px-10 py-3 md:py-4 rounded-full font-black hover:scale-105 transition-all shadow-xl italic">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Help
-                </a>
+                <span class="text-white font-black">Driven by Data. Secured by Logic.</span>
             </div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-        });
-
+        lucide.createIcons();
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('menu-icon');
-            if (!menu || !icon) return;
             menu.classList.toggle('active');
-            if (menu.classList.contains('active')) {
-                icon.setAttribute('data-lucide', 'x');
-            } else {
-                icon.setAttribute('data-lucide', 'menu');
-            }
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
         }
     </script>
 </body>
