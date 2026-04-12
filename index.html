@@ -1,151 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Perfect IT | Global Systems Engineering & Strategic Consultancy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
+    <!-- ADVANCED SEO: BD & GLOBAL -->
+    <title>360° Bhumitech | Advanced Geo-Spatial Analysis & Forensic Audit</title>
+    
+    <!-- JSON-LD SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "360° Bhumitech Solutions",
+      "telephone": "+8801715354960",
+      "email": "pixelperfect.its@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kathalbari",
+        "addressLocality": "Shibchar",
+        "addressRegion": "Madaripur",
+        "addressCountry": "BD"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Bangladesh" },
+        { "@type": "Country", "name": "Malaysia" },
+        { "@type": "Country", "name": "United Kingdom" }
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; background: #000; }
-        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; }
-        .glass-card:hover { transform: translateY(-12px) scale(1.02); border-color: rgba(255,255,255,0.2); box-shadow: 0 40px 100px -20px rgba(0,0,0,0.5); }
-        .bg-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 50px 50px; }
-        .neon-text-cyan { color: #00F2FF; text-shadow: 0 0 30px rgba(0, 242, 255, 0.7); }
-
-        /* INTRO ANIMATIONS */
+        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; background-color: #000000; overflow-x: hidden; padding-top: 100px; }
+        .glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(16, 185, 129, 0.1); border-radius: 32px; transition: all 0.5s ease; }
+        .emerald-text { color: #10B981; text-shadow: 0 0 25px rgba(16, 185, 129, 0.6); }
+        .capsule { border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 100px; padding: 6px 16px; font-size: 10px; font-weight: 800; color: #10B981; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* Entrance Animations */
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes zoomIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .animate-fadeIn { animation: fadeIn 1s ease-out; }
+        .animate-slideUp { animation: slideUp 1s ease-out; animation-fill-mode: both; }
+
+        #mobile-menu { transition: all 0.4s ease; opacity: 0; visibility: hidden; }
+        #mobile-menu.active { opacity: 1; visibility: visible; display: flex !important; }
         
-        .fade-in { animation: fadeIn 1s ease-out forwards; }
-        .fade-in-up-1 { animation: fadeInUp 0.8s ease-out 0.2s forwards; opacity: 0; }
-        .fade-in-up-2 { animation: fadeInUp 0.8s ease-out 0.4s forwards; opacity: 0; }
-        .fade-in-up-3 { animation: fadeInUp 0.8s ease-out 0.6s forwards; opacity: 0; }
-        
-        /* SCROLL-TRIGGERED ANIMATIONS */
-        .scroll-zoom-in { opacity: 0; transform: scale(0.95); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .scroll-zoom-in.visible { opacity: 1; transform: scale(1); }
+        .disclaimer-box { background: rgba(244, 63, 94, 0.05); border: 1px solid rgba(244, 63, 94, 0.2); border-radius: 20px; padding: 25px; font-size: 13px; color: #fb7185; }
     </style>
 </head>
-<body class="text-slate-300 bg-grid">
+<body class="text-slate-300">
 
-    <!-- HEADER (Intro Animation) -->
-    <header class="py-6 px-4 md:px-8 sticky top-0 bg-black/50 backdrop-blur-xl z-50 border-b border-white/5 fade-in" style="animation-duration: 1.5s;">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" class="w-10 h-10 md:w-12 md:h-12 rounded-lg shadow-[0_0_20px_#00F2FF]">
-                <div>
-                    <h1 class="text-lg font-black text-white uppercase italic">Pixel Perfect IT</h1>
-                    <p class="text-[9px] font-bold text-[#00F2FF] uppercase tracking-[0.2em]">Global Systems Hub</p>
-                </div>
+    <!-- TOP BAR -->
+    <div class="w-full bg-[#10B981] text-black text-[10px] font-black uppercase tracking-[0.3em] py-2 text-center fixed top-0 z-[60]">
+        Precision Land Intelligence • Serving BD, MY & Global Expats
+    </div>
+    
+    <!-- NAVIGATION (Mobile Fix) -->
+    <header class="fixed w-full z-50 bg-black/70 backdrop-blur-xl border-b border-white/5 top-[28px] md:top-[38px]">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#10B981] rounded-lg flex items-center justify-center font-black text-black">360°</div>
+                <span class="text-lg font-black text-white uppercase">Bhumitech</span>
             </div>
-            <a href="https://wa.me/8801715354960" class="bg-[#00F2FF] text-black px-6 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-white transition-all shadow-lg transform hover:scale-105">Contact Architect</a>
-        </div>
+            <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </nav>
     </header>
 
-    <!-- HUB SECTION (Intro Animation) -->
-    <section class="py-24 md:py-40 text-center px-4">
-        <h2 class="text-4xl md:text-8xl font-black text-white uppercase italic leading-tight fade-in-up-1">
-            The Central <br><span class="neon-text-cyan">Command Hub</span>
-        </h2>
-        <p class="text-slate-400 max-w-3xl mx-auto mt-8 text-sm md:text-lg font-medium leading-relaxed fade-in-up-2">
-            Welcome to the central portal of Pixel Perfect IT Solutions. Please select a specialized division below.
-            <br><span class="mt-4 block font-semibold text-slate-500">পিক্সেল পারফেক্ট আইটি সলিউশনের কেন্দ্রীয় পোর্টালে স্বাগতম। আপনার প্রয়োজনীয় সেবাটি বেছে নিন।</span>
-        </p>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden fixed inset-0 top-0 bg-black/95 backdrop-blur-3xl flex-col items-center p-8 z-40">
+        <div class="w-full flex justify-end mb-8">
+            <button onclick="toggleMobileMenu()" class="text-white p-2"><i data-lucide="x"></i></button>
+        </div>
+        <div class="w-full space-y-4 mb-10 text-center">
+            <a href="../" class="border border-cyan-500/30 text-cyan-400 font-bold uppercase py-4 rounded-xl w-full flex justify-center gap-2">
+                <i data-lucide="monitor"></i> IT Systems Division
+            </a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="relative pt-40 pb-32 px-6 text-center">
+        <div class="container mx-auto">
+            <div class="inline-block capsule mb-10 animate-fadeIn" style="animation-delay: 0.2s;">Data • Measurement • Forensic Logic</div>
+            <h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-10 uppercase italic tracking-tighter animate-slideUp" style="animation-delay: 0.4s;">
+                From Land to <span class="emerald-text">Logic</span>
+            </h1>
+            <p class="text-slate-400 max-w-4xl mx-auto text-base md:text-2xl leading-relaxed mb-12 font-medium animate-slideUp" style="animation-delay: 0.6s;">
+                We utilize proprietary geo-spatial logic and advanced mapping systems to verify, measure, and secure land assets for clients in Bangladesh and globally.
+                <br><strong class="text-white mt-4 block">আপনার কষ্টার্জিত জমির নিরাপত্তা নিশ্চিত করতে আমরা প্রদান করি অত্যাধুনিক ডিজিটাল জরিপ এবং ফরেনসিক রেকর্ড বিশ্লেষণ সেবা।</strong>
+            </p>
+            <a href="https://wa.me/8801715354960" class="bg-[#10B981] text-black px-10 py-4 rounded-xl font-bold text-sm uppercase tracking-wider shadow-lg animate-slideUp" style="animation-delay: 0.8s;">Get Property Audit</a>
+        </div>
     </section>
 
-    <!-- DIVISION GRID (Scroll-Triggered Animation) -->
-    <section class="px-4 pb-24 md:pb-40">
-        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            
-            <!-- Cards with .scroll-zoom-in class -->
-            <a href="./design/" class="glass-card rounded-3xl p-8 block scroll-zoom-in">
-                <div class="flex justify-between items-start mb-6">
-                    <i data-lucide="palette" class="w-10 h-10 text-yellow-400"></i>
-                    <div class="flex gap-2">
-                        <span class="text-2xl">🇧🇩</span><span class="text-2xl">🇲🇾</span>
-                    </div>
+    <!-- DETAILED SERVICES -->
+    <section id="services" class="py-24 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-white uppercase italic">Our Core Capabilities</h2>
+                <p class="text-slate-400 mt-4 text-sm md:text-base">আমরা ভূমি সংক্রান্ত যে সকল কারিগরি সেবা প্রদান করি:</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                <!-- Record Forensic -->
+                <div class="glass-card p-8 md:p-12 border-t-4 border-[#10B981] animate-slideUp" style="animation-delay: 0.1s;">
+                    <i data-lucide="file-check-2" class="text-[#10B981] mb-6 w-8 h-8"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-4">Record Forensic</h3>
+                    <p class="text-xs text-slate-500 font-bold uppercase leading-relaxed">দলিলের ফরেনসিক অডিট এবং মালিকানার ধারাবাহিকতা যাচাই।</p>
                 </div>
-                <h3 class="text-2xl font-black text-white uppercase italic">Visual Production</h3>
-                <p class="text-sm text-slate-400 mt-2 font-medium">Print & Digital Media Design</p>
-            </a>
-
-            <a href="./growth/" class="glass-card rounded-3xl p-8 block scroll-zoom-in" style="transition-delay: 0.1s;">
-                <div class="flex justify-between items-start mb-6">
-                    <i data-lucide="trending-up" class="w-10 h-10 text-purple-400"></i>
-                    <div class="flex gap-2">
-                        <span class="text-2xl">🇧🇩</span><span class="text-2xl">🇲🇾</span>
-                    </div>
+                <!-- Geo-Mapping -->
+                <div class="glass-card p-8 md:p-12 border-t-4 border-cyan-500 animate-slideUp" style="animation-delay: 0.3s;">
+                    <i data-lucide="map-pinned" class="text-cyan-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-4">Geo-Mapping</h3>
+                    <p class="text-xs text-slate-500 font-bold uppercase leading-relaxed">আধুনিক ডিজিটাল জরিপ এবং computerised ব্লুপ্রিন্ট ম্যাপ তৈরি।</p>
                 </div>
-                <h3 class="text-2xl font-black text-white uppercase italic">Growth Engine</h3>
-                <p class="text-sm text-slate-400 mt-2 font-medium">Digital Marketing & SEO</p>
-            </a>
-            
-            <a href="./audit/" class="glass-card rounded-3xl p-8 block scroll-zoom-in" style="transition-delay: 0.2s;">
-                <div class="flex justify-between items-start mb-6">
-                    <i data-lucide="shield-check" class="w-10 h-10 text-rose-400"></i>
-                    <div class="flex gap-2"><span class="text-2xl">🌍</span></div>
+                <!-- Revenue Strategy -->
+                <div class="glass-card p-8 md:p-12 border-t-4 border-yellow-500 animate-slideUp" style="animation-delay: 0.5s;">
+                    <i data-lucide="gavel" class="text-yellow-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-4">Revenue Strategy</h3>
+                    <p class="text-xs text-slate-500 font-bold uppercase leading-relaxed">নামজারি, মিসকেস এবং রেকর্ড সংশোধনের জন্য কারিগরি সহায়তা।</p>
                 </div>
-                <h3 class="text-2xl font-black text-white uppercase italic">Tech Diagnostics</h3>
-                <p class="text-sm text-slate-400 mt-2 font-medium">Website Audit & Debugging</p>
-            </a>
-            
-            <a href="./systems/" class="glass-card rounded-3xl p-8 block scroll-zoom-in" style="transition-delay: 0.3s;">
-                <div class="flex justify-between items-start mb-6">
-                    <i data-lucide="layers" class="w-10 h-10 text-cyan-400"></i>
-                    <div class="flex gap-2"><span class="text-2xl">🌍</span></div>
+                <!-- Forensic Support -->
+                <div class="glass-card p-8 md:p-12 border-t-4 border-rose-500 animate-slideUp" style="animation-delay: 0.7s;">
+                    <i data-lucide="briefcase" class="text-rose-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-4">Legal-Tech Support</h3>
+                    <p class="text-xs text-slate-500 font-bold uppercase leading-relaxed">মামলায় আইনজীবীদের জন্য কারিগরি প্রমাণ ও ডেটা ম্যাট্রিক্স সরবরাহ।</p>
                 </div>
-                <h3 class="text-2xl font-black text-white uppercase italic">Systems Architecture</h3>
-                <p class="text-sm text-slate-400 mt-2 font-medium">Web & Software Development</p>
-            </a>
-            
-            <a href="./bhumitech/" class="glass-card rounded-3xl p-8 block sm:col-span-2 lg:col-span-3 border-emerald-400/20 scroll-zoom-in" style="transition-delay: 0.4s;">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
-                    <div class="flex items-center gap-6">
-                        <i data-lucide="map" class="w-12 h-12 text-green-400 flex-shrink-0"></i>
-                        <div>
-                            <h3 class="text-2xl font-black text-white uppercase italic">360° Bhumitech Solutions</h3>
-                            <p class="text-sm text-slate-400 mt-2 font-medium">Smart Land Intelligence & Geo-Data Analysis</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-3 mt-4 sm:mt-0">
-                        <span class="text-3xl">🇧🇩</span>
-                        <span class="text-3xl">🇲🇾</span>
-                    </div>
-                </div>
-            </a>
-
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 px-4 border-t border-white/10 text-center">
-        <p class="text-[10px] text-slate-600 font-bold uppercase tracking-widest">
-            © 2024 Pixel Perfect IT Solutions | MD Ibrahim Hossain | Global Systems Architect
-        </p>
+    <footer class="py-24 border-t border-white/5">
+        <div class="container mx-auto text-center px-6">
+            <div class="disclaimer-box mb-16 text-left md:text-center italic">
+                <strong class="not-italic">কারিগরি সতর্কতা:</strong> 360° Bhumitech একটি ডাটা অ্যানালাইটিক্স এবং কারিগরি প্রযুক্তি প্রতিষ্ঠান। আমরা কোনো আইনি পরামর্শ বা প্রতিনিধিত্ব করি না। আমাদের রিপোর্টসমূহ শুধুমাত্র আপনার দলিলের কারিগরি ডাটা বিশ্লেষণের ওপর ভিত্তি করে তৈরি। চূড়ান্ত আইনি সিদ্ধান্তের জন্য আপনার আইনজীবীর পরামর্শ নিন।
+            </div>
+            <!-- Contact info and map placeholder here -->
+        </div>
     </footer>
 
     <script>
         lucide.createIcons();
-
-        // SCROLL-TRIGGERED ANIMATION LOGIC
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.2 // Trigger when 20% of the card is visible
-        });
-
-        document.querySelectorAll('.scroll-zoom-in').forEach((el) => {
-            observer.observe(el);
-        });
+        function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('active'); }
     </script>
 </body>
 </html>
