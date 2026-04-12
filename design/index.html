@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
-    <!-- ADVANCED SEO -->
-    <title>Pixel Perfect Design | Elite Print & Digital Production (BD & MY)</title>
-    <meta name="description" content="Global standard print media and digital ad design solutions for enterprises, printing presses, and SMEs in Bangladesh and Malaysia.">
+    <!-- ADVANCED SEO: BD & MY FOCUSED -->
+    <title>Pixel Perfect Design | Elite Print & Digital Media in BD & Malaysia</title>
+    <meta name="description" content="Global standard print media and digital ad design solutions for printing presses, SMEs, schools, and clinics in Bangladesh (Shibchar, Dhaka) and Malaysia.">
+    <meta name="keywords" content="Professional Graphic Design Malaysia, Print Media Design Bangladesh, Digital Ad Design Kuala Lumpur, Banner Design Shibchar, UI/UX Design BD, MD Ibrahim Hossain">
     <link rel="canonical" href="https://pixelperfectits.github.io/design/">
+
+    <!-- JSON-LD SCHEMA FOR BD & MY -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Pixel Perfect Design Studio",
+      "image": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "description": "Premium Print and Digital Visual Production for brands in Bangladesh and Malaysia.",
+      "telephone": "+8801715354960",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kathalbari",
+        "addressLocality": "Shibchar",
+        "addressRegion": "Madaripur",
+        "addressCountry": "BD"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Bangladesh" },
+        { "@type": "Country", "name": "Malaysia" }
+      ]
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -25,20 +49,22 @@
         #mobile-menu { transition: all 0.4s ease-in-out; transform: translateY(-100%); opacity: 0; z-index: 100; visibility: hidden; }
         #mobile-menu.active { transform: translateY(0); opacity: 1; visibility: visible; display: flex !important; }
         p, li { line-height: 1.8; letter-spacing: 0.01em; }
+        
+        .animated-card { opacity: 0; transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
     </style>
 </head>
 <body class="text-slate-300 bg-grid text-left">
 
     <!-- TOP GLOBAL BAR -->
-    <div class="w-full bg-[#FBBF24] text-black text-[9px] md:text-[11px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[60]">
-        Elite Programmatic Design Studio • Serving Malaysia & Bangladesh
+    <div class="w-full bg-[#FBBF24] text-black text-[9px] md:text-[11px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[60] shadow-xl">
+        Elite Visual Production • Serving Malaysia (🇲🇾) & Bangladesh (🇧🇩)
     </div>
 
     <!-- NAVIGATION -->
-    <header class="fixed w-full z-50 bg-black/70 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[32px]">
+    <header class="fixed w-full z-50 bg-black/70 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[34px]">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
             <div class="flex items-center gap-4">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_#FBBF24] rounded-xl">
+                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Pixel Perfect Design" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_#FBBF24] rounded-xl">
                 <div class="mt-1">
                     <span class="text-xl md:text-2xl font-black text-white tracking-tighter block leading-none italic uppercase">Pixel Perfect</span>
                     <span class="text-[8px] md:text-[10px] font-bold text-[#FBBF24] tracking-[0.3em] uppercase italic">Visual Production</span>
@@ -52,7 +78,7 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/8801715354960" class="hidden md:flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg hover:scale-105 transition-all">
+                <a href="https://wa.me/8801715354960" class="hidden md:flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:scale-105 transition-all">
                     <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
                 </a>
                 <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()">
@@ -70,22 +96,20 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (SUPREME TEXT) -->
+    <!-- HERO SECTION -->
     <section class="relative pt-40 pb-32 px-6 text-center">
         <div class="container mx-auto">
-            <span class="inline-block px-6 py-2 rounded-full bg-[#FBBF24]/10 border border-[#FBBF24]/20 text-[#FBBF24] text-[10px] font-black uppercase tracking-[0.4em] mb-10 italic">Elite Programmatic Design</span>
+            <span class="inline-block px-6 py-2 rounded-full bg-[#FBBF24]/10 border border-[#FBBF24]/20 text-[#FBBF24] text-[10px] font-black uppercase tracking-[0.4em] mb-10 italic">Design Partner for MY & BD Brands</span>
             <h1 class="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-10 uppercase italic tracking-tighter">
                 Visual <br><span class="neon-text-yellow">Perfection</span>
             </h1>
-            <p class="text-slate-300 max-w-4xl mx-auto text-lg md:text-2xl leading-relaxed mb-6 font-medium italic">
-                We deliver world-class, production-ready designs for Print & Digital Media using advanced programmatic frameworks. No design is too complex; we engineer visuals with mathematical precision.
+            <p class="text-slate-400 max-w-3xl mx-auto text-lg md:text-2xl leading-relaxed mb-8 font-medium">
+                We deliver world-class, production-ready designs for Print & Digital Media in Bangladesh and Malaysia. 
+                <br><strong class="text-white mt-4 block font-normal">আমরা বাংলাদেশ এবং মালয়েশিয়ার প্রিন্টিং প্রেস ও ব্যবসায়ীদের জন্য <span class="text-[#FBBF24] font-black italic">১০০% প্রিন্ট-রেডি (CMYK)</span> এবং হাই-রেজোলিউশন ডিজাইন তৈরি করি।</strong>
             </p>
-            <p class="text-[#FBBF24] max-w-4xl mx-auto text-xl md:text-3xl leading-relaxed mb-12 font-black italic">
-                আমরা কোডিং এবং আধুনিক সিস্টেম ব্যবহার করে প্রিন্ট ও ডিজিটাল মিডিয়ার জন্য হাই-কোয়ালিটি ডিজাইন তৈরি করি।
-            </p>
-            <p class="text-xs md:text-sm font-black text-slate-500 uppercase tracking-[0.4em] mb-16">Mathematical Precision & Production-Ready.</p>
+            <p class="text-xs md:text-sm font-bold text-yellow-400 uppercase tracking-[0.3em] italic mb-16">High-Fidelity Vector & Digital Assets.</p>
             
-            <a href="https://wa.me/8801715354960" class="bg-[#FBBF24] text-black px-12 md:px-16 py-5 md:py-6 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_0_60px_rgba(251,191,36,0.4)] hover:bg-white transition-all transform hover:-rotate-2 inline-block">Start Design Project</a>
+            <a href="https://wa.me/8801715354960" class="bg-[#FBBF24] text-black px-12 md:px-16 py-5 md:py-6 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_0_60px_rgba(251,191,36,0.4)] hover:bg-white transition-all transform hover:rotate-2 inline-block">Start Design Project</a>
         </div>
     </section>
 
@@ -101,11 +125,11 @@
 
             <div class="grid lg:grid-cols-2 gap-16 text-left">
                 <!-- Print Media -->
-                <div id="print" class="glass-card p-10 md:p-14 border-t-4 border-[#FBBF24]">
+                <div id="print" class="glass-card p-10 md:p-14 border-t-4 border-[#FBBF24] animated-card">
                     <i data-lucide="printer" class="text-[#FBBF24] mb-8 w-12 h-12"></i>
-                    <h3 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-[#FBBF24] decoration-4 underline-offset-12">Print Media Production</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-white mb-8 uppercase italic underline decoration-[#FBBF24] decoration-4 underline-offset-12">Print Media Production</h3>
                     <p class="text-sm md:text-base text-slate-300 leading-relaxed mb-10 italic font-medium">
-                        For Printing Presses, Local Businesses, Schools & Clinics in Malaysia and Bangladesh. Our print designs are mathematically aligned and rendered in flawless CMYK precision.
+                        For Printing Presses, Local Businesses, Schools & Clinics in Malaysia and Bangladesh. Our print designs are engineered for flawless CMYK precision.
                     </p>
                     <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
                         <li class="flex items-center gap-4"><i data-lucide="star" class="w-5 h-5 text-[#FBBF24]"></i> Corporate Identity (ID & Business Cards)</li>
@@ -116,11 +140,11 @@
                     </ul>
                 </div>
                 <!-- Digital Media -->
-                <div id="digital" class="glass-card p-10 md:p-14 border-t-4 border-[#FBBF24]">
+                <div id="digital" class="glass-card p-10 md:p-14 border-t-4 border-[#FBBF24] animated-card">
                     <i data-lucide="monitor-smartphone" class="text-[#FBBF24] mb-8 w-12 h-12"></i>
-                    <h3 class="text-3xl font-black text-white mb-8 uppercase italic underline decoration-[#FBBF24] decoration-4 underline-offset-12">Digital Media Assets</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-white mb-8 uppercase italic underline decoration-[#FBBF24] decoration-4 underline-offset-12">Digital Media Assets</h3>
                     <p class="text-sm md:text-base text-slate-300 leading-relaxed mb-10 italic font-medium">
-                        For Online Sellers, YouTubers, and Global Brands seeking a dominant visual presence. We craft scroll-stopping digital assets utilizing advanced UI/UX principles.
+                        For Online Sellers, YouTubers, and Global Brands in KL and Dhaka seeking a dominant visual presence. We craft scroll-stopping digital assets.
                     </p>
                     <ul class="text-sm md:text-lg space-y-6 font-bold text-slate-400 uppercase tracking-widest">
                         <li class="flex items-center gap-4"><i data-lucide="zap" class="w-5 h-5 text-[#FBBF24]"></i> High-Impact Social Media Ad Graphics</li>
@@ -138,7 +162,7 @@
     <footer class="py-32 border-t border-white/5 text-center relative overflow-hidden px-6">
         <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-10 tracking-tighter">Ready for <br><span class="neon-text-yellow">Visual Dominance?</span></h3>
         <p class="text-slate-400 mb-16 text-xl md:text-2xl italic max-w-4xl mx-auto font-medium leading-relaxed">
-            Contact us today for world-class design solutions tailored for your business.
+            Contact us today for world-class design solutions tailored for your business in Bangladesh or Malaysia.
             <br><strong class="text-white mt-4 block">প্রিন্টিং প্রেস, স্কুল, ক্লিনিক বা যেকোনো ব্যবসার জন্য বিশ্বমানের ডিজাইন পেতে এখনই যোগাযোগ করুন।</strong>
         </p>
         
@@ -149,6 +173,9 @@
         <div class="flex flex-col md:flex-row justify-center gap-12 text-[10px] font-bold text-slate-600 uppercase tracking-widest text-center items-center italic">
             <span>Malaysia & Bangladesh</span>
             <span class="text-white font-black">Engineered to Perfection.</span>
+            <a href="https://wa.me/8801715354960" class="flex items-center gap-3 bg-[#25D366] text-white px-8 py-3 rounded-full font-black hover:scale-105 transition-all shadow-xl italic">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Support
+            </a>
         </div>
     </footer>
 
@@ -165,6 +192,21 @@
             }
             lucide.createIcons();
         }
+
+        // Animation Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateX(0)";
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animated-card').forEach((card, index) => {
+            card.style.transform = index % 2 === 0 ? "translateX(-40px)" : "translateX(40px)";
+            observer.observe(card);
+        });
     </script>
 </body>
 </html>
