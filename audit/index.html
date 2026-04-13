@@ -4,188 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
+    <title>Strategic Audit | Pixel Perfect IT | Forensic System Diagnostics (BD-MY)</title>
     
-    <!-- ADVANCED SEO: AUDIT CENTER FOCUSED -->
-    <title>Pixel Perfect Audit Center | System Diagnostics & Cybersecurity</title>
-    <meta name="description" content="Expert Technical Audits, Core Web Vitals Optimization, and Security Vulnerability Scans for businesses in Bangladesh and worldwide. Forensic system analysis.">
-    <meta name="keywords" content="Website Audit Bangladesh, Core Web Vitals Fix, Security Scan Malaysia, Revenue Leakage Analysis, Penetration Testing, MD Ibrahim Hossain">
-    <meta name="author" content="MD Ibrahim Hossain - Chief Architect">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <!-- ADVANCED SEO: AUDIT & SECURITY FOCUS -->
+    <meta name="description" content="Expert Technical Audits and Cybersecurity Scans for global platforms. Core Web Vitals optimization and revenue leakage analysis for businesses in Bangladesh and Malaysia.">
+    <meta name="keywords" content="Website Audit Bangladesh, Security Vulnerability Scan, Core Web Vitals Malaysia, Technical SEO Audit KL, Revenue Leakage Analysis, MD Ibrahim Hossain">
+    <meta name="author" content="MD Ibrahim Hossain">
     <link rel="canonical" href="https://pixelperfectits.github.io/audit/">
 
-    <!-- OPEN GRAPH / SOCIAL -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Pixel Perfect Audit Center | Security & Performance Diagnostics">
-    <meta property="og:description" content="Deep Web Infrastructure Diagnostics, Vulnerability Scans, and Core Web Vitals Fixes for global platforms. Eliminate revenue leaks.">
-    <meta property="og:url" content="https://pixelperfectits.github.io/audit/">
-    <meta property="og:site_name" content="Pixel Perfect IT Solutions">
-    <meta property="og:image" content="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png">
-
-    <!-- PERFORMANCE INFRASTRUCTURE -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- ASSETS (LUCIDE STABILITY PATCH) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: { inter: ['Inter', 'sans-serif'], bengali:['Hind Siliguri', 'sans-serif'] },
-                    colors: { neonCyan: '#00F2FF', emeraldHQ: '#10B981', darkGrid: '#020617' }
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        bengali: ['Hind Siliguri', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
+                    colors: {
+                        neonCyan: '#00F2FF',
+                        emeraldHQ: '#10B981',
+                        auditRose: '#F43F5E'
+                    }
                 }
             }
         }
     </script>
 
     <style>
-        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; background: #000; overflow-x: hidden; scroll-behavior: smooth; padding-top: 100px; }
-        .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px); background-size: 40px 40px; background-attachment: fixed; }
-        .neon-text-cyan { text-shadow: 0 0 30px rgba(0, 242, 255, 0.8); color: #00F2FF; }
-        .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 24px; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform; }
-        .glass-card:hover { transform: translateY(-10px); border-color: rgba(0, 242, 255, 0.5); box-shadow: 0 40px 80px -15px rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.04); }
-        .reveal-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal-up.active { opacity: 1; transform: translateY(0); }
-        #mobile-menu { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(-100%); opacity: 0; visibility: hidden; }
-        #mobile-menu.active { transform: translateY(0); opacity: 1; visibility: visible; display: flex !important; }
+        body { background-color: #000; overflow-x: hidden; scroll-behavior: smooth; }
+        .bg-grid { background-image: radial-gradient(rgba(244, 63, 94, 0.1) 1px, transparent 1px); background-size: 40px 40px; }
+        
+        .glass-panel { 
+            background: rgba(255, 255, 255, 0.01); 
+            backdrop-filter: blur(25px); 
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-panel:hover { 
+            border-color: #F43F5E; 
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px -15px rgba(244, 63, 94, 0.2); 
+        }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        .neon-glow-rose { text-shadow: 0 0 20px rgba(244, 63, 94, 0.6); }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Pixel Perfect Audit Center",
-      "image": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
-      "description": "Expert Technical Audits and Infrastructure Debugging for enterprises.",
-      "telephone": "+8801715354960",
-      "address": { "@type": "PostalAddress", "streetAddress": "Kathalbari", "addressLocality": "Shibchar", "addressRegion": "Madaripur", "addressCountry": "BD" },
-      "areaServed":[{ "@type": "Country", "name": "Bangladesh" }, { "@type": "Country", "name": "Malaysia" }]
-    }
-    </script>
 </head>
+<body class="font-inter text-slate-300 bg-grid antialiased">
 
-<body class="text-slate-300 bg-grid antialiased">
-
-    <!-- TOP GLOBAL BAR -->
-    <div class="w-full bg-neonCyan text-black text-[9px] md:text-[11px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[60] shadow-[0_0_15px_rgba(0,242,255,0.5)]">
-        Deep System Diagnostics • Cybersecurity • Serving Malaysia (🇲🇾) & Bangladesh (🇧🇩)
+    <!-- GLOBAL HUD -->
+    <div class="w-full bg-auditRose text-white text-[9px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[100] shadow-lg">
+        Audit Node: Forensic Diagnostics • Serving KL 🇲🇾 & Dhaka 🇧🇩
     </div>
 
-    <!-- HEADER -->
-    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[34px]">
+    <!-- NAVIGATION -->
+    <header class="fixed w-full z-[90] bg-black/70 backdrop-blur-2xl border-b border-white/5 top-[28px] md:top-[34px]">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="flex items-center gap-4 group" aria-label="HQ Command">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(0,242,255,0.4)] rounded-xl">
-                <div>
-                    <span class="text-xl md:text-2xl font-black text-white tracking-tighter block leading-none italic uppercase">Pixel Perfect</span>
-                    <span class="text-[8px] md:text-[10px] font-bold text-neonCyan tracking-[0.3em] uppercase italic">Strategic Audit Center</span>
-                </div>
-            </a>
-            
-            <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400 items-center">
-                <a href="#diagnostics" class="hover:text-neonCyan transition">Diagnostics</a>
-                <a href="#security" class="hover:text-neonCyan transition">Security</a>
-                <a href="../" class="text-white border border-white/20 px-5 py-2 rounded-full hover:border-neonCyan hover:text-neonCyan transition">Main Hub</a>
-            </div>
-
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/8801715354960" target="_blank" class="hidden md:flex items-center gap-2 bg-[#F43F5E] text-white px-5 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg hover:bg-neonCyan hover:text-black transition-all">
-                    <i data-lucide="shield-alert" class="w-4 h-4"></i> Emergency Audit
-                </a>
-                <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()">
-                    <i data-lucide="menu" id="menu-icon"></i>
-                </button>
+                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(244,63,94,0.3)] rounded-xl">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black text-white uppercase italic tracking-tighter leading-none">Pixel Perfect</h1>
+                    <p class="text-[8px] md:text-[10px] font-bold text-auditRose uppercase tracking-[0.3em]">Audit Center</p>
+                </div>
             </div>
+            <a href="/" class="text-white hover:text-auditRose transition-colors border border-white/10 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest">
+                Main Hub
+            </a>
         </nav>
-
-        <div id="mobile-menu" class="hidden fixed inset-0 top-[60px] bg-black/98 backdrop-blur-3xl flex-col items-center justify-center gap-10 p-10 z-40 lg:hidden text-center">
-            <a href="#diagnostics" class="text-xl font-black uppercase text-slate-300 italic" onclick="toggleMobileMenu()">Diagnostics</a>
-            <a href="#security" class="text-xl font-black uppercase text-slate-300 italic" onclick="toggleMobileMenu()">Security</a>
-            <a href="../" class="text-neonCyan font-black uppercase tracking-[0.2em] border border-neonCyan/20 px-8 py-4 rounded-2xl w-full">Return Hub</a>
-        </div>
     </header>
 
-    <main>
+    <main class="pt-32 md:pt-48">
         <!-- HERO -->
-        <section class="relative pt-40 pb-32 px-6 text-center overflow-hidden">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-neonCyan/10 rounded-full blur-[150px] -z-10"></div>
-            <div class="container mx-auto reveal-up">
-                <span class="inline-block px-6 py-2 rounded-full bg-neonCyan/10 border border-neonCyan/20 text-neonCyan text-[10px] font-black uppercase tracking-[0.4em] mb-10 italic shadow-[0_0_15px_rgba(0,242,255,0.2)]">Forensic Intelligence</span>
-                <h1 class="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-10 uppercase italic tracking-tighter">Technical <br><span class="neon-text-cyan">Diagnostics</span></h1>
-                <div class="max-w-3xl mx-auto mb-16">
-                    <p class="text-slate-400 text-lg md:text-2xl leading-relaxed font-medium">We uncover hidden infrastructure errors and eliminate revenue leaks.</p>
-                    <p lang="bn" class="text-white mt-4 text-base md:text-xl font-bengali leading-loose">আপনার ওয়েবসাইটের গভীর কারিগরি অডিট এবং সিকিউরিটি চেকআপের মাধ্যমে নিশ্চিত করুন সর্বোচ্চ নিরাপত্তা।</p>
+        <section class="container mx-auto px-6 text-center mb-32">
+            <div class="max-w-4xl mx-auto">
+                <span class="inline-block px-4 py-1 rounded-full bg-auditRose/10 border border-auditRose/20 text-auditRose text-[10px] font-black uppercase tracking-widest mb-10 reveal">
+                    Forensic Intelligence & Security
+                </span>
+                <h2 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-12 uppercase italic tracking-tighter reveal">
+                    Technical <br> <span class="text-auditRose neon-glow-rose">Diagnostics.</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 text-left reveal">
+                    <p class="text-slate-400 text-lg md:text-xl font-medium leading-relaxed">
+                        We dive deep into your web infrastructure to uncover hidden errors and revenue leaks that traditional agencies miss.
+                    </p>
+                    <p class="font-bengali text-slate-300 text-lg leading-relaxed border-l-2 border-auditRose pl-6">
+                        আপনার ওয়েবসাইট কি কাস্টমার হারাচ্ছে? আমরা ওয়েবসাইটের গভীরে গিয়ে এমন সব <span class="text-white font-bold italic">কারিগরি এরর</span> শনাক্ত করি যা আপনার ব্যবসায়িক আয় কমিয়ে দিচ্ছে।
+                    </p>
                 </div>
-                <a href="https://wa.me/8801715354960" target="_blank" class="bg-neonCyan text-black px-12 md:px-16 py-5 rounded-2xl font-black text-xs md:text-sm uppercase tracking-[0.3em] shadow-[0_0_50px_rgba(0,242,255,0.3)] hover:bg-white transition-all transform hover:scale-105 inline-block">Analyze My Site Now</a>
             </div>
         </section>
 
-        <!-- AUDIT SERVICES -->
-        <section class="py-24 bg-white/[0.01]">
-            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10">
-                <article id="diagnostics" class="glass-card p-8 md:p-14 border-t-4 border-neonCyan reveal-up">
-                    <div class="bg-neonCyan/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border border-neonCyan/20"><i data-lucide="gauge" class="text-neonCyan w-8 h-8"></i></div>
-                    <h3 class="text-2xl md:text-3xl font-black text-white mb-6 uppercase italic underline decoration-neonCyan decoration-4 underline-offset-8">Performance Audit</h3>
-                    <ul class="text-xs md:text-sm space-y-5 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-start gap-4"><i data-lucide="zap" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5"></i> Core Web Vitals (LCP/FID/CLS) Fix</li>
-                        <li class="flex items-start gap-4"><i data-lucide="terminal" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5"></i> Code Debugging & Console Logic Audit</li>
-                        <li class="flex items-start gap-4"><i data-lucide="search" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5"></i> UX Friction & Revenue Leakage Analysis</li>
-                    </ul>
-                </article>
+        <!-- SERVICES (BENTO GRID) -->
+        <section class="container mx-auto px-6 mb-40">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Performance Audit -->
+                <div class="glass-panel rounded-[40px] p-8 md:p-12 reveal">
+                    <div class="flex flex-col h-full">
+                        <div class="w-16 h-16 bg-auditRose/10 rounded-2xl flex items-center justify-center border border-auditRose/20 mb-8">
+                            <i data-lucide="gauge" class="text-auditRose w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-white uppercase italic mb-6">Performance <br>Audit</h3>
+                        <p class="text-slate-500 text-sm font-bold uppercase tracking-widest mb-10">Optimization for Core Web Vitals.</p>
+                        
+                        <ul class="space-y-6 font-bengali">
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="zap" class="text-auditRose w-5 h-5 shrink-0 mt-1"></i>
+                                <span><strong class="text-white">স্পিড অপ্টিমাইজেশন:</strong> এলসিপি (LCP) এবং সিএলএস (CLS) এরর ফিক্স করে সাইট সুপার-ফাস্ট করা।</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="terminal" class="text-auditRose w-5 h-5 shrink-0 mt-1"></i>
+                                <span><strong class="text-white">কোড ডিবাগিং:</strong> জাভাস্ক্রিপ্ট এবং সিএসএস এর ব্লকিং ইস্যু শনাক্তকরণ ও সমাধান।</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="search" class="text-auditRose w-5 h-5 shrink-0 mt-1"></i>
+                                <span><strong class="text-white">রেভিনিউ লিকেজ:</strong> কেন কাস্টমার চেকআউট পেজ থেকে ফিরে যাচ্ছে তার টেকনিক্যাল বিশ্লেষণ।</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <article id="security" class="glass-card p-8 md:p-14 border-t-4 border-emeraldHQ reveal-up" style="transition-delay: 100ms;">
-                    <div class="bg-emeraldHQ/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border border-emeraldHQ/20"><i data-lucide="shield-check" class="text-emeraldHQ w-8 h-8"></i></div>
-                    <h3 class="text-2xl md:text-3xl font-black text-white mb-6 uppercase italic underline decoration-emeraldHQ decoration-4 underline-offset-8">Cybersecurity Scan</h3>
-                    <ul class="text-xs md:text-sm space-y-5 font-bold text-slate-400 uppercase tracking-widest">
-                        <li class="flex items-start gap-4"><i data-lucide="lock" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5"></i> Vulnerability Audit & Threat Detection</li>
-                        <li class="flex items-start gap-4"><i data-lucide="database" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5"></i> Database Integrity & Malware Injection Scan</li>
-                        <li class="flex items-start gap-4"><i data-lucide="server" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5"></i> Server Hardening & SSL Security Verification</li>
-                    </ul>
-                </article>
+                <!-- Cybersecurity Scan -->
+                <div class="glass-panel rounded-[40px] p-8 md:p-12 reveal">
+                    <div class="flex flex-col h-full">
+                        <div class="w-16 h-16 bg-neonCyan/10 rounded-2xl flex items-center justify-center border border-neonCyan/20 mb-8">
+                            <i data-lucide="shield-check" class="text-neonCyan w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-white uppercase italic mb-6">Cybersecurity <br>Scan</h3>
+                        <p class="text-slate-500 text-sm font-bold uppercase tracking-widest mb-10">Immutable Security Hardening.</p>
+                        
+                        <ul class="space-y-6 font-bengali">
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="lock" class="text-neonCyan w-5 h-5 shrink-0 mt-1"></i>
+                                <span><strong class="text-white">ভালনারেবিলিটি অডিট:</strong> হ্যাকারদের প্রবেশের সম্ভাব্য পথগুলো আগেভাগেই বন্ধ করা।</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="alert-triangle" class="text-neonCyan w-5 h-5 shrink-0 mt-1"></i>
+                                <span><strong class="text-white">মালওয়্যার ডিটেকশন:</strong> সাইটে থাকা ক্ষতিকর ইনজেকশন কোড এবং ব্যাকডোর শনাক্তকরণ।</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="server" class="text-neonCyan w-5 h-5 shrink-0 mt-1"></i>
+                                <span><strong class="text-white">এসএসএল ও সার্ভার:</strong> সার্ভার কনফিগারেশন এবং এসএসএল পলিসি হার্ডেনিং।</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AUDIT LOGIC (TERMINAL STYLE) -->
+        <section class="bg-darkBg border-y border-white/5 py-24 px-6 mb-40">
+            <div class="container mx-auto max-w-4xl">
+                <div class="bg-[#020617] border border-white/10 rounded-2xl p-6 md:p-10 font-mono shadow-2xl reveal">
+                    <div class="flex gap-2 mb-6">
+                        <div class="w-3 h-3 rounded-full bg-auditRose"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-emeraldHQ"></div>
+                    </div>
+                    <div class="text-auditRose text-sm md:text-base space-y-3">
+                        <p class="opacity-50">> Initializing Forensic Scan...</p>
+                        <p class="text-white">> Analyzing Mainframe Architecture [BD/MY Nodes]</p>
+                        <p class="text-emeraldHQ">> 0 Critical Vulnerabilities Found in Pixel Perfect Core</p>
+                        <p class="text-white">> Performance Score: 100/100</p>
+                        <p class="opacity-50">> Ready for Deployment.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="py-24 border-t border-white/5 text-center px-6 bg-black/50">
-        <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter reveal-up">Secure Your <br><span class="neon-text-cyan">Digital Assets</span></h3>
-        <p lang="bn" class="text-white text-base md:text-xl font-bengali leading-loose mb-12 reveal-up">হ্যাকিং থেকে বাঁচতে এবং ওয়েবসাইটের গতি বাড়িয়ে বিক্রি বাড়াতে আজই আমাদের অডিট নিন।</p>
-        <div class="flex justify-center mb-10" aria-hidden="true"><div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center font-black text-neonCyan text-xl border border-white/10 italic">P</div></div>
-        <p class="text-[9px] md:text-[11px] font-black text-slate-500 tracking-[0.8em] uppercase mb-10">Pixel Perfect Strategic Audit Center</p>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest italic">
-            <span>MY 🇲🇾 & BD 🇧🇩 Operations</span>
-            <!-- EMAIL WITH UNIQUE AUDIT CENTER IDENTIFIER -->
-            <a href="mailto:pixelperfect.its@gmail.com?subject=Inquiry from Technical Audit Center&body=Hello Architect, I am requesting a deep technical diagnostic audit for my web infrastructure. I am concerned about security and performance leaks..." class="flex items-center gap-3 border border-neonCyan/30 px-6 py-2.5 rounded-full text-neonCyan hover:bg-neonCyan hover:text-black transition-all">
-                <i data-lucide="mail" class="w-4 h-4"></i> Audit Inquiry
+    <!-- FOOTER & CONTACT (STRATEGIC EMAIL) -->
+    <footer class="py-24 px-6 border-t border-white/10 bg-black text-center">
+        <div class="container mx-auto">
+            <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter reveal">
+                Secure Your <br> <span class="text-auditRose">Digital Assets</span>
+            </h3>
+            <p class="text-slate-400 text-lg md:text-xl font-medium mb-12 max-w-2xl mx-auto reveal font-bengali">
+                আপনার ওয়েবসাইটের গতি বাড়িয়ে বিক্রি বাড়াতে এবং হ্যাকিং থেকে বাঁচতে আজই আমাদের এক্সপার্ট অডিট নিন।
+            </p>
+            
+            <!-- UNIQUE EMAIL LINK FOR AUDIT SOURCE TRACKING -->
+            <a href="mailto:pixelperfect.its@gmail.com?subject=Strategic Audit Inquiry: Diagnostics & Security BD-MY&body=Hello Chief Architect, I am requesting a deep technical diagnostic audit for my infrastructure..." 
+               class="inline-flex items-center gap-4 bg-auditRose text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all transform hover:-rotate-2 reveal">
+                <i data-lucide="shield-alert"></i> Initialize Diagnostic Scan
             </a>
+
+            <div class="mt-32 opacity-20">
+                <div class="w-12 h-px bg-white mx-auto mb-8"></div>
+                <p class="text-[8px] font-bold uppercase tracking-[1em]">Pixel Perfect IT Solutions | Strategic Audit Node</p>
+            </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('menu-icon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) {
-                icon.setAttribute('data-lucide', 'x');
-                document.body.style.overflow = 'hidden';
-            } else {
-                icon.setAttribute('data-lucide', 'menu');
-                document.body.style.overflow = '';
-            }
-            lucide.createIcons();
-        }
 
+        // Scroll Animation Logic
         document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); } });
-            }, { threshold: 0.15 });
-            document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         });
     </script>
 </body>
