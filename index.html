@@ -4,44 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
-    <title>Pixel Perfect IT | Global Systems Engineering Headquarters</title>
+    <title>Pixel Perfect IT | Global Systems Engineering Hub (BD 🇧🇩 - MY 🇲🇾)</title>
     
-    <!-- ADVANCED SEO & DISCOVERABILITY -->
-    <meta name="description" content="The Central Command Hub for Pixel Perfect IT Solutions. A global systems engineering agency serving digital architecture and smart land intelligence across Bangladesh and Malaysia.">
-    <meta name="keywords" content="Systems Architecture, Technical Audit, Digital Marketing, SEO, Web Development, Geo-Data Analysis, Smart Land Intelligence, MD Ibrahim Hossain">
-    <meta name="author" content="MD Ibrahim Hossain - Chief Architect">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <!-- ADVANCED SEO: THE BD-MY TECH BRIDGE -->
+    <meta name="description" content="Pixel Perfect IT Solutions is the premier technological bridge between Bangladesh and Malaysia. Specializing in Systems Engineering, Technical Audits, and Smart Land Intelligence. Led by Chief Architect MD Ibrahim Hossain.">
+    <meta name="keywords" content="Systems Engineering Malaysia, Tech Solutions Bangladesh, Digital Bridge BD MY, Technical Audit, Geo-Spatial Forensics, MD Ibrahim Hossain, Pixel Perfect IT">
+    <meta name="author" content="MD Ibrahim Hossain">
     <link rel="canonical" href="https://pixelperfectits.github.io/">
 
-    <!-- OPEN GRAPH (OG) / SOCIAL MEDIA METADATA -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Pixel Perfect IT | Global Systems Engineering Headquarters">
-    <meta property="og:description" content="Global systems engineering, algorithmic growth, and smart land intelligence (360° Bhumitech) across Bangladesh and Malaysia.">
-    <meta property="og:url" content="https://pixelperfectits.github.io/">
-    <meta property="og:site_name" content="Pixel Perfect IT Solutions">
-    <meta property="og:image" content="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png">
-    
-    <!-- PERFORMANCE OPTIMIZATION -->
+    <!-- FONTS & ASSETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <!-- TAILWIND & LUCIDE (FIXED: REMOVED DEFER FOR ICON STABILITY) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: { inter: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
-                    colors: { neonCyan: '#00F2FF', emeraldHQ: '#10B981', darkGrid: '#020617' },
-                    animation: { 'typewriter': 'typing 3s steps(40, end)', 'blink': 'blink-caret .75s step-end infinite' },
-                    keyframes: {
-                        typing: { '0%': { width: '0' }, '100%': { width: '100%' } },
-                        'blink-caret': { '0%, 100%': { borderColor: 'transparent' }, '50%': { borderColor: '#00F2FF' } }
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        bengali: ['Hind Siliguri', 'sans-serif']
+                    },
+                    colors: {
+                        neonCyan: '#00F2FF',
+                        emeraldHQ: '#10B981',
+                        darkBg: '#000000',
+                        glass: 'rgba(255, 255, 255, 0.03)'
                     }
                 }
             }
@@ -49,155 +41,222 @@
     </script>
 
     <style>
-        body { background: #000; overflow-x: hidden; scroll-behavior: smooth; }
-        .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.15) 1px, transparent 1px); background-size: 40px 40px; background-attachment: fixed; }
-        .neon-text-cyan { color: #00F2FF; text-shadow: 0 0 30px rgba(0, 242, 255, 0.8); }
-        .typing-effect { overflow: hidden; white-space: nowrap; border-right: 2px solid #00F2FF; }
-        .emoji-flag { font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif; }
-        .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform; }
-        .glass-card:hover { transform: translateY(-8px) scale(1.01); border-color: rgba(0, 242, 255, 0.5); box-shadow: 0 30px 60px -15px rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.04); }
-        .reveal-element { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal-element.active { opacity: 1; transform: translateY(0); }
+        body { background-color: #000; overflow-x: hidden; scroll-behavior: smooth; }
+        .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.15) 1px, transparent 1px); background-size: 30px 30px; }
+        
+        /* Fixed Mobile Structural Break */
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.02); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .glass-card:hover { 
+            border-color: #00F2FF; 
+            transform: translateY(-5px); 
+            box-shadow: 0 20px 40px -10px rgba(0, 242, 255, 0.2); 
+        }
+
+        /* Animation Keyframes */
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        .typing-cursor::after { content: '|'; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Ensuring high-end rendering on mobile */
+        @media (max-width: 640px) {
+            .hero-text { font-size: 2.8rem !important; line-height: 1.1 !important; }
+        }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Pixel Perfect IT Solutions",
-      "url": "https://pixelperfectits.github.io/",
-      "logo": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
-      "founder": { "@type": "Person", "name": "MD Ibrahim Hossain", "jobTitle": "Chief Architect" },
-      "contactPoint": { "@type": "ContactPoint", "telephone": "+8801715354960", "contactType": "Technical Support" }
-    }
-    </script>
 </head>
-
 <body class="font-inter text-slate-300 bg-grid antialiased">
 
-    <!-- GLOBAL HUD -->
-    <div role="banner" class="w-full bg-neonCyan text-black text-[10px] md:text-xs font-black uppercase tracking-[0.5em] py-2.5 text-center fixed top-0 z-[70] shadow-[0_0_20px_#00F2FF]">
-        Global Headquarters • Active Nodes: BD 🇧🇩 | MY 🇲🇾
+    <!-- GLOBAL HUD (FIXED TOP) -->
+    <div role="banner" class="w-full bg-neonCyan text-black text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] py-2 text-center fixed top-0 z-[100] shadow-[0_0_20px_rgba(0,242,255,0.4)]">
+        Technological Bridge: Dhaka 🇧🇩 <span class="mx-2 opacity-50">||</span> Kuala Lumpur 🇲🇾
     </div>
 
     <!-- NAVIGATION -->
-    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-2xl border-b border-neonCyan/20 top-[32px] md:top-[38px]" id="main-header">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="flex items-center gap-4 md:gap-5 group" aria-label="Main Hub Home">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="HQ Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-xl shadow-[0_0_20px_rgba(0,242,255,0.4)]">
-                <div>
-                    <h1 class="text-2xl md:text-3xl font-black text-white uppercase italic tracking-tighter leading-none">Pixel Perfect</h1>
-                    <p class="text-[9px] md:text-[11px] font-black text-neonCyan uppercase tracking-[0.4em] mt-1">Systems Headquarters</p>
+    <header class="fixed w-full z-[90] bg-black/60 backdrop-blur-xl border-b border-white/5 top-[28px] md:top-[34px]">
+        <nav class="container mx-auto px-5 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neonCyan rounded-lg flex items-center justify-center shadow-[0_0_15px_#00F2FF]">
+                    <i data-lucide="cpu" class="text-black w-6 h-6"></i>
                 </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black text-white uppercase italic tracking-tighter leading-none">Pixel Perfect</h1>
+                    <p class="text-[7px] md:text-[9px] font-bold text-neonCyan uppercase tracking-[0.3em]">Systems Headquarters</p>
+                </div>
+            </div>
+            <!-- EMAIL STRATEGY INTEGRATED -->
+            <a href="mailto:pixelperfect.its@gmail.com?subject=Strategic Inquiry - Global Hub&body=Hello Architect, I am reaching out from the HQ portal to discuss..." 
+               class="bg-white text-black px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-neonCyan transition-all flex items-center gap-2">
+                <i data-lucide="mail" class="w-3 h-3"></i> Contact
             </a>
-            <a href="https://wa.me/8801715354960" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-neonCyan transition-all flex items-center gap-2">
-                <i data-lucide="power" class="w-4 h-4"></i> Initialize Contact
-            </a>
-        </div>
+        </nav>
     </header>
 
-    <main>
-        <!-- HERO -->
-        <section class="relative pt-48 pb-24 md:pb-32 px-6">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-neonCyan/10 rounded-full blur-[100px] -z-10"></div>
-            <div class="container mx-auto max-w-5xl reveal-element">
-                <div class="bg-darkGrid border border-neonCyan/30 rounded-2xl p-6 md:p-10 shadow-[0_0_50px_rgba(0,242,255,0.15)] mb-16 font-mono">
-                    <div class="flex gap-2 mb-6">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                    </div>
-                    <div class="text-neonCyan text-sm md:text-base space-y-2">
-                        <p class="opacity-70">> Booting Mainframe...</p>
-                        <p class="opacity-70">> Node Status: Bangladesh [ONLINE], Malaysia [ONLINE]</p>
-                        <p class="text-white mt-4">> Systems Status: <span class="text-emeraldHQ font-bold">[100% OPERATIONAL]</span></p>
-                        <div class="mt-6 inline-block">
-                            <p class="typing-effect animate-typewriter animate-blink text-xl md:text-3xl font-black text-white">Welcome to the Architect's Hub.</p>
-                        </div>
-                    </div>
+    <main class="pt-32 md:pt-48 pb-20">
+        <!-- HERO SECTION -->
+        <section class="container mx-auto px-6 mb-20 md:mb-32">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emeraldHQ/10 border border-emeraldHQ/20 text-emeraldHQ text-[10px] font-bold uppercase tracking-widest mb-8 reveal">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emeraldHQ opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emeraldHQ"></span>
+                    </span>
+                    Live Node Connectivity Active
                 </div>
-                <h2 class="text-5xl md:text-8xl font-black text-white uppercase italic leading-[0.9] tracking-tighter mb-8">Command <br><span class="neon-text-cyan">Center</span></h2>
-                <p class="text-slate-400 text-lg md:text-2xl font-medium leading-relaxed max-w-3xl">Select an operational division below to access specialized global services and enterprise architectures.</p>
+                
+                <h2 class="hero-text text-5xl md:text-8xl font-black text-white uppercase italic leading-none tracking-tighter mb-8 reveal">
+                    Engineering <br> <span class="text-neonCyan">Truth</span> In Every Pixel.
+                </h2>
+                
+                <p class="text-slate-400 text-lg md:text-2xl font-medium leading-relaxed max-w-2xl reveal font-bengali">
+                    বাংলাদেশ এবং মালয়েশিয়ার ব্যবসায়িক সফলতায় একটি শক্তিশালী <span class="text-white italic underline decoration-neonCyan">প্রযুক্তিগত সেতু</span>। আমরা শুধু কোড করি না, আমরা ডিজিটাল আর্কিটেকচার নির্মাণ করি।
+                </p>
             </div>
         </section>
 
-        <!-- BENTO GRID -->
-        <section class="px-6 pb-40">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a href="./audit/" class="glass-card rounded-[32px] p-10 block lg:col-span-2 group reveal-element" aria-label="Technical Audit Division">
-                    <div class="flex justify-between items-start mb-12">
-                        <div class="bg-rose-500/10 p-4 rounded-2xl border border-rose-500/20 group-hover:bg-rose-500/20"><i data-lucide="shield-alert" class="w-10 h-10 text-rose-500"></i></div>
-                        <span class="text-3xl emoji-flag opacity-50">🌍</span>
+        <!-- BENTO HUB GRID (RE-ENGINEERED FOR STABILITY) -->
+        <section class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                
+                <!-- Technical Audit Card -->
+                <a href="./audit/" class="glass-card rounded-3xl p-8 lg:col-span-2 reveal">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="p-4 bg-rose-500/10 rounded-2xl border border-rose-500/20">
+                            <i data-lucide="shield-alert" class="text-rose-500 w-8 h-8"></i>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="text-slate-600"></i>
                     </div>
-                    <h3 class="text-3xl font-black text-white uppercase italic mb-2">Diagnostics</h3>
-                    <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Tech Audit & Security</p>
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-3">Diagnostics</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed uppercase font-bold tracking-wider">
+                        Deep System Technical Audits & Security Vulnerability Scans for Corporate Mainframes.
+                    </p>
                 </a>
 
-                <a href="./growth/" class="glass-card rounded-[32px] p-10 block lg:col-span-2 group reveal-element" style="transition-delay: 100ms;" aria-label="Algorithmic Marketing Division">
-                    <div class="flex justify-between items-start mb-12">
-                        <div class="bg-purple-500/10 p-4 rounded-2xl border border-purple-500/20 group-hover:bg-purple-500/20"><i data-lucide="trending-up" class="w-10 h-10 text-purple-400"></i></div>
-                        <span class="text-3xl emoji-flag opacity-50">🌍</span>
+                <!-- Growth Hub Card -->
+                <a href="./growth/" class="glass-card rounded-3xl p-8 lg:col-span-2 reveal">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="p-4 bg-purple-500/10 rounded-2xl border border-purple-500/20">
+                            <i data-lucide="trending-up" class="text-purple-400 w-8 h-8"></i>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="text-slate-600"></i>
                     </div>
-                    <h3 class="text-3xl font-black text-white uppercase italic mb-2">Growth Hub</h3>
-                    <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Algorithmic Marketing</p>
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-3">Growth Hub</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed uppercase font-bold tracking-wider">
+                        Algorithmic Marketing & Data-Driven SEO Domination for the BD-MY Digital Corridor.
+                    </p>
                 </a>
 
-                <a href="./design/" class="glass-card rounded-[32px] p-10 block lg:col-span-2 group reveal-element" style="transition-delay: 200ms;" aria-label="Visual Production Division">
-                    <div class="flex justify-between items-start mb-12">
-                        <div class="bg-yellow-500/10 p-4 rounded-2xl border border-yellow-500/20 group-hover:bg-yellow-500/20"><i data-lucide="palette" class="w-10 h-10 text-yellow-400"></i></div>
-                        <span class="text-3xl emoji-flag">🇧🇩 🇲🇾</span>
-                    </div>
-                    <h3 class="text-3xl font-black text-white uppercase italic mb-2">Visual Media</h3>
-                    <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Print & Digital Design</p>
-                </a>
-
-                <a href="./systems/" class="glass-card rounded-[32px] p-10 block lg:col-span-2 group reveal-element" style="transition-delay: 300ms;" aria-label="Systems Engineering Division">
-                    <div class="flex justify-between items-start mb-12">
-                        <div class="bg-neonCyan/10 p-4 rounded-2xl border border-neonCyan/20 group-hover:bg-neonCyan/20"><i data-lucide="layers" class="w-10 h-10 text-neonCyan"></i></div>
-                        <span class="text-3xl emoji-flag opacity-50">🌍</span>
-                    </div>
-                    <h3 class="text-3xl font-black text-white uppercase italic mb-2">Architecture</h3>
-                    <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Web & Software Systems</p>
-                </a>
-
-                <a href="./bhumitech/" class="glass-card rounded-[40px] p-10 md:p-12 block lg:col-span-4 border-emeraldHQ/30 bg-[#022c22]/30 hover:border-emeraldHQ group reveal-element" style="transition-delay: 400ms;" aria-label="Smart Land Intelligence Division">
-                    <div class="flex flex-col md:flex-row justify-between items-center gap-10">
-                        <div class="flex items-center gap-8 w-full">
-                            <div class="bg-emeraldHQ/20 p-6 rounded-3xl border border-emeraldHQ/30 group-hover:scale-110 transition-transform"><i data-lucide="map" class="w-16 h-16 text-emeraldHQ"></i></div>
+                <!-- 360 Bhumitech (The Major Bridge) -->
+                <a href="./bhumitech/" class="glass-card rounded-[40px] p-8 md:p-12 col-span-1 sm:col-span-2 lg:col-span-4 border-emeraldHQ/20 bg-emeraldHQ/[0.02] reveal">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                        <div class="flex items-center gap-6">
+                            <div class="p-5 bg-emeraldHQ/20 rounded-3xl border border-emeraldHQ/30">
+                                <i data-lucide="map" class="text-emeraldHQ w-12 h-12"></i>
+                            </div>
                             <div>
-                                <span class="text-emeraldHQ font-black uppercase text-[10px] tracking-[0.5em] mb-2 block">Specialized Division</span>
-                                <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">360° Bhumitech</h3>
-                                <p class="text-base font-bold text-slate-400 uppercase tracking-widest mt-2">Smart Land Intelligence & Geo-Forensics</p>
+                                <h3 class="text-3xl md:text-5xl font-black text-white uppercase italic leading-none">360° Bhumitech</h3>
+                                <p class="text-emeraldHQ font-bold uppercase tracking-[0.3em] text-[10px] mt-2">Smart Land Intelligence & Geo-Forensics</p>
                             </div>
                         </div>
-                        <div class="flex gap-4 text-4xl emoji-flag">🇧🇩 🇲🇾</div>
+                        <div class="font-bengali text-slate-400 max-w-md md:text-right">
+                            মালয়েশিয়া প্রবাসী এবং বাংলাদেশের ভূমি মালিকদের জন্য <span class="text-white">বায়া দলিল যাচাই</span> এবং <span class="text-white">ডিজিটাল ম্যাপ</span> সলিউশন। 
+                        </div>
                     </div>
                 </a>
+
+                <!-- Visual Media Card -->
+                <a href="./design/" class="glass-card rounded-3xl p-8 lg:col-span-2 reveal">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="p-4 bg-yellow-500/10 rounded-2xl border border-yellow-500/20">
+                            <i data-lucide="palette" class="text-yellow-400 w-8 h-8"></i>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="text-slate-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-3">Visual Media</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed uppercase font-bold tracking-wider">
+                        Elite Print-Ready Design Production for Regional SMEs and International Branding.
+                    </p>
+                </a>
+
+                <!-- Architecture Card -->
+                <a href="./systems/" class="glass-card rounded-3xl p-8 lg:col-span-2 reveal">
+                    <div class="flex justify-between items-start mb-16">
+                        <div class="p-4 bg-neonCyan/10 rounded-2xl border border-neonCyan/20">
+                            <i data-lucide="layers" class="text-neonCyan w-8 h-8"></i>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="text-slate-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white uppercase italic mb-3">Systems Architecture</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed uppercase font-bold tracking-wider">
+                        High-Performance Web Infrastructure & Scalable Cloud Ecosystems.
+                    </p>
+                </a>
+
             </div>
         </section>
     </main>
 
-    <footer class="py-16 px-6 border-t border-white/10 text-center bg-black/50">
-        <div class="flex justify-center mb-8">
-            <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-neonCyan text-2xl border border-white/10 italic">P</div>
-        </div>
-        <p class="text-[11px] font-black text-slate-500 tracking-[1em] uppercase mb-10">Pixel Perfect IT Solutions</p>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 text-[10px] font-bold text-slate-600 uppercase tracking-widest">
-            <span class="flex items-center gap-2"><i data-lucide="globe" class="w-3 h-3"></i> Global Cloud Operations</span>
-            <!-- DYNAMIC MAILTO WITH HUB IDENTIFIER -->
-            <a href="mailto:pixelperfect.its@gmail.com?subject=Inquiry from Global HQ Hub&body=Hello Architect, I am reaching out from the main command center..." class="text-neonCyan hover:text-white transition flex items-center gap-2 border border-neonCyan/30 px-5 py-2.5 rounded-full" aria-label="Email support from HQ">
-                <i data-lucide="mail" class="w-3 h-3"></i> Direct Email
-            </a>
+    <!-- FOOTER (SEMANTIC & SECURE) -->
+    <footer class="py-20 border-t border-white/10 bg-black/80 px-6">
+        <div class="container mx-auto flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center font-black text-neonCyan text-3xl italic border border-white/10 mb-8">P</div>
+            <h4 class="text-white font-black uppercase tracking-[0.5em] text-sm mb-4">Pixel Perfect IT Solutions</h4>
+            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-widest max-w-md mb-12">
+                Unified Global Operations Serving The Technological Corridor Of Bangladesh And Malaysia.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <span class="text-[9px] text-slate-600 font-bold uppercase tracking-[0.2em] flex items-center gap-2">
+                    <i data-lucide="globe" class="w-3 h-3 text-emeraldHQ"></i> Certified Digital Architect
+                </span>
+                <div class="h-4 w-px bg-white/10 hidden md:block"></div>
+                <!-- EMAIL IDENTITY RESTORED -->
+                <a href="mailto:pixelperfect.its@gmail.com?subject=Strategic Inquiry from HQ&body=Hello Chief Architect..." 
+                   class="text-neonCyan hover:text-white transition-colors text-[10px] font-black uppercase tracking-widest flex items-center gap-2 border border-neonCyan/20 px-6 py-3 rounded-full">
+                    <i data-lucide="mail" class="w-4 h-4"></i> pixelperfect.its@gmail.com
+                </a>
+            </div>
+            
+            <div class="mt-20 text-[8px] text-slate-700 font-bold uppercase tracking-[1em]">
+                &copy; 2025 All Rights Reserved. Engineered by MD Ibrahim Hossain.
+            </div>
         </div>
     </footer>
 
+    <!-- INTERACTION LOGIC (STABILITY PATCH) -->
     <script>
+        // Initialize Lucide Icons Immediately (Fixing the previous bug)
         lucide.createIcons();
+
+        // High-Performance Scroll Reveal (Intersection Observer)
         document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); } });
-            }, { threshold: 0.15 });
-            document.querySelectorAll('.reveal-element').forEach(el => observer.observe(el));
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
+
+        // Dynamic Header Shadow
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-[0_10px_30px_rgba(0,242,255,0.1)]');
+            } else {
+                header.classList.remove('shadow-[0_10px_30px_rgba(0,242,255,0.1)]');
+            }
         });
     </script>
 </body>
