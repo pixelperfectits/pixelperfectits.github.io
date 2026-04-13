@@ -5,354 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
     
-    <!-- ADVANCED SEO: BD & MY FOCUSED -->
-    <title>Pixel Perfect Systems | High-Performance Web Architecture</title>
-    <meta name="description" content="Custom web development, high-converting landing pages, and secure cloud infrastructure for businesses in Bangladesh (Shibchar, Dhaka) and Malaysia.">
-    <meta name="keywords" content="Web Development Bangladesh, Software Architecture Malaysia, Cloud Hosting BD, Landing Page Design Shibchar, Custom ERP Solutions, Enterprise Web Architecture, MD Ibrahim Hossain">
+    <!-- ADVANCED SEO: SYSTEMS HUB FOCUSED -->
+    <title>Pixel Perfect Systems | High-Performance Web Architecture (BD & MY)</title>
+    <meta name="description" content="Custom web development, high-converting landing pages, and secure cloud infrastructure for businesses in Bangladesh and Malaysia. Zero-lag deployment.">
+    <meta name="keywords" content="Web Development Bangladesh, Software Architecture Malaysia, Cloud Hosting BD, Landing Page Design Shibchar, Custom ERP Solutions, Full-Stack Development, MD Ibrahim Hossain">
     <meta name="author" content="MD Ibrahim Hossain - Chief Architect">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://pixelperfectits.github.io/systems/">
 
-    <!-- OPEN GRAPH (OG) / SOCIAL MEDIA METADATA -->
+    <!-- OPEN GRAPH / SOCIAL -->
     <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="bn_BD">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Pixel Perfect Systems Engineering">
-    <meta property="og:description" content="Elite web and software development agency. Engineering scalable websites and immutable cloud infrastructure for global enterprises.">
+    <meta property="og:title" content="Pixel Perfect Systems | High-Performance Web Architecture">
+    <meta property="og:description" content="Elite web and software development agency. Engineering scalable websites and robust cloud portals for global enterprises.">
     <meta property="og:url" content="https://pixelperfectits.github.io/systems/">
     <meta property="og:site_name" content="Pixel Perfect IT Solutions">
     <meta property="og:image" content="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png">
-    
-    <!-- TWITTER CARDS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pixel Perfect Systems Hub">
-    <meta name="twitter:description" content="Architectural Excellence. Deploy your enterprise website on secure infrastructure today.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png">
 
-    <!-- PERFORMANCE OPTIMIZATION: PRECONNECTS -->
+    <!-- PERFORMANCE INFRASTRUCTURE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
-
-    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     
-    <!-- JSON-LD SCHEMA FOR BD & MY -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Pixel Perfect Systems Engineering",
-      "image": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
-      "description": "Elite web and software development agency serving Bangladesh and Malaysia with high-performance cloud architectures.",
-      "telephone": "+8801715354960",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Kathalbari",
-        "addressLocality": "Shibchar",
-        "addressRegion": "Madaripur",
-        "addressCountry": "BD"
-      },
-      "areaServed":[
-        { "@type": "Country", "name": "Bangladesh" },
-        { "@type": "Country", "name": "Malaysia" },
-        { "@type": "Country", "name": "Worldwide" }
-      ],
-      "priceRange": "$$$",
-      "sameAs":[
-        "https://pixelperfectits.github.io/"
-      ]
-    }
-    </script>
-
-    <!-- TAILWIND CSS (ENTERPRISE CONFIG) -->
+    <!-- ASSETS (LUCIDE STABILITY PATCH) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: {
-                        inter: ['Inter', 'sans-serif'],
-                        bengali: ['Hind Siliguri', 'sans-serif'],
-                    },
-                    colors: {
-                        neonCyan: '#00F2FF',
-                        emeraldHQ: '#10B981',
-                        darkGrid: '#020617',
-                    }
+                    fontFamily: { inter: ['Inter', 'sans-serif'], bengali:['Hind Siliguri', 'sans-serif'] },
+                    colors: { neonCyan: '#00F2FF', emeraldHQ: '#10B981', darkGrid: '#020617' }
                 }
             }
         }
     </script>
 
-    <!-- LUCIDE ICONS -->
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    
-    <!-- ENTERPRISE STYLES & GLASSMORPHISM LOGIC -->
     <style>
-        body { 
-            font-family: 'Inter', 'Hind Siliguri', sans-serif; 
-            scroll-behavior: smooth; 
-            background-color: #000000; 
-            overflow-x: hidden; 
-            padding-top: 100px; 
-        }
-        @media (min-width: 768px) { body { padding-top: 112px; } }
-
-        /* Grid Background Pattern */
+        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; background: #000; overflow-x: hidden; scroll-behavior: smooth; padding-top: 100px; }
         .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px); background-size: 40px 40px; background-attachment: fixed; }
-
-        /* Typography */
         .neon-text-cyan { text-shadow: 0 0 30px rgba(0, 242, 255, 0.8); color: #00F2FF; }
-        p, li { line-height: 1.8; letter-spacing: 0.01em; }
-        
-        /* Glassmorphism Card Logic */
-        .glass-card { 
-            background: rgba(255, 255, 255, 0.02); 
-            backdrop-filter: blur(24px); 
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.05); 
-            border-radius: 24px; 
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); 
-            will-change: transform, border-color, box-shadow;
-        }
-        .glass-card:hover { 
-            border-color: rgba(0, 242, 255, 0.5); 
-            transform: translateY(-10px); 
-            box-shadow: 0 40px 80px -15px rgba(0, 242, 255, 0.15); 
-            background: rgba(255, 255, 255, 0.04);
-        }
-
-        /* Mobile Menu Transitions */
-        #mobile-menu { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(-100%); opacity: 0; z-index: 100; visibility: hidden; }
+        .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 24px; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform; }
+        .glass-card:hover { transform: translateY(-10px); border-color: rgba(0, 242, 255, 0.5); box-shadow: 0 40px 80px -15px rgba(0, 242, 255, 0.15); background: rgba(255, 255, 255, 0.04); }
+        .reveal-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-up.active { opacity: 1; transform: translateY(0); }
+        #mobile-menu { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateY(-100%); opacity: 0; visibility: hidden; }
         #mobile-menu.active { transform: translateY(0); opacity: 1; visibility: visible; display: flex !important; }
-        
-        /* High-Performance Scroll Animation Utilities */
-        .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
-        .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
-        .reveal-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
-        .active-reveal { opacity: 1; transform: translate(0, 0); }
-
-        /* Accessibility Focus Ring */
-        a:focus-visible, button:focus-visible { outline: 2px solid #00F2FF; outline-offset: 4px; border-radius: 8px; }
     </style>
-</head>
-<body class="text-slate-300 bg-grid text-left antialiased">
 
-    <!-- TOP GLOBAL BAR -->
-    <div role="banner" class="w-full bg-neonCyan text-black text-[9px] md:text-[11px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[60] shadow-[0_0_15px_rgba(0,242,255,0.5)]" aria-label="Global Service Indicator">
-        Elite Cloud Infrastructure • Serving Malaysia (🇲🇾) & Bangladesh (🇧🇩)
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Pixel Perfect Systems Architecture",
+      "image": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "description": "Elite web and software development agency serving Bangladesh and Malaysia.",
+      "telephone": "+8801715354960",
+      "address": { "@type": "PostalAddress", "streetAddress": "Kathalbari", "addressLocality": "Shibchar", "addressRegion": "Madaripur", "addressCountry": "BD" },
+      "areaServed":[{ "@type": "Country", "name": "Bangladesh" }, { "@type": "Country", "name": "Malaysia" }]
+    }
+    </script>
+</head>
+
+<body class="text-slate-300 bg-grid antialiased">
+
+    <!-- GLOBAL HUD -->
+    <div class="w-full bg-neonCyan text-black text-[9px] md:text-[11px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[60] shadow-[0_0_15px_rgba(0,242,255,0.5)]">
+        Elite Systems Hub • Serving Malaysia (🇲🇾) & Bangladesh (🇧🇩)
     </div>
 
-    <!-- NAVIGATION (SEMANTIC HEADER) -->
-    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[34px] transition-all duration-300" id="main-header">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative" aria-label="Main Navigation">
-            
-            <!-- Brand Identity -->
-            <a href="/" class="flex items-center gap-4 group" aria-label="Homepage Pixel Perfect Systems">
-                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Pixel Perfect Systems Logo" width="48" height="48" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(0,242,255,0.4)] group-hover:shadow-[0_0_35px_rgba(0,242,255,0.8)] rounded-xl transition-shadow duration-300" decoding="async">
-                <div class="mt-1">
+    <!-- HEADER -->
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-2xl border-b border-white/5 top-[26px] md:top-[34px]">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-4 group" aria-label="HQ Command Hub">
+                <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" alt="Logo" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(0,242,255,0.4)] rounded-xl">
+                <div>
                     <span class="text-xl md:text-2xl font-black text-white tracking-tighter block leading-none italic uppercase">Pixel Perfect</span>
                     <span class="text-[8px] md:text-[10px] font-bold text-neonCyan tracking-[0.3em] uppercase italic">Systems Architecture</span>
                 </div>
             </a>
             
-            <!-- Desktop Menu -->
             <div class="hidden lg:flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400 items-center">
-                <a href="#dev" class="hover:text-neonCyan transition-colors">Development</a>
-                <a href="#hosting" class="hover:text-neonCyan transition-colors">Cloud Hosting</a>
-                <div class="h-4 w-px bg-white/20"></div>
-                <a href="../" class="text-white hover:text-neonCyan transition-colors border border-white/20 hover:border-neonCyan px-5 py-2 rounded-full text-[9px]">Main Hub</a>
+                <a href="#dev" class="hover:text-neonCyan transition">Development</a>
+                <a href="#hosting" class="hover:text-neonCyan transition">Cloud Hosting</a>
+                <a href="../" class="text-white border border-white/20 px-5 py-2 rounded-full hover:border-neonCyan hover:text-neonCyan transition">Main Hub</a>
             </div>
 
-            <!-- CTA & Mobile Toggle -->
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/8801715354960" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-2 bg-emeraldHQ text-white px-5 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:bg-[#0ea5e9] hover:shadow-[0_0_25px_rgba(0,242,255,0.4)] transition-all">
-                    <i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i> WhatsApp
+                <a href="https://wa.me/8801715354960" target="_blank" class="hidden md:flex items-center gap-2 bg-emeraldHQ text-white px-5 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest shadow-lg hover:bg-neonCyan hover:text-black transition-all">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
                 </a>
-                <button id="menu-toggle-btn" class="lg:hidden text-white p-2 focus-visible" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
-                    <i data-lucide="menu" id="menu-icon" aria-hidden="true"></i>
+                <button class="lg:hidden text-white p-2" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" id="menu-icon"></i>
                 </button>
             </div>
         </nav>
 
-        <!-- MOBILE MENU -->
-        <div id="mobile-menu" class="hidden fixed inset-0 top-[60px] bg-black/98 backdrop-blur-3xl flex-col items-center justify-center gap-10 p-10 z-40 lg:hidden text-center" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
-            <a href="#dev" class="mobile-link text-xl font-black uppercase text-slate-300 hover:text-neonCyan italic transition-colors">Development</a>
-            <a href="#hosting" class="mobile-link text-xl font-black uppercase text-slate-300 hover:text-neonCyan italic transition-colors">Cloud Hosting</a>
-            <div class="w-full h-px bg-white/10 my-2"></div>
-            <a href="../" class="mobile-link text-neonCyan font-black uppercase tracking-[0.2em] border border-neonCyan/20 hover:bg-neonCyan/10 px-8 py-4 rounded-2xl w-full transition-colors">Visit Main Hub</a>
+        <div id="mobile-menu" class="hidden fixed inset-0 top-[60px] bg-black/98 backdrop-blur-3xl flex-col items-center justify-center gap-10 p-10 z-40 lg:hidden text-center">
+            <a href="#dev" class="text-xl font-black uppercase text-slate-300 italic" onclick="toggleMobileMenu()">Development</a>
+            <a href="#hosting" class="text-xl font-black uppercase text-slate-300 italic" onclick="toggleMobileMenu()">Cloud Hosting</a>
+            <a href="../" class="text-neonCyan font-black uppercase tracking-[0.2em] border border-neonCyan/20 px-8 py-4 rounded-2xl w-full">Return Hub</a>
         </div>
     </header>
 
-    <!-- MAIN CONTENT AREA -->
     <main>
-        <!-- HERO SECTION -->
+        <!-- HERO -->
         <section class="relative pt-40 pb-32 px-6 text-center overflow-hidden">
-            <!-- Ambient Glow -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-neonCyan/10 rounded-full blur-[120px] md:blur-[150px] -z-10 pointer-events-none"></div>
-
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-neonCyan/10 rounded-full blur-[150px] -z-10"></div>
             <div class="container mx-auto reveal-up">
                 <span class="inline-block px-6 py-2 rounded-full bg-neonCyan/10 border border-neonCyan/20 text-neonCyan text-[10px] font-black uppercase tracking-[0.4em] mb-10 italic shadow-[0_0_15px_rgba(0,242,255,0.2)]">Full-Stack Engineering</span>
-                
-                <h1 class="text-5xl md:text-8xl lg:text-[7.5rem] font-black text-white leading-[0.9] mb-8 md:mb-10 uppercase italic tracking-tighter">
-                    Architectural <br><span class="neon-text-cyan">Excellence</span>
-                </h1>
-                
-                <div class="max-w-3xl mx-auto mb-8">
-                    <p class="text-slate-400 text-lg md:text-2xl leading-relaxed font-medium">
-                        We engineer scalable websites and robust portals optimized for SEO and global performance.
-                    </p>
-                    <p lang="bn" class="text-white mt-6 text-base md:text-xl font-bengali leading-loose">
-                        অত্যন্ত অল্প সময়ের মধ্যে আমরা সর্বোচ্চ মানের ওয়েবসাইট ও পোর্টাল নির্মাণ করি, যেখানে প্রতিটি কোড থাকে <span class="text-neonCyan font-black">Advanced SEO Optimized</span> এবং <span class="text-emeraldHQ font-black">Secure</span>।
-                    </p>
+                <h1 class="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-10 uppercase italic tracking-tighter">Architectural <br><span class="neon-text-cyan">Excellence</span></h1>
+                <div class="max-w-3xl mx-auto mb-16">
+                    <p class="text-slate-400 text-lg md:text-2xl leading-relaxed font-medium">We engineer scalable websites and robust portals optimized for SEO and performance.</p>
+                    <p lang="bn" class="text-white mt-4 text-base md:text-xl font-bengali leading-loose">সর্বোচ্চ মানের কোডিং এবং সিকিউর ক্লাউড আর্কিটেকচারের মাধ্যমে আপনার ডিজিটাল ইকোসিস্টেম গড়ে তুলুন।</p>
                 </div>
-
-                <p class="text-xs md:text-sm font-bold text-emeraldHQ uppercase tracking-[0.3em] italic mb-12 md:mb-16">Immutable Cloud Infrastructure.</p>
-                
-                <a href="https://wa.me/8801715354960" target="_blank" rel="noopener noreferrer" class="bg-neonCyan text-black px-10 md:px-16 py-5 md:py-6 rounded-2xl font-black text-xs md:text-sm uppercase tracking-[0.3em] shadow-[0_0_50px_rgba(0,242,255,0.3)] hover:bg-white transition-all transform hover:scale-105 inline-flex items-center gap-3">
-                    Deploy Project <i data-lucide="terminal-square" class="w-4 h-4" aria-hidden="true"></i>
-                </a>
+                <a href="https://wa.me/8801715354960" target="_blank" class="bg-neonCyan text-black px-12 md:px-16 py-5 rounded-2xl font-black text-xs md:text-sm uppercase tracking-[0.3em] shadow-[0_0_50px_rgba(0,242,255,0.3)] hover:bg-white transition-all transform hover:scale-105 inline-block">Deploy Project</a>
             </div>
         </section>
 
-        <!-- SERVICES (DEVELOPMENT & HOSTING) -->
-        <section class="py-24 md:py-32 bg-white/[0.01]">
-            <div class="container mx-auto px-6">
-                <!-- Section Header -->
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 md:mb-20 border-l-[6px] border-neonCyan pl-6 md:pl-10 text-left reveal-up">
-                    <div>
-                        <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-none">Web <br>Ecosystems</h2>
-                        <p lang="bn" class="text-neonCyan mt-4 text-base md:text-lg font-bold font-bengali tracking-widest">প্রফেশনাল ওয়েবসাইট ও ক্লাউড সমাধান</p>
-                    </div>
-                </div>
+        <!-- SYSTEM SERVICES -->
+        <section class="py-24 bg-white/[0.01]">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10">
+                <article id="dev" class="glass-card p-8 md:p-14 border-t-4 border-neonCyan reveal-up">
+                    <div class="bg-neonCyan/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border border-neonCyan/20"><i data-lucide="monitor" class="text-neonCyan w-8 h-8"></i></div>
+                    <h3 class="text-2xl md:text-3xl font-black text-white mb-6 uppercase italic underline decoration-neonCyan decoration-4 underline-offset-8">Systems Development</h3>
+                    <ul class="text-xs md:text-sm space-y-5 font-bold text-slate-400 uppercase tracking-widest">
+                        <li class="flex items-start gap-4"><i data-lucide="layout" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5"></i> High-Converting Static & Dynamic Landing Pages</li>
+                        <li class="flex items-start gap-4"><i data-lucide="briefcase" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5"></i> SME Business Portals & Dashboard Engineering</li>
+                        <li class="flex items-start gap-4"><i data-lucide="search" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5"></i> Native SEO-First Modular Code Architecture</li>
+                    </ul>
+                </article>
 
-                <div class="grid lg:grid-cols-2 gap-10 md:gap-16 text-left">
-                    
-                    <!-- Web Dev -->
-                    <article id="dev" class="glass-card p-8 md:p-14 border-t-4 border-neonCyan reveal-left">
-                        <div class="bg-neonCyan/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border border-neonCyan/20">
-                            <i data-lucide="monitor" class="text-neonCyan w-8 h-8" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="text-2xl md:text-3xl font-black text-white mb-6 uppercase italic underline decoration-neonCyan decoration-4 underline-offset-8">Systems Engineering</h3>
-                        <p lang="bn" class="text-sm md:text-base text-slate-300 leading-relaxed mb-10 font-bengali font-medium">
-                            আধুনিক টেকনোলজি ব্যবহার করে আপনার ব্যবসার জন্য স্কেলেবল এবং ফাস্ট-লোডিং ওয়েবসাইট নির্মাণ।
-                        </p>
-                        <ul class="text-sm md:text-base space-y-5 font-bold text-slate-400 uppercase tracking-widest" aria-label="Web Development Services">
-                            <li class="flex items-start gap-4"><i data-lucide="layout" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5" aria-hidden="true"></i> <span>High-Converting Landing Pages</span></li>
-                            <li class="flex items-start gap-4"><i data-lucide="globe" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5" aria-hidden="true"></i> <span>Corporate & Portfolio Websites</span></li>
-                            <li class="flex items-start gap-4"><i data-lucide="briefcase" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5" aria-hidden="true"></i> <span>SME Business Portals & Dashboards</span></li>
-                            <li class="flex items-start gap-4"><i data-lucide="search" class="w-5 h-5 text-neonCyan shrink-0 mt-0.5" aria-hidden="true"></i> <span>Native Advanced SEO Ready</span></li>
-                        </ul>
-                    </article>
-
-                    <!-- Cloud Hosting -->
-                    <article id="hosting" class="glass-card p-8 md:p-14 border-t-4 border-emeraldHQ hover:border-emeraldHQ reveal-right" style="transition-delay: 100ms;">
-                        <div class="bg-emeraldHQ/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border border-emeraldHQ/20">
-                            <i data-lucide="server" class="text-emeraldHQ w-8 h-8" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="text-2xl md:text-3xl font-black text-white mb-6 uppercase italic underline decoration-emeraldHQ decoration-4 underline-offset-8">Secure Infrastructure</h3>
-                        <p lang="bn" class="text-sm md:text-base text-slate-300 leading-relaxed mb-10 font-bengali font-medium">
-                            আমরা প্রথাগত হোস্টিংয়ের বদলে এলিট ক্লাউড ইনফ্রাস্ট্রাকচার ব্যবহার করি যা ১০০% হ্যাকার-প্রুফ এবং জিরো-ডাউনটাইম নিশ্চিত করে।
-                        </p>
-                        <ul class="text-sm md:text-base space-y-5 font-bold text-slate-400 uppercase tracking-widest" aria-label="Cloud Hosting Services">
-                            <li class="flex items-start gap-4"><i data-lucide="cloud" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5" aria-hidden="true"></i> <span>Immutable Cloud Hosting</span></li>
-                            <li class="flex items-start gap-4"><i data-lucide="zap" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5" aria-hidden="true"></i> <span>Zero-Lag Deployment via CDN</span></li>
-                            <li class="flex items-start gap-4"><i data-lucide="lock" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5" aria-hidden="true"></i> <span>Enterprise SSL Security</span></li>
-                            <li class="flex items-start gap-4"><i data-lucide="activity" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5" aria-hidden="true"></i> <span>99.99% Uptime Guarantee</span></li>
-                        </ul>
-                    </article>
-
-                </div>
+                <article id="hosting" class="glass-card p-8 md:p-14 border-t-4 border-emeraldHQ reveal-up" style="transition-delay: 100ms;">
+                    <div class="bg-emeraldHQ/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border border-emeraldHQ/20"><i data-lucide="server" class="text-emeraldHQ w-8 h-8"></i></div>
+                    <h3 class="text-2xl md:text-3xl font-black text-white mb-6 uppercase italic underline decoration-emeraldHQ decoration-4 underline-offset-8">Secure Cloud Hosting</h3>
+                    <ul class="text-xs md:text-sm space-y-5 font-bold text-slate-400 uppercase tracking-widest">
+                        <li class="flex items-start gap-4"><i data-lucide="cloud" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5"></i> Immutable Infrastructure for Maximum Security</li>
+                        <li class="flex items-start gap-4"><i data-lucide="zap" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5"></i> Zero-Lag Global Deployment via Edge CDN</li>
+                        <li class="flex items-start gap-4"><i data-lucide="shield-check" class="w-5 h-5 text-emeraldHQ shrink-0 mt-0.5"></i> 256-bit SSL Encryption & Enterprise Protection</li>
+                    </ul>
+                </article>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER & CTA -->
-    <footer class="py-24 md:py-32 border-t border-white/5 text-center relative overflow-hidden px-6 bg-black/50 backdrop-blur-lg">
-        <div class="reveal-up">
-            <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter">Ready for a <br><span class="neon-text-cyan">Flawless Build?</span></h3>
-            
-            <div class="max-w-4xl mx-auto mb-16">
-                <p class="text-slate-400 text-lg md:text-2xl italic font-medium leading-relaxed">
-                    Deploy your enterprise website on secure infrastructure today.
-                </p>
-                <p lang="bn" class="text-white mt-6 text-base md:text-xl font-bengali leading-loose">
-                    আপনার ওয়েবসাইট তৈরি এবং নিরাপদ হোস্টিং নিশ্চিত করতে আজই আমাদের আর্কিটেক্টের সাথে আলোচনা করুন।
-                </p>
-            </div>
-            
-            <div class="flex justify-center mb-10 md:mb-12" aria-hidden="true">
-                <div class="w-14 h-14 md:w-16 md:h-16 bg-white/5 rounded-2xl md:rounded-3xl flex items-center justify-center font-black text-neonCyan text-xl md:text-2xl border border-white/10 italic shadow-[0_0_20px_rgba(0,242,255,0.2)]">P</div>
-            </div>
-            
-            <p class="text-[9px] md:text-[11px] font-black text-slate-500 tracking-[0.8em] uppercase mb-10">Pixel Perfect Systems Hub</p>
-            
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest text-center italic">
-                <span>Malaysia & Bangladesh</span>
-                <span class="text-white font-black flex items-center gap-2"><i data-lucide="cpu" class="w-4 h-4 text-emeraldHQ"></i> Architectural Excellence</span>
-                <a href="https://wa.me/8801715354960" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-emeraldHQ text-white px-6 md:px-8 py-3 rounded-full font-black hover:bg-[#0ea5e9] hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] transition-all shadow-xl italic" aria-label="Contact via WhatsApp">
-                    <i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i> WhatsApp Support
-                </a>
-            </div>
+    <footer class="py-24 border-t border-white/5 text-center px-6 bg-black/50">
+        <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter reveal-up">Ready for a <br><span class="neon-text-cyan">Flawless Build?</span></h3>
+        <p lang="bn" class="text-white text-base md:text-xl font-bengali leading-loose mb-12 reveal-up">নিরাপদ এবং আধুনিক ওয়েবসাইট নির্মাণের জন্য আজই আমাদের আর্কিটেক্টের সাথে আলোচনা করুন।</p>
+        <div class="flex justify-center mb-10" aria-hidden="true"><div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center font-black text-neonCyan text-xl border border-white/10 italic">P</div></div>
+        <p class="text-[9px] md:text-[11px] font-black text-slate-500 tracking-[0.8em] uppercase mb-10">Pixel Perfect Systems Hub</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest italic">
+            <span>MY 🇲🇾 & BD 🇧🇩 Operations</span>
+            <!-- EMAIL WITH UNIQUE SYSTEMS IDENTIFIER -->
+            <a href="mailto:pixelperfect.its@gmail.com?subject=Inquiry from Systems Architecture Portal&body=Hello Architect, I am looking for full-stack development and cloud infrastructure solutions..." class="flex items-center gap-3 border border-neonCyan/30 px-6 py-2.5 rounded-full text-neonCyan hover:bg-neonCyan hover:text-black transition-all">
+                <i data-lucide="mail" class="w-4 h-4"></i> Project Inquiry
+            </a>
         </div>
     </footer>
 
-    <!-- INTERACTION & LOGIC SCRIPTS -->
     <script>
-        // 1. Initialize Icons
         lucide.createIcons();
-
-        // 2. Accessible Mobile Menu Logic
-        const menuBtn = document.getElementById('menu-toggle-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        function toggleMenu() {
-            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-            menuBtn.setAttribute('aria-expanded', !isExpanded);
-            mobileMenu.classList.toggle('active');
-            
-            if (!isExpanded) {
-                menuIcon.setAttribute('data-lucide', 'x');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('active');
+            if (menu.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+                document.body.style.overflow = 'hidden';
             } else {
-                menuIcon.setAttribute('data-lucide', 'menu');
+                icon.setAttribute('data-lucide', 'menu');
                 document.body.style.overflow = '';
             }
             lucide.createIcons();
         }
 
-        menuBtn.addEventListener('click', toggleMenu);
-        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
-
-        // 3. High-Performance Scroll Animations (Intersection Observer)
         document.addEventListener("DOMContentLoaded", () => {
-            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
-            
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active-reveal');
-                        observer.unobserve(entry.target); // Optimize performance
-                    }
-                });
-            }, observerOptions);
-
-            const revealElements = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up');
-            revealElements.forEach(el => observer.observe(el));
-        });
-
-        // 4. Header Scroll Shadow Effect
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-[0_10px_30px_rgba(0,242,255,0.05)]');
-            } else {
-                header.classList.remove('shadow-[0_10px_30px_rgba(0,242,255,0.05)]');
-            }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); } });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
         });
     </script>
 </body>
