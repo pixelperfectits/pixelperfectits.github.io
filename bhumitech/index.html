@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="bn" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
-    <title>360° Bhumitech | Smart Land Intelligence & Geo-Forensics (BD-MY)</title>
+    <title>360° Bhumitech | Smart Land Intelligence | MD Ibrahim Hossain</title>
     
     <!-- ADVANCED BILINGUAL SEO: LAND & EXPAT FOCUS -->
-    <meta name="description" content="Advanced digital land surveying, deed forensic analysis, and property protection for expatriates in Malaysia & Bangladesh. বায়া দলিল ও নামজারি কারিগরি যাচাই এবং ডিজিটাল সুপার-ইম্পোজ।">
-    <meta name="keywords" content="Land Survey Bangladesh, Deed Forensics BD, Digital Super-impose, Khatian Audit, বায়া দলিল যাচাই, নামজারি কারিগরি যাচাই, জমির নকশা যাচাই, MD Ibrahim Hossain, 360 Bhumitech">
+    <meta name="description" content="360° Bhumitech: Elite Smart Land Intelligence and Geo-Forensics by MD Ibrahim Hossain. Protecting property assets in Bangladesh through advanced deed audits and digital mapping.">
+    <meta name="keywords" content="Land Survey Bangladesh, Forensic Deed Audit, Digital Super-impose, Khatian Audit BD, Property Protection for Expats, বায়া দলিল যাচাই, নামজারি কারিগরি যাচাই, MD Ibrahim Hossain, 360 Bhumitech">
     <meta name="author" content="MD Ibrahim Hossain">
     <link rel="canonical" href="https://pixelperfectits.github.io/bhumitech/">
 
     <!-- OPEN GRAPH / SOCIAL -->
     <meta property="og:title" content="360° Bhumitech | Geo-Spatial Forensics & Land Security">
-    <meta property="og:description" content="Protect your property assets in Bangladesh from anywhere in the world. Zero Tolerance for Discrepancy.">
+    <meta property="og:description" content="Engineering Certainty in Land Assets. Advanced Forensic Logic for Global Clients.">
     <meta property="og:image" content="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -29,94 +29,85 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        inter: ['Inter', 'sans-serif'],
-                        bengali: ['Hind Siliguri', 'sans-serif']
+                    fontFamily: { 
+                        inter: ['Inter', 'sans-serif'], 
+                        mono: ['JetBrains Mono', 'monospace'], 
+                        bengali: ['Hind Siliguri', 'sans-serif'] 
                     },
-                    colors: {
-                        neonCyan: '#00F2FF',
-                        emeraldHQ: '#10B981',
-                        darkGrid: '#020617'
-                    }
+                    colors: { neonCyan: '#00F2FF', emeraldHQ: '#10B981', darkBg: '#020617' }
                 }
             }
         }
     </script>
 
     <style>
-        body { font-family: 'Inter', 'Hind Siliguri', sans-serif; background-color: #000; overflow-x: hidden; scroll-behavior: smooth; padding-top: 100px; }
-        @media (min-width: 768px) { body { padding-top: 112px; } }
+        body { background-color: #000; overflow-x: hidden; scroll-behavior: smooth; }
         .bg-grid { background-image: radial-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px); background-size: 50px 50px; background-attachment: fixed; }
         .emerald-text { color: #10B981; text-shadow: 0 0 30px rgba(16, 185, 129, 0.6); }
+        .neon-text-cyan { text-shadow: 0 0 30px rgba(0, 242, 255, 0.8); color: #00F2FF; }
         .capsule { border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 100px; padding: 6px 16px; font-size: 10px; font-weight: 800; color: #10B981; text-transform: uppercase; letter-spacing: 2px; }
-        .glass-panel { 
-            background: rgba(255, 255, 255, 0.02); 
-            backdrop-filter: blur(24px); 
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(16, 185, 129, 0.15); 
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+        .glass-panel { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(24px); border: 1px solid rgba(16, 185, 129, 0.15); border-radius: 32px; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
         .glass-panel:hover { border-color: #10B981; transform: translateY(-10px); box-shadow: 0 40px 80px -15px rgba(16, 185, 129, 0.2); }
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
     </style>
 </head>
-<body class="text-slate-300 bg-grid antialiased">
+<body class="font-inter text-slate-300 bg-grid antialiased">
 
     <!-- GLOBAL HUD -->
-    <div class="w-full bg-emeraldHQ text-black text-[9px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[100] shadow-lg">
-        Elite Geo-Spatial Node • Serving Global Expats (MY 🇲🇾 - BD 🇧🇩)
+    <div role="banner" class="w-full bg-emeraldHQ text-black text-[9px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[100] shadow-lg">
+        Intelligence Node: Geo-Spatial Forensics <span class="mx-2">||</span> Serving Global Expats (MY 🇲🇾 - BD 🇧🇩)
     </div>
 
     <!-- NAVIGATION -->
     <header class="fixed w-full z-[90] bg-black/70 backdrop-blur-2xl border-b border-white/5 top-[28px] md:top-[34px]">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-4 group">
-                <!-- UPDATED CENTRAL LOGO -->
                 <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" 
-                     alt="Pixel Perfect Logo" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(16,185,129,0.4)] rounded-xl transition-shadow">
+                     alt="Bhumitech Logo" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(16,185,129,0.4)] rounded-xl transition-shadow">
                 <div>
                     <h1 class="text-xl md:text-2xl font-black text-white uppercase italic tracking-tighter leading-none">Bhumitech</h1>
                     <p class="text-[8px] md:text-[10px] font-bold text-emeraldHQ uppercase tracking-[0.3em]">Intelligence Solutions</p>
                 </div>
             </div>
-            <a href="../" class="text-white hover:text-emeraldHQ transition-colors border border-white/10 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest">
-                Main Hub
-            </a>
+            <div class="flex items-center gap-6">
+                <a href="../" class="text-[10px] font-black uppercase text-white border-b border-white/20 hover:border-white transition-all">Main Hub</a>
+                <a href="https://pixelperfectits.github.io/showroom/" class="bg-white text-black px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-emeraldHQ hover:text-white transition-all">Verification Vault</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <!-- HERO (BILINGUAL EXPAT FOCUS) -->
+        <!-- HERO (GLOBAL EXPAT FOCUS) -->
         <section class="relative pt-40 pb-32 px-6 text-center overflow-hidden">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-emeraldHQ/10 rounded-full blur-[150px] -z-10"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-emeraldHQ/10 rounded-full blur-[150px] -z-10 pointer-events-none"></div>
             <div class="container mx-auto reveal">
-                <span class="capsule mb-10 inline-block italic">Data • Geometry • Asset Security</span>
+                <span class="capsule mb-10 inline-block italic">Empirical Data • Geometry • Asset Security</span>
                 <h2 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-12 uppercase italic tracking-tighter">
                     Geo-Spatial <br> <span class="emerald-text">Intelligence.</span>
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8 text-left max-w-5xl mx-auto">
-                    <p class="text-slate-400 text-lg md:text-xl font-medium leading-relaxed">
-                        Protect your property assets in Bangladesh from anywhere in the world using our proprietary forensic mapping and deed audits.
+                    <p class="text-slate-400 text-lg md:text-xl font-medium leading-relaxed italic border-l-4 border-emeraldHQ pl-6">
+                        We engineer certainty. Protect your property assets in Bangladesh from anywhere in the world using our proprietary forensic mapping and deed verification protocols.
                     </p>
-                    <p class="font-bengali text-slate-300 text-lg leading-relaxed border-l-2 border-emeraldHQ pl-6">
-                        দেশে কিংবা প্রবাসে, আপনার জমির শতভাগ আইনি ও ডিজিটাল নিরাপত্তা নিশ্চিত করতে আমরা ব্যবহার করি <span class="text-white font-bold italic">Forensic Logic</span> এবং বায়া দলিল যাচাই প্রযুক্তি।
+                    <p class="font-bengali text-slate-300 text-lg leading-relaxed bg-white/5 p-8 rounded-[32px] border border-white/5">
+                        দেশে কিংবা প্রবাসে, আপনার জমির শতভাগ আইনি ও ডিজিটাল নিরাপত্তা নিশ্চিত করতে আমরা ব্যবহার করি <span class="text-white font-bold italic">Advanced Forensic Logic</span> এবং বায়া দলিল যাচাই প্রযুক্তি।
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- BILINGUAL CAPABILITIES (BENTO GRID) -->
+        <!-- CAPABILITIES (BENTO GRID) -->
         <section class="container mx-auto px-6 mb-40">
             <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-l-[6px] border-emeraldHQ pl-6 md:pl-8 text-left reveal">
                 <div>
                     <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-none">Strategic <br>Capabilities</h2>
-                    <p class="text-emeraldHQ mt-4 text-base md:text-lg font-bold font-bengali tracking-widest uppercase">কারিগরি সমাধান ও এসইও ফোকাস</p>
+                    <p class="text-emeraldHQ mt-4 text-base md:text-lg font-bold font-bengali tracking-widest uppercase">কারিগরি সমাধান ও ফরেনসিক অডিট</p>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Deed Forensics (Dual Language) -->
+                <!-- Deed Forensics -->
                 <article class="glass-panel rounded-[40px] p-8 md:p-12 reveal">
                     <div class="w-16 h-16 bg-emeraldHQ/10 rounded-2xl flex items-center justify-center border border-emeraldHQ/20 mb-8">
                         <i data-lucide="file-check-2" class="text-emeraldHQ w-8 h-8"></i>
@@ -129,7 +120,7 @@
                     </ul>
                 </article>
 
-                <!-- Geo-Mapping (Dual Language) -->
+                <!-- Geo-Mapping -->
                 <article class="glass-panel rounded-[40px] p-8 md:p-12 reveal" style="transition-delay: 100ms;">
                     <div class="w-16 h-16 bg-neonCyan/10 rounded-2xl flex items-center justify-center border border-neonCyan/20 mb-8">
                         <i data-lucide="map-pinned" class="text-neonCyan w-8 h-8"></i>
@@ -142,7 +133,7 @@
                     </ul>
                 </article>
 
-                <!-- Revenue Strategy (Dual Language) -->
+                <!-- Revenue/Legal Strategy -->
                 <article class="glass-panel rounded-[40px] p-8 md:p-12 reveal">
                     <div class="w-16 h-16 bg-[#FBBF24]/10 rounded-2xl flex items-center justify-center border border-[#FBBF24]/20 mb-8">
                         <i data-lucide="gavel" class="text-[#FBBF24] w-8 h-8"></i>
@@ -155,7 +146,7 @@
                     </ul>
                 </article>
 
-                <!-- Security Vault (Dual Language) -->
+                <!-- Asset Vault -->
                 <article class="glass-panel rounded-[40px] p-8 md:p-12 reveal" style="transition-delay: 100ms;">
                     <div class="w-16 h-16 bg-rose-500/10 rounded-2xl flex items-center justify-center border border-rose-500/20 mb-8">
                         <i data-lucide="lock" class="text-rose-500 w-8 h-8"></i>
@@ -169,9 +160,28 @@
                 </article>
             </div>
         </section>
+
+        <!-- CTAs: SHOWROOM ACCESS -->
+        <section class="container mx-auto px-6 text-center mb-40">
+            <div class="glass-panel p-12 md:p-20 rounded-[50px] border-emeraldHQ/20 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5 rotate-12">
+                    <i data-lucide="map" class="w-64 h-64 text-white"></i>
+                </div>
+                <h3 class="text-3xl md:text-5xl font-black text-white uppercase italic mb-8 reveal">
+                    Verified <span class="text-emeraldHQ">Land Intelligence.</span>
+                </h3>
+                <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto reveal font-bengali">
+                    আমাদের ফরেনসিক অডিট এবং ডিজিটাল ম্যাপ বিশ্লেষণের বাস্তব গাণিতিক প্রমাণ দেখতে সরাসরি ভল্টে প্রবেশ করুন।
+                </p>
+                <a href="https://pixelperfectits.github.io/showroom/" 
+                   class="inline-flex items-center gap-4 bg-emeraldHQ text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 reveal shadow-[0_0_40px_rgba(16,185,129,0.3)]">
+                    <i data-lucide="database"></i> Access Forensic Archive
+                </a>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER & LEGAL (STRATEGIC EMAIL) -->
+    <!-- FOOTER -->
     <footer class="py-24 px-6 border-t border-white/10 bg-black text-center">
         <div class="container mx-auto">
             <!-- LEGAL DISCLAIMER -->
@@ -179,21 +189,20 @@
                 <div class="flex flex-col md:flex-row items-center gap-6">
                     <i data-lucide="shield-alert" class="w-12 h-12 shrink-0 opacity-50"></i>
                     <p class="text-left">
-                        <strong>কারিগরি সতর্কতা:</strong> ৩৬০° ভূমিটেক সলিউশনস একটি ডাটা অ্যানালাইটিক্স এবং কারিগরি প্রযুক্তি প্রতিষ্ঠান। আমরা কোনো আইনি ওকালতি (Advocacy) করি না। আমাদের রিপোর্টসমূহ আপনার দলিলের কারিগরি অডিট এবং ম্যাপের গাণিতিক বিশ্লেষণ। আইনি চূড়ান্ত সিদ্ধান্তের জন্য আপনার আইনজীবীর সাথে পরামর্শ করুন।
+                        <strong>কারিগরি সতর্কতা:</strong> ৩৬০° ভূমিটেক সলিউশনস একটি ডাটা অ্যানালাইটিক্স এবং কারিগরি প্রযুক্তি প্রতিষ্ঠান। আমরা কোনো আইনি ওকালতি (Advocacy) করি না। আমাদের রিপোর্টসমূহ শুধুমাত্র আপনার দলিলের কারিগরি অডিট এবং ম্যাপের গাণিতিক বিশ্লেষণ। আইনি চূড়ান্ত সিদ্ধান্তের জন্য সর্বদা আপনার আইনজীবীর সাথে পরামর্শ করুন।
                     </p>
                 </div>
             </aside>
 
-            <h3 class="text-4xl md:text-7xl font-black text-white uppercase italic mb-8 tracking-tighter reveal">
+            <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter reveal">
                 Audit Your <span class="text-emeraldHQ">Assets.</span>
             </h3>
             <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto reveal font-bengali">
                 আপনার জমির গাণিতিক ও ফরেনসিক সত্যতা যাচাই করতে আজই ইমেইল করুন।
             </p>
             
-            <!-- TARGETED EMAIL FOR BHUMITECH SOURCE TRACKING -->
-            <a href="mailto:pixelperfect.its@gmail.com?subject=Land Intelligence Inquiry [BD-MY]&body=Hello Chief Architect, I am inquiring about forensic deed audit and geo-mapping for my assets in Bangladesh..." 
-               class="inline-flex items-center gap-4 bg-emeraldHQ text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white transition-all reveal">
+            <a href="mailto:pixelperfect.its@gmail.com?subject=Land Intelligence Inquiry [BD-MY]&body=Hello Architect, I am inquiring about forensic deed audit and geo-mapping for my assets..." 
+               class="inline-flex items-center gap-4 bg-emeraldHQ text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white transition-all transform hover:-rotate-2 reveal">
                 <i data-lucide="mail"></i> Initialize Forensic Audit
             </a>
 
@@ -206,9 +215,10 @@
     <script>
         lucide.createIcons();
         document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); } });
-            }, { threshold: 0.1 });
+            }, observerOptions);
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         });
     </script>
