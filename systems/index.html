@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
-    <title>Systems Architecture | Pixel Perfect IT | High-Performance Web Architecture (BD-MY)</title>
+    <title>Systems Architecture | MD Ibrahim Hossain | Scalable Enterprise Ecosystems</title>
     
-    <!-- ADVANCED BILINGUAL SEO: WEB & CLOUD -->
-    <meta name="description" content="Elite Web Systems Engineering and Immutable Cloud Infrastructure for global enterprises. Custom software development and scalable ecosystems. ওয়েব সিস্টেম এবং ক্লাউড ইনফ্রাস্ট্রাকচার সমাধান।">
-    <meta name="keywords" content="Web Architecture Malaysia, Software Engineering Bangladesh, Cloud Hosting KL, Scalable Systems Dhaka, Full-stack Engineering, ERP Development, ওয়েব ডেভেলপমেন্ট, ক্লাউড হোস্টিং, MD Ibrahim Hossain, Pixel Perfect IT">
+    <!-- ADVANCED BILINGUAL SEO: SYSTEMS & CLOUD ARCHITECTURE -->
+    <meta name="description" content="MD Ibrahim Hossain: Principal Architect specializing in scalable web systems, ERP architectures, and immutable cloud infrastructure. Engineering high-performance solutions for Malaysia and Bangladesh.">
+    <meta name="keywords" content="Web Architecture Malaysia, Full-stack Engineering Kuala Lumpur, Cloud Infrastructure BD, Enterprise SaaS Architecture, ERP Developer MY, MD Ibrahim Hossain, Pixel Perfect IT">
     <meta name="author" content="MD Ibrahim Hossain">
     <link rel="canonical" href="https://pixelperfectits.github.io/systems/">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Hind+Siliguri:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -24,16 +24,12 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        inter: ['Inter', 'sans-serif'],
-                        bengali: ['Hind Siliguri', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace']
+                    fontFamily: { 
+                        inter: ['Inter', 'sans-serif'], 
+                        mono: ['JetBrains Mono', 'monospace'], 
+                        bengali: ['Hind Siliguri', 'sans-serif'] 
                     },
-                    colors: {
-                        neonCyan: '#00F2FF',
-                        emeraldHQ: '#10B981',
-                        darkPanel: '#020617'
-                    }
+                    colors: { neonCyan: '#00F2FF', emeraldHQ: '#10B981', darkBg: '#020617' }
                 }
             }
         }
@@ -42,14 +38,9 @@
     <style>
         body { background-color: #000; overflow-x: hidden; scroll-behavior: smooth; }
         .bg-grid { background-image: radial-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px); background-size: 40px 40px; }
-        .glass-panel { 
-            background: rgba(255, 255, 255, 0.01); 
-            backdrop-filter: blur(25px); 
-            -webkit-backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.05); 
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .glass-panel:hover { border-color: #00F2FF; transform: translateY(-8px); box-shadow: 0 30px 60px -15px rgba(0, 242, 255, 0.2); }
+        .glass-panel { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-panel:hover { border-color: #00F2FF; transform: translateY(-8px); box-shadow: 0 40px 80px -20px rgba(0, 242, 255, 0.2); }
+        .neon-glow { text-shadow: 0 0 20px rgba(0, 242, 255, 0.7); color: #00F2FF; }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
     </style>
@@ -57,52 +48,52 @@
 <body class="font-inter text-slate-300 bg-grid antialiased">
 
     <!-- GLOBAL HUD -->
-    <div class="w-full bg-neonCyan text-black text-[9px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[100] shadow-lg">
-        System Node: Full-Stack Engineering • Serving KL 🇲🇾 & Dhaka 🇧🇩
+    <div role="banner" class="w-full bg-neonCyan text-black text-[9px] font-black uppercase tracking-[0.4em] py-2 text-center fixed top-0 z-[100] shadow-lg">
+        Architectural Node: Full-Stack Systems • Serving KL 🇲🇾 & Dhaka 🇧🇩
     </div>
 
     <!-- NAVIGATION -->
     <header class="fixed w-full z-[90] bg-black/70 backdrop-blur-2xl border-b border-white/5 top-[28px] md:top-[34px]">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <!-- UPDATED NEON LOGO -->
                 <img src="https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png" 
                      alt="Pixel Perfect Logo" class="w-10 h-10 md:w-12 md:h-12 shadow-[0_0_20px_rgba(0,242,255,0.3)] rounded-xl">
                 <div>
                     <h1 class="text-xl md:text-2xl font-black text-white uppercase italic tracking-tighter leading-none">Pixel Perfect</h1>
-                    <p class="text-[8px] md:text-[10px] font-bold text-neonCyan uppercase tracking-[0.3em]">Systems Hub</p>
+                    <p class="text-[8px] md:text-[10px] font-bold text-neonCyan uppercase tracking-[0.3em]">Systems Architecture</p>
                 </div>
             </div>
-            <a href="../" class="text-white hover:text-neonCyan transition-colors border border-white/10 px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest">
-                Main Hub
-            </a>
+            <div class="flex items-center gap-6">
+                <a href="../" class="text-[10px] font-black uppercase text-white border-b border-white/20 hover:border-white transition-all">Main Hub</a>
+                <a href="https://pixelperfectits.github.io/showroom/" class="bg-white text-black px-4 py-2 rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-neonCyan hover:text-white transition-all">Evidence Vault</a>
+            </div>
         </nav>
     </header>
 
     <main class="pt-32 md:pt-48">
-        <!-- HERO (BILINGUAL) -->
+        <!-- HERO (BILINGUAL AUTHORITY) -->
         <section class="container mx-auto px-6 text-center mb-32">
             <div class="max-w-4xl mx-auto">
-                <span class="inline-block px-4 py-1 rounded-full bg-neonCyan/10 border border-neonCyan/20 text-neonCyan text-[10px] font-black uppercase tracking-widest mb-10 reveal">
-                    Scalable Web Ecosystems / স্কেলেবল ওয়েব ইকোসিস্টেম
+                <span class="inline-block px-4 py-1 rounded-full bg-neonCyan/10 border border-neonCyan/20 text-neonCyan text-[10px] font-black uppercase tracking-widest mb-10 reveal uppercase">
+                    Scalable Web Ecosystems & Cloud Logic
                 </span>
                 <h2 class="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-12 uppercase italic tracking-tighter reveal">
-                    Architectural <br> <span class="text-neonCyan">Excellence.</span>
+                    Architectural <br> <span class="text-neonCyan neon-glow">Excellence.</span>
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8 text-left reveal">
                     <p class="text-slate-400 text-lg md:text-xl font-medium leading-relaxed">
-                        Engineering robust portals and cloud infrastructure optimized for SEO and global performance. Built for the modern enterprise.
+                        We engineer scalable websites and robust portals optimized for SEO and global performance. We transform complex visions into immutable digital realities.
                     </p>
                     <p class="font-bengali text-slate-300 text-lg leading-relaxed border-l-2 border-neonCyan pl-6">
-                        আমরা সর্বোচ্চ মানের ওয়েবসাইট ও পোর্টাল নির্মাণ করি, যেখানে প্রতিটি কোড থাকে <span class="text-white font-bold">Advanced SEO Optimized</span> এবং সম্পূর্ণ সিকিউর।
+                        আমরা সর্বোচ্চ মানের ওয়েবসাইট ও পোর্টাল নির্মাণ করি, যেখানে প্রতিটি কোড থাকে <span class="text-white font-bold italic">Advanced SEO Optimized</span> এবং সম্পূর্ণ সিকিউর ক্লাউড আর্কিটেকচার।
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- BILINGUAL CAPABILITIES (BENTO GRID) -->
+        <!-- CAPABILITIES (BENTO GRID) -->
         <section class="container mx-auto px-6 mb-40">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 <!-- Systems Engineering (Dual Language) -->
                 <article class="glass-panel rounded-[40px] p-8 md:p-12 reveal">
@@ -115,11 +106,11 @@
                     <ul class="space-y-6 font-bengali text-sm md:text-base">
                         <li class="flex items-start gap-4">
                             <i data-lucide="layout" class="text-neonCyan w-5 h-5 shrink-0 mt-1"></i>
-                            <span><strong class="text-white">Landing Pages / ল্যান্ডিং পেজ:</strong> High-converting, lightning-fast pages for global marketing campaigns.</span>
+                            <span><strong class="text-white">Landing Pages / ল্যান্ডিং পেজ:</strong> হাই-কনভার্টিং ল্যান্ডিং পেজ এবং মডার্ন ইন্টারফেস ডিজাইন যা ব্যবসাকে দ্রুত প্রসারিত করে।</span>
                         </li>
                         <li class="flex items-start gap-4">
-                            <i data-lucide="code-2" class="text-neonCyan w-5 h-5 shrink-0 mt-1"></i>
-                            <span><strong class="text-white">Modular Code / মডুলার কোড:</strong> Clean, SEO-friendly architecture designed for long-term scalability.</span>
+                            <i data-lucide="briefcase" class="text-neonCyan w-5 h-5 shrink-0 mt-1"></i>
+                            <span><strong class="text-white">Enterprise Systems / বিজনেস পোর্টাল:</strong> SMEs এবং কর্পোরেটদের জন্য ড্যাশবোর্ড ভিত্তিক কাস্টম ম্যানেজমেন্ট সিস্টেম।</span>
                         </li>
                     </ul>
                 </article>
@@ -130,50 +121,69 @@
                         <i data-lucide="server" class="text-emeraldHQ w-8 h-8"></i>
                     </div>
                     <h3 class="text-2xl font-black text-white uppercase italic mb-4">Cloud & Security / ক্লাউড ইনফ্রাস্ট্রাকচার</h3>
-                    <p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-10">Immutable Hosting & Global Delivery.</p>
+                    <p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-10">Immutable Hosting & Zero-Lag Delivery.</p>
                     
                     <ul class="space-y-6 font-bengali text-sm md:text-base">
                         <li class="flex items-start gap-4">
                             <i data-lucide="cloud" class="text-emeraldHQ w-5 h-5 shrink-0 mt-1"></i>
-                            <span><strong class="text-white">Immutable Hosting / ক্লাউড হোস্টিং:</strong> Hacker-proof infrastructure using elite CDN nodes in KL and Dhaka.</span>
+                            <span><strong class="text-white">Immutable Hosting / ক্লাউড হোস্টিং:</strong> হ্যাকার-প্রুফ ইনফ্রাস্ট্রাকচার এবং গ্লোবাল সিডিএন (CDN) ইন্টিগ্রেশন।</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <i data-lucide="shield-check" class="text-emeraldHQ w-5 h-5 shrink-0 mt-1"></i>
-                            <span><strong class="text-white">Uptime Guarantee / আপটাইম:</strong> 99.99% reliability for mission-critical business portals and ERPs.</span>
+                            <span><strong class="text-white">Uptime SLA / নির্ভরযোগ্যতা:</strong> ৯৯.৯৯% আপটাইম নিশ্চয়তা এবং সর্বোচ্চ ডাটা এনক্রিপশন প্রোটোকল।</span>
                         </li>
                     </ul>
                 </article>
 
             </div>
         </section>
+
+        <!-- CTAs: SHOWROOM ACCESS -->
+        <section class="container mx-auto px-6 text-center mb-40">
+            <div class="glass-panel p-12 md:p-20 rounded-[50px] border-neonCyan/20 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5 rotate-12">
+                    <i data-lucide="layers" class="w-64 h-64 text-white"></i>
+                </div>
+                <h3 class="text-3xl md:text-5xl font-black text-white uppercase italic mb-8 reveal">
+                    Verified <span class="text-neonCyan">Engineering Blueprints.</span>
+                </h3>
+                <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto reveal font-bengali">
+                    আমাদের আর্কিটেকচারাল সক্ষমতা এবং জটিল সিস্টেম ডিজাইনের বাস্তব প্রমাণ দেখতে সরাসরি শোরুমে প্রবেশ করুন।
+                </p>
+                <a href="https://pixelperfectits.github.io/showroom/" 
+                   class="inline-flex items-center gap-4 bg-neonCyan text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 reveal shadow-[0_0_40px_rgba(0,242,255,0.3)]">
+                    <i data-lucide="database"></i> Access System Vault
+                </a>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER & STRATEGIC EMAIL -->
-    <footer class="py-24 px-6 border-t border-white/10 bg-black text-center">
-        <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter reveal">
-            Deploy Your <span class="text-neonCyan">System.</span>
-        </h3>
-        <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto reveal font-bengali">
-            নিরাপদ এবং আধুনিক ওয়েবসাইট ও সিস্টেম নির্মাণের জন্য আজই আমাদের আর্কিটেক্টের সাথে আলোচনা করুন।
-        </p>
-        
-        <!-- TARGETED EMAIL FOR SYSTEMS -->
-        <a href="mailto:pixelperfect.its@gmail.com?subject=Systems Architecture Inquiry [BD-MY]&body=Hello Chief Architect, I am interested in building a high-performance web system or cloud portal..." 
-           class="inline-flex items-center gap-4 bg-neonCyan text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white transition-all reveal">
-            <i data-lucide="terminal"></i> Initialize System Project
-        </a>
-
-        <div class="mt-32 opacity-20">
-            <p class="text-[8px] font-bold uppercase tracking-[1em]">Pixel Perfect IT | Systems Architecture Node</p>
+    <!-- FOOTER -->
+    <footer class="py-24 border-t border-white/10 bg-black text-center">
+        <div class="container mx-auto">
+            <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 tracking-tighter reveal">
+                Deploy Your <span class="text-neonCyan">System.</span>
+            </h3>
+            <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto reveal font-bengali">
+                নিরাপদ এবং আধুনিক ওয়েবসাইট ও সিস্টেম নির্মাণের জন্য আজই আমাদের আর্কিটেক্টের সাথে আলোচনা করুন।
+            </p>
+            <a href="mailto:pixelperfect.its@gmail.com?subject=Systems Architecture Inquiry&body=Hello Architect, I am interested in building a high-performance web system..." 
+               class="text-neonCyan hover:text-white transition-all text-xs font-black uppercase tracking-widest border border-neonCyan/30 px-8 py-4 rounded-full inline-block reveal">
+                Initialize Technical Build
+            </a>
+            <div class="mt-32 opacity-20">
+                <p class="text-[8px] font-bold uppercase tracking-[1em]">Pixel Perfect IT Solutions | Systems Architecture Node</p>
+            </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
         document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); } });
-            }, { threshold: 0.1 });
+            }, observerOptions);
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         });
     </script>
