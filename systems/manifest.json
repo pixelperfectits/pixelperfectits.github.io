@@ -1,11 +1,12 @@
 {
-  "vault_guard": "🔒 PROTECTED BY VAULT-GUARD v1.0 | MD IBRAHIM HOSSAIN",
-  "name": "Systems Architecture | MD Ibrahim Hossain",
-  "short_name": "Systems Hub",
-  "start_url": "/systems/index.html",
+  "name": "Systems Architecture Hub",
+  "short_name": "SystemsHub",
+  "description": "Scalable Enterprise Infrastructure by Pixel Perfect IT Solutions",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#00F2FF",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
