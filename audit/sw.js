@@ -1,6 +1,6 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'audit-vault-v3';
-const ASSETS = ['./','./index.html','./manifest.json','https://cdn.tailwindcss.com','https://unpkg.com/lucide@latest'];
+const CACHE_NAME = 'audit-vault-v5';
+const ASSETS = ['./','index.html','manifest.json','https://cdn.tailwindcss.com','https://unpkg.com/lucide@latest'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)));
 });
