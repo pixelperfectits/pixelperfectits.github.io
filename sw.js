@@ -1,5 +1,5 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'ppit-hq-vault-v3';
+const CACHE_NAME = 'ppit-hq-vault-v4';
 const ASSETS = ['./','./index.html','./manifest.json','https://cdn.tailwindcss.com','https://unpkg.com/lucide@latest'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)));
