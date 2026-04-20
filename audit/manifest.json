@@ -1,11 +1,11 @@
 {
   "vault_guard": "🔒 PROTECTED BY VAULT-GUARD v1.0 | MD IBRAHIM HOSSAIN",
-  "name": "Pixel Perfect IT | Global Hub",
-  "short_name": "PPIT Hub",
-  "start_url": "/index.html",
+  "name": "Strategic Audit Hub | Pixel Perfect IT",
+  "short_name": "Audit Hub",
+  "start_url": "/audit/index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#00F2FF",
+  "theme_color": "#F43F5E",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
