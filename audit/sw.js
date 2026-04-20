@@ -1,11 +1,22 @@
-/* 🔒 PROTECTED BY VAULT-GUARD v1.0 | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'audit-hub-v1.2';
-const assets = ['/audit/', '/audit/index.html', '/audit/manifest.json', 'https://cdn.tailwindcss.com', 'https://unpkg.com/lucide@latest'];
+/* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
+const CACHE_NAME = 'audit-vault-v1';
+const ASSETS = ['./', './index.html', './manifest.json', 'https://cdn.tailwindcss.com', 'https://unpkg.com/lucide@latest'];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE_NAME).then(cache => { return cache.addAll(assets); }));
+    e.waitUntil(caches.open(CACHE_NAME).then(c => {
+        console.log('Vault Syncing...');
+        return c.addAll(ASSETS);
+    }));
 });
 
 self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(res => { return res || fetch(e.request); }));
+    e.respondWith(caches.match(e.request).then(r => {
+        return r || fetch(e.request);
+    }));
+});
+
+self.addEventListener('activate', e => {
+    e.waitUntil(caches.keys().then(k => {
+        return Promise.all(k.filter(i => i !== CACHE_NAME).map(i => caches.delete(i)));
+    }));
 });
