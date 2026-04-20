@@ -1,10 +1,12 @@
 {
-  "name": "Pixel Perfect IT | HQ",
+  "name": "Pixel Perfect IT | Mother HQ",
   "short_name": "PPIT HQ",
-  "start_url": "/index.html",
+  "description": "Principal Systems Architecture Headquarters by MD Ibrahim Hossain",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#00F2FF",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
