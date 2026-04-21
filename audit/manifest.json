@@ -1,18 +1,18 @@
 {
-  "name": "Strategic Audit Hub",
-  "short_name": "AuditHub",
-  "description": "Technical Diagnostics by Pixel Perfect IT Solutions",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#020617",
-  "theme_color": "#f43f5e",
-  "orientation": "portrait",
-  "icons": [
-    {
-      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ]
+"name": "Strategic Audit Hub",
+"short_name": "AuditHub",
+"description": "Forensic Intelligence by Pixel Perfect IT Solutions",
+"start_url": "index.html",
+"display": "standalone",
+"background_color": "#020617",
+"theme_color": "#f43f5e",
+"orientation": "portrait",
+"icons": [
+{
+"src": "../assets/logo.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "any maskable"
+}
+]
 }
