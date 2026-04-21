@@ -1,10 +1,10 @@
 {
-  "name": "Pixel Perfect IT | Systems HQ",
+  "name": "Pixel Perfect IT | Mother HQ",
   "short_name": "PPIT HQ",
   "description": "Principal Systems Architecture Headquarters by MD Ibrahim Hossain",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#020617",
   "theme_color": "#00F2FF",
   "orientation": "portrait",
   "icons": [
