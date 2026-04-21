@@ -2,7 +2,7 @@
   "name": "Strategic Audit Hub",
   "short_name": "AuditHub",
   "description": "Forensic Intelligence and Technical Diagnostics by Pixel Perfect IT Solutions, optimized for Malaysia and global markets.",
-  "start_url": "index.html",
+  "start_url": "/audit/index.html",
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#f43f5e",
