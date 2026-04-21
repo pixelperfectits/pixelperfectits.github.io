@@ -1,15 +1,15 @@
 {
-  "name": "360° Bhumitech",
-  "short_name": "Bhumitech",
-  "description": "Smart Land Intelligence by Pixel Perfect IT Solutions",
+  "name": "Pixel Perfect IT | Systems HQ",
+  "short_name": "PPIT HQ",
+  "description": "Principal Systems Architecture Headquarters by MD Ibrahim Hossain",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#10B981",
+  "theme_color": "#00F2FF",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "../assets/logo.png",
+      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
