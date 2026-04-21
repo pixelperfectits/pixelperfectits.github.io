@@ -1,6 +1,13 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'ppit-hq-vault-v7';
-const ASSETS = ['./','./index.html','./manifest.json','https://cdn.tailwindcss.com','https://unpkg.com/lucide@latest'];
+const CACHE_NAME = 'ppit-hq-vault-v8';
+const ASSETS = [
+  './',
+  './index.html',
+  './manifest.json',
+  'https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png',
+  'https://cdn.tailwindcss.com',
+  'https://unpkg.com/lucide@latest'
+];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)));
 });
