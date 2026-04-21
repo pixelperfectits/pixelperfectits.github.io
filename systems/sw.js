@@ -1,9 +1,9 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'systems-vault-v10';
+const CACHE_NAME = 'systems-vault-v11';
 const ASSETS = [
-  './',
-  './index.html',
-  './manifest.json',
+  '/systems/',
+  '/systems/index.html',
+  '/systems/manifest.json',
   'https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png',
   'https://cdn.tailwindcss.com',
   'https://unpkg.com/lucide@latest'
