@@ -1,5 +1,5 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'visual-vault-v3';
+const CACHE_NAME = 'visual-vault-v4';
 const ASSETS = [
   '/visual/',
   '/visual/index.html',
