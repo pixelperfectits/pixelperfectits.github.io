@@ -1,9 +1,9 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'ppit-hq-vault-v10';
+const CACHE_NAME = 'ppit-hq-vault-v11';
 const ASSETS = [
-  './',
-  './index.html',
-  './manifest.json',
+  '/', // Correct root path for HQ
+  '/index.html',
+  '/manifest.json',
   'https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png',
   'https://cdn.tailwindcss.com',
   'https://unpkg.com/lucide@latest'
