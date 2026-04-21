@@ -1,7 +1,7 @@
 {
-  "name": "Pixel Perfect IT | Mother HQ",
-  "short_name": "PPIT HQ",
-  "description": "Principal Systems Architecture Headquarters by MD Ibrahim Hossain",
+  "name": "Systems Architecture Hub",
+  "short_name": "SystemsHub",
+  "description": "Scalable Enterprise Infrastructure by Pixel Perfect IT Solutions",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "src": "../assets/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
