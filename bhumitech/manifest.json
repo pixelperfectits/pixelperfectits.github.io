@@ -1,7 +1,7 @@
 {
   "name": "360° Bhumitech",
   "short_name": "Bhumitech",
-  "description": "Smart Land Intelligence & Legal OS Bangladesh",
+  "description": "Smart Land Intelligence by Pixel Perfect IT Solutions",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "src": "../assets/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
