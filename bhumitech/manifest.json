@@ -2,7 +2,7 @@
   "name": "360° Bhumitech",
   "short_name": "Bhumitech",
   "description": "Smart Land Intelligence by Pixel Perfect IT Solutions",
-  "start_url": "index.html",
+  "start_url": "/bhumitech/index.html",
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#10B981",
