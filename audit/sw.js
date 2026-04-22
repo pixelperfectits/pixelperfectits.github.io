@@ -1,13 +1,18 @@
-/* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'audit-vault-v18';
-const ASSETS = [
-  './',
-  './index.html',
-  './manifest.json',
-  'https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png',
-  'https://cdn.tailwindcss.com',
-  'https://unpkg.com/lucide@latest'
-];
-self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS))); });
-self.addEventListener('fetch', e => { e.respondWith(caches.match(e.request).then(r => r || fetch(e.request))); });
-self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(i => i !== CACHE_NAME).map(i => caches.delete(i))))); });
+{
+  "name": "Strategic Audit Hub",
+  "short_name": "AuditHub",
+  "description": "Forensic Intelligence and Technical Diagnostics by Pixel Perfect IT Solutions, optimized for Malaysia and global markets.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#f43f5e",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
