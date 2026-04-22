@@ -1,7 +1,7 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'systems-vault-v20';
+const CACHE_NAME = 'systems-vault-v21';
 const ASSETS = [
-  './',
+  './', // Ensures the service worker caches its own directory
   './index.html',
   './manifest.json',
   'https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png',
