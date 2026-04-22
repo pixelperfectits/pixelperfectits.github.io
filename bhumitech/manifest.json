@@ -1,7 +1,7 @@
 {
-  "name": "360° Bhumitech",
+  "name": "360° Bhumitech | Smart Land Intelligence",
   "short_name": "360 Bhumitech",
-  "description": "Smart Land Intelligence by Pixel Perfect IT Solutions for Bangladesh.",
+  "description": "Smart Land Intelligence by Pixel Perfect IT Solutions.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#020617",
