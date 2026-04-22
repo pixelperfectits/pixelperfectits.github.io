@@ -1,11 +1,11 @@
 {
-  "name": "Pixel Perfect IT | Systems Engineering HQ",
-  "short_name": "PPIT HQ",
-  "description": "Principal Systems Architect MD Ibrahim Hossain specializes in high-performance digital ecosystems for Malaysia, Bangladesh, and global markets, encompassing IT architecture, system engineering, forensic audits, land intelligence, and rapid visual engineering.",
-  "start_url": "index.html",
+  "name": "Visual Engineering Hub",
+  "short_name": "VisualEng",
+  "description": "Rapid Digital & Print Production by Pixel Perfect IT Solutions. Creating high-fidelity visual assets for global brands and businesses in Malaysia and internationally.",
+  "start_url": "/visual/index.html",
   "display": "standalone",
   "background_color": "#020617",
-  "theme_color": "#00F2FF",
+  "theme_color": "#fbbf24",
   "orientation": "portrait",
   "icons": [
     {
