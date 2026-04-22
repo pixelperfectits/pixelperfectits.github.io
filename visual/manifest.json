@@ -1,8 +1,8 @@
 {
   "name": "Visual Engineering Hub",
   "short_name": "VisualEng",
-  "description": "Rapid Digital & Print Production by Pixel Perfect IT Solutions. Creating high-fidelity visual assets for global brands and businesses in Malaysia and internationally.",
-  "start_url": "/visual/index.html",
+  "description": "Rapid Digital & Print Production by Pixel Perfect IT Solutions.",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#fbbf24",
