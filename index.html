@@ -86,5 +86,5 @@ Explore the <span class="text-white font-black italic">real evidence and bluepri
 <div class="h-1 w-32 bg-neonCyan rounded-full mb-6 shadow-[0_0_10px_#00F2FF]"></div> <p class="text-[9px] font-bold uppercase tracking-widest text-slate-500">Pixel Perfect IT Solutions HQ &copy; 2025</p> </div> </div> </footer>
 <script> lucide.createIcons(); const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('active')})},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el)); if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js')})}
-document.addEventListener("contextmenu",e=>e.preventDefault()); document.onkeydown=function(e){if(123==e.keyCode||(e.ctrlKey&&e.shiftKey&&(e.keyCode==73||e.keyCode==74||e.keyCode==67))||(e.ctrlKey&&e.keyCode==85))return false};
+document.addEventListener("contextmenu",e=>e.preventDefault()); document.onkeydown=function(e){if(e.keyCode==123||(e.ctrlKey&&e.shiftKey&&(e.keyCode==73||e.keyCode==74||e.keyCode==67))||(e.ctrlKey&&e.keyCode==85))return false};
 setInterval(function(){debugger},100); </script> </body> </html>
