@@ -1,5 +1,5 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'systems-vault-v17';
+const CACHE_NAME = 'systems-vault-v20';
 const ASSETS = [
   './',
   './index.html',
