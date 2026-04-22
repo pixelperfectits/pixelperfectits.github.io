@@ -1,9 +1,9 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'audit-vault-v14';
+const CACHE_NAME = 'audit-vault-v15';
 const ASSETS = [
-  '/audit/',
-  '/audit/index.html',
-  '/audit/manifest.json',
+  './',
+  './index.html',
+  './manifest.json',
   'https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png',
   'https://cdn.tailwindcss.com',
   'https://unpkg.com/lucide@latest'
