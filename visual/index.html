@@ -68,6 +68,21 @@
 <ul class="text-sm space-y-4 text-slate-500 font-medium">
 <li class="flex items-start gap-3"><div class="w-1.5 h-1.5 rounded-full bg-yellow-500 mt-2 shrink-0"></div> 8K Ultra-Resolution Prompts <span class="font-bengali opacity-70">(৮কে আল্ট্রা-রেজোলিউশন প্রম্পট)</span></li>
 <li class="flex items-start gap-3"><div class="w-1.5 h-1.5 rounded-full bg-yellow-500 mt-2 shrink-0"></div> Photorealistic Image Forging <span class="font-bengali opacity-70">(ফটোরিয়ালিস্টিক ইমেজ তৈরি)</span></li> </ul> </div> </div> </section>
+<!-- STYLISH BENTO SLOTS FOR PORTFOLIO -->
+<section class="container mx-auto px-4 md:px-8 reveal"> <div class="flex items-center gap-4 mb-16"> <div class="h-px flex-grow bg-white/10"></div> <h3 class="text-white font-black uppercase text-xs tracking-[0.4em]">Portfolio & Insights <span class="opacity-50">/ পোর্টফোলিও ও অন্তর্দৃষ্টি</span></h3> <div class="h-px flex-grow bg-white/10"></div> </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+<a href="https://pixelperfectits.github.io/showroom/" class="bento-slot rounded-[40px] p-10 group">
+<div class="p-5 bg-white/5 rounded-3xl w-fit mb-8 group-hover:bg-yellow-500/20 transition-all border border-white/5"><i data-lucide="database" class="text-white group-hover:text-yellow-400 w-8 h-8 transition-colors"></i></div>
+<h4 class="text-white font-black uppercase italic text-2xl mb-4">Design Vault</h4>
+<p class="text-sm text-slate-500 font-medium">Access our curated collection of high-fidelity digital and print assets. <span class="block mt-2 font-bengali opacity-70">আমাদের উচ্চ-মানের ডিজিটাল ও প্রিন্ট অ্যাসেটের কিউরেটেড সংগ্রহ দেখুন।</span></p> </a>
+<div class="bento-slot rounded-[40px] p-10 group">
+<div class="p-5 bg-white/5 rounded-3xl w-fit mb-8 group-hover:bg-yellow-500/20 transition-all border border-white/5"><i data-lucide="file-text" class="text-white group-hover:text-yellow-400 w-8 h-8 transition-colors"></i></div>
+<h4 class="text-white font-black uppercase italic text-2xl mb-4">Case Studies</h4>
+<p class="text-sm text-slate-500 font-medium">Real-world examples of impactful visual campaigns and brand transformations. <span class="block mt-2 font-bengali opacity-70">প্রভাবশালী ভিজ্যুয়াল ক্যাম্পেইন ও ব্র্যান্ড রূপান্তরের বাস্তব উদাহরণ।</span></p> </div>
+<a href="https://pixelperfectits.github.io/blog/" class="bento-slot rounded-[40px] p-10 group">
+<div class="p-5 bg-white/5 rounded-3xl w-fit mb-8 group-hover:bg-yellow-500/20 transition-all border border-white/5"><i data-lucide="book-open" class="text-white group-hover:text-yellow-400 w-8 h-8 transition-colors"></i></div>
+<h4 class="text-white font-black uppercase italic text-2xl mb-4">Visual Blog</h4>
+<p class="text-sm text-slate-500 font-medium">Our latest insights on design trends, digital aesthetics, and visual communication. <span class="block mt-2 font-bengali opacity-70">ডিজাইন ট্রেন্ড, ডিজিটাল নান্দনিকতা এবং ভিজ্যুয়াল কমিউনিকেশন নিয়ে আমাদের সর্বশেষ অন্তর্দৃষ্টি।</span></p> </a> </div> </section>
 <!-- FAQ SECTION -->
 <section class="container mx-auto px-4 md:px-8 reveal"> <div class="flex items-center gap-4 mb-16"> <div class="h-px flex-grow bg-white/10"></div> <h3 class="text-white font-black uppercase text-xs tracking-[0.4em]">Frequently Asked Questions <span class="opacity-50">/ সাধারণ জিজ্ঞাসা</span></h3> <div class="h-px flex-grow bg-white/10"></div> </div>
 <div class="max-w-4xl mx-auto space-y-4">
@@ -83,5 +98,5 @@
 <div class="h-1 w-32 bg-yellow-500 rounded-full mb-6 shadow-[0_0_10px_#fbbf24]"></div> <p class="text-[9px] font-bold uppercase tracking-widest text-slate-500">Pixel Perfect IT Solutions Visual Node &copy; 2025</p> </div> </div> </footer>
 <script> lucide.createIcons(); const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('active')})},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el)); if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js')})}
-document.addEventListener("contextmenu",e=>e.preventDefault()); document.onkeydown=function(e){if(e.keyCode==123||(e.ctrlKey&&e.shiftKey&&(e.keyCode==73||e.keyCode==74==e.keyCode==67))||(e.ctrlKey&&e.keyCode==85))return false};
+document.addEventListener("contextmenu",e=>e.preventDefault()); document.onkeydown=function(e){if(e.keyCode==123||(e.ctrlKey&&e.shiftKey&&(e.keyCode==73||e.keyCode==74||e.keyCode==67))||(e.ctrlKey&&e.keyCode==85))return false};
 setInterval(function(){debugger},100); </script> </body> </html>
