@@ -1,5 +1,5 @@
-/* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'audit-vault-v16';
+/* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD Ibrahim Hossain */
+const CACHE_NAME = 'audit-vault-v17';
 const ASSETS = [
   './',
   './index.html',
