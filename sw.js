@@ -1,5 +1,5 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'ppit-hq-vault-v15';
+const CACHE_NAME = 'bhumitech-hq-vault-v2';
 const ASSETS = [
   './',
   './index.html',
